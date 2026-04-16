@@ -46,17 +46,30 @@
 	<key>branding.theme-colors</key>
 	<dict>
 		<key>branding-background-color</key>
-		<string>#628a99</string>
+		<string>#688D9E</string>
 		<key>setup-status-bar-style</key>
-		<string>black</string>
+		<string>white</string>
 		<key>folder-icon-color</key>
-		<string>#52DDA9</string>
+		<string>#00E2BB</string>
 		<key>file-icon-color</key>
-		<string>#52DDA9</string>
+		<string>#00E2BB</string>
 	</dict>
+	<key>branding.theme-definitions</key>
+	<array>
+		<dict>
+			<key>identifier</key>
+			<string>com.owncloud.online.dark</string>
+			<key>darkBrandColor</key>
+			<string>#688D9E</string>
+			<key>lightBrandColor</key>
+			<string>#00E2BB</string>
+		</dict>
+	</array>
 	<key>branding.url-help</key>
 	<string>https://owncloud.online/faq/</string>
 	<key>branding.url-privacy</key>
 	<string>https://owncloud.online/privacy-policy/</string>
+	<key>branding.url-terms-of-use</key>
+	<string>https://owncloud.online/terms-of-use/</string>
 </dict>
 </plist>

@@ -1,8 +1,8 @@
 {
     "ios_branding.organization-name_text": "ownCloud Online",
     "ios_branding.profile-bookmark-name_text": "ownCloud Online",
-    "ios_branding.theme-definitions$[0].darkBrandColor_color": "#628a99",
-    "ios_branding.theme-definitions$[0].lightBrandColor_color": "#1D293B",
+    "ios_branding.theme-definitions$[0].darkBrandColor_color": "#688D9E",
+    "ios_branding.theme-definitions$[0].lightBrandColor_color": "#00E2BB",
     "ios_branding.send-feedback-address_text": "",
     "ios_branding.profile-url_text": "https://owncloud.online",
     "ios_branding.navigation.style_select": "colored",
