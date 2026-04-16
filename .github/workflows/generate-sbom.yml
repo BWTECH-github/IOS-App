@@ -1,0 +1,71 @@
+name: Generate/Update SBOM
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches:
+    - master
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-latest
+    name: Generate/Update SBOM
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: "master"
+          persist-credentials: false
+          submodules: true
+      - name: Xcode version
+        run: /usr/bin/xcodebuild -version
+      - name: Install cdxgen
+        run: brew install cdxgen
+      - name: Resolve packages for app
+        run: xcodebuild -resolvePackageDependencies -project ownCloud.xcodeproj
+      - name: Resolve packages for SDK
+        run: xcodebuild -resolvePackageDependencies -project ownCloudSDK.xcodeproj
+        working-directory: ./ios-sdk/
+      - name: Build SBOM
+        run: FETCH_LICENSE=true GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} cdxgen -o ./sbom.json -t swift .
+      - name: Trim and format JSON
+        shell: bash
+        run: |
+          trimAndFormatJSON() {
+            jq 'del(.serialNumber, .metadata.timestamp, .annotations[].timestamp, .annotations[].text, .components[].tags)' "$1" >"$1.tmp"
+            mv "$1.tmp" "$1"
+          }
+          addSHA3IUFLicense() {
+            jq '.components[] |= 
+                (if .name == "SHA3IUF" 
+                 then . + {
+                   licenses: [{license: {id: "MIT", "url": "https://github.com/brainhub/SHA3IUF/blob/master/LICENSE"}}],
+                   externalReferences: ([.externalReferences[]?] + 
+                     [{type: "vcs", url: "https://github.com/brainhub/SHA3IUF.git"}]),
+                   type: "library",
+                   version: "fc8504750a5c2174a1874094dd05e6a0d8797753",
+                 } 
+                 else . end)' "$1" >"$1.tmp"
+            mv "$1.tmp" "$1"
+          }
+          trimAndFormatJSON "sbom.json"
+          addSHA3IUFLicense "sbom.json"
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@21cfef2b496dd8ef5b904c159339626a10ad380e # v1.11.6
+        with:
+          app-id: ${{ secrets.TRANSLATION_APP_ID }}
+          private-key: ${{ secrets.TRANSLATION_APP_PRIVATE_KEY }}
+      - name: Create or update SBOM PR
+        uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
+        with:
+          add-paths: sbom.json
+          token: ${{ steps.app-token.outputs.token }}
+          branch: chore/sbom-update
+          base: master
+          commit-message: "chore: update SBOM"
+          title: "chore: update sbom.json"
+          body: "Automated SBOM update. This pull request is updated on each push to `master` — merging it will close it and a fresh one will be opened on the next change."
+          delete-branch: true
+          sign-commits: true

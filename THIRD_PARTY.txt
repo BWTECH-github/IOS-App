@@ -1,0 +1,97 @@
+###################################################################
+
+     Copyright (C) 2024, ownCloud GmbH.
+
+
+     This code is covered by the GNU Public License Version 3.
+
+     For distribution utilizing Apple mechanisms please see
+     https://owncloud.org/contribute/iOS-license-exception/
+
+
+     You should have received a copy of this license along with this program.
+     If not, see <http://www.gnu.org/licenses/gpl-3.0.en.html>,
+     <https://owncloud.com/de/licenses/owncloud-commercial/>.
+
+###################################################################
+
+
+###########
+# LICENSE #
+###########
+ 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+The source distribution of this program should include a full copy
+of the GNU GPL version 3 license in the LICENSE.txt file located 
+in its root directory. If not, see <http://www.gnu.org/licenses/>.
+
+
+########################
+# THIRD PARTY LICENSES #
+########################
+
+Both the source and binary distributions of this software contain
+some third party software. All the third party software included
+or linked is redistributed under the terms and conditions of their 
+original licenses. These licenses are compatible the GPL license 
+that govern this software, for the purposes they are being used.
+
+The third party software included and used by this project is:
+
+ *      ownCloud iOS SDK
+        Copyright (c) 2018-2024 ownCloud GmbH. (http://www.owncloud.org/)
+        Licensed under GNU Public License, Version 3.
+        Placed at ios-sdk
+        Original license document included at ios-sdk/LICENSE.
+        See https://github.com/owncloud/ios-sdk
+
+ *      Down
+        Copyright (c) 2016 Rob Phillips.
+        Licensed under MIT License. Components used by "Down" under indivdiual licenses.
+        Placed as Swift package
+        Original license document included at ownCloudAppShared/Down.LICENSE.
+        See https://github.com/johnxnguyen/Down
+
+ *      ISRunLoopThread
+        Copyright (c) 2014 Felix Schwarz.
+        Licensed under MIT License.
+        Placed at ios-sdk/ownCloudSDK/External/ISRunLoopThread
+        Original license document included at ios-sdk/ownCloudSDK/External/ISRunLoopThread/ISRunLoopThread.LICENSE.
+        See https://gist.github.com/felix-schwarz/9fa9055b6ade900f1f21
+
+ *      OpenSSL 3
+        Copyright (c) 2024 OpenSSL.
+        Licensed under Apache-2.0 license.
+        Placed as Swift package
+        Original license document included at "ios-sdk/ownCloudUI/Certificate Metadata/OpenSSL license/OpenSSL.LICENSE".
+        See https://github.com/openssl/openssl
+
+ *      PLCrashReporter
+        Copyright (c) Microsoft Corporation.
+        Copyright (c) 2008 - 2014 Plausible Labs Cooperative, Inc.
+        Licensed under MIT, Apache License 2.0 (see license file)
+        Placed as Swift package
+        Original license document included at ownCloud/Resources/PLCrashReporter.LICENSE.
+        See https://github.com/microsoft/plcrashreporter
+
+ *      PocketSVG
+        Copyright (c) Ponderwell, Ariel Elkin, Fjölnir Ásgeirsson, and Contributors
+        Licensed under MIT License.
+        Placed as Swift package
+        Original license document included at ownCloudAppShared/PocketSVG.LICENSE.
+        See https://github.com/pocketsvg/PocketSVG
+
+ *      SHA3IUF
+        Copyright (c) brainhub
+        Licensed under MIT License.
+        Placed at ios-sdk/ownCloudSDK/External/SHA3IUF/Sources/SHA3IUF
+        Original license document included at ios-sdk/ownCloudSDK/File Handling/Checksums/SHA3/SHA3IUF.LICENSE.
+        See https://github.com/brainhub/SHA3IUF/blob/master/LICENSE

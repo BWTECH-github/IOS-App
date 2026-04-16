@@ -1,0 +1,26 @@
+name: Build Xcode project
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    name: Build Xcode project
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # 6.0.2
+        with:
+          submodules: true
+      - name: mxcl/Xcodebuild
+        uses: mxcl/xcodebuild@d3ee9b419c1be9a988086c58fe0988f32d99cfc5 # v3.6.0
+        with:
+          scheme: ownCloud
+          action: build
+          platform: iOS
+          platform-version: 26.2
+          xcode: 26.2

@@ -1,0 +1,44 @@
+excluded:
+    - ownCloudTests
+    - ownCloudScreenshotsTests
+    - external
+
+#function_body_length: 100
+# warning_threshold: 5
+# line_length:
+#  warning: 300
+#  ignores_function_declarations: true
+#  ignores_comments: true
+
+disabled_rules:
+    - block_based_kvo
+    - empty_enum_arguments
+    - switch_case_alignment
+    - identifier_name
+    - colon
+    - cyclomatic_complexity
+    - file_length
+    - for_where
+    - function_name_whitespace
+    - type_body_length
+    - line_length
+    - type_name
+    - vertical_parameter_alignment
+    - function_body_length
+    - implicit_getter
+    - computed_accessors_order
+    - function_parameter_count
+    - comment_spacing
+    - unused_closure_parameter
+    - control_statement
+    - nesting
+    - comma
+    - large_tuple
+    - force_cast
+custom_rules:
+  empty_line_after_guard_statement:
+    included: ".*\\.swift"
+    name: "Empty line after guard statement"
+    regex: "((?<=\n)([ ]*)guard[^\\}]*?\\}\n\\2[^\n])" # Follow https://regex101.com/r/i1IaQH/1 fo$
+    message: "Add a newline after guard statement to make it easier to read"
+    severity: warning
