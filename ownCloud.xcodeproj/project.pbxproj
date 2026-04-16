@@ -4391,7 +4391,7 @@
 			);
 			inputPaths = (
 				"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/branding-action-extension-icon.png",
-				"${PROJECT_DIR}/ownCloud/Resources/Theming/com.owncloud.ios-app/branding-action-extension-icon.png",
+				"${PROJECT_DIR}/ownCloud/Resources/Theming/online.owncloud.ios-app/branding-action-extension-icon.png",
 			);
 			name = "Copy branding asset action extension icon";
 			outputFileListPaths = (
@@ -4401,7 +4401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\n# Determine branding assets folder to use\nASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/com.owncloud.ios-app/\"\n\nASSETS_FILE_COUNT=$(ls -A \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"branding-action-extension-icon.png | wc -l)\necho \"File count in branding-assets:\" ${ASSETS_FILE_COUNT}\n\nif [ -e \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\" ]; then\n    if [ $ASSETS_FILE_COUNT -ne 0 ]; then\n        # Copy branding-*.png files from branding-assets\n        ASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"\n    fi\nfi\n\n\nICON_FILE_COUNT=$(ls -A ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png | wc -l)\n\necho \"Icon count in assets source folder:\" ${ICON_FILE_COUNT}\n\nif [ $ICON_FILE_COUNT -ne 0 ]; then\n    # Copy branding-action-extension-icon.png assets\n    echo \"Copying branding-action-extension-icon.png files from\" ${ASSETS_SOURCE_FOLDER}\n    echo cp ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\n    cp ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-action-extension-icon.png\"\nfi\n";
+			shellScript = "#!/bin/bash\n\n# Determine branding assets folder to use\nASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/online.owncloud.ios-app/\"\n\nASSETS_FILE_COUNT=$(ls -A \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"branding-action-extension-icon.png | wc -l)\necho \"File count in branding-assets:\" ${ASSETS_FILE_COUNT}\n\nif [ -e \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\" ]; then\n    if [ $ASSETS_FILE_COUNT -ne 0 ]; then\n        # Copy branding-*.png files from branding-assets\n        ASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"\n    fi\nfi\n\n\nICON_FILE_COUNT=$(ls -A ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png | wc -l)\n\necho \"Icon count in assets source folder:\" ${ICON_FILE_COUNT}\n\nif [ $ICON_FILE_COUNT -ne 0 ]; then\n    # Copy branding-action-extension-icon.png assets\n    echo \"Copying branding-action-extension-icon.png files from\" ${ASSETS_SOURCE_FOLDER}\n    echo cp ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\n    cp ${ASSETS_SOURCE_FOLDER}branding-action-extension-icon.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-action-extension-icon.png\"\nfi\n";
 		};
 		DC049259258CB33600DEDC27 /* Copy PocketSVG license (inactive) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4440,7 +4440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/bin/bash\n\n# Determine branding assets folder to use\nASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/com.owncloud.ios-app/\"\n\nASSETS_FILE_COUNT=$(ls -A \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"branding-*.png | wc -l)\necho \"File count in branding-assets:\" ${ASSETS_FILE_COUNT}\n\nif [ -e \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\" ]; then\n\tif [ $ASSETS_FILE_COUNT -ne 0 ]; then\n\t\t# Copy branding-*.png files from branding-assets\n\t\tASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"\n\tfi\nfi\n\n# Copy branding-*.png assets\necho \"Copying branding-*.png files from\" ${ASSETS_SOURCE_FOLDER}\necho cp ${ASSETS_SOURCE_FOLDER}branding-*.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\ncp ${ASSETS_SOURCE_FOLDER}branding-*.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\n\n# Remove assets from the assets folder that aren't used by the app from the build product\nif [ -e \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-icon.png\" ]; then\n    rm \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-icon.png\"\nfi\n";
+			shellScript = "#!/bin/bash\n\n# Determine branding assets folder to use\nASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/online.owncloud.ios-app/\"\n\nASSETS_FILE_COUNT=$(ls -A \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"branding-*.png | wc -l)\necho \"File count in branding-assets:\" ${ASSETS_FILE_COUNT}\n\nif [ -e \"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\" ]; then\n\tif [ $ASSETS_FILE_COUNT -ne 0 ]; then\n\t\t# Copy branding-*.png files from branding-assets\n\t\tASSETS_SOURCE_FOLDER=\"${PROJECT_DIR}/ownCloud/Resources/Theming/branding-assets/\"\n\tfi\nfi\n\n# Copy branding-*.png assets\necho \"Copying branding-*.png files from\" ${ASSETS_SOURCE_FOLDER}\necho cp ${ASSETS_SOURCE_FOLDER}branding-*.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\ncp ${ASSETS_SOURCE_FOLDER}branding-*.png \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/\"\n\n# Remove assets from the assets folder that aren't used by the app from the build product\nif [ -e \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-icon.png\" ]; then\n    rm \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/branding-icon.png\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -5417,7 +5417,7 @@
 					OCLocalizedFormat,
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
@@ -5454,9 +5454,9 @@
 					OCLocalizedFormat,
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5541,7 +5541,7 @@
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Action-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Action-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -5585,9 +5585,9 @@
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Action-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Action-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app.ownCloud-Action-Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app.ownCloud-Action-Extension";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -5713,7 +5713,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Intents";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5744,9 +5744,9 @@
 					OCLocalizedString,
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Intents";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app.ownCloud-Intents";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app.ownCloud-Intents";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -5781,7 +5781,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-File-ProviderUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-ProviderUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5812,9 +5812,9 @@
 					OCLocalizedString,
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-File-ProviderUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-ProviderUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app.ownCloud-File-ProviderUI";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app.ownCloud-File-ProviderUI";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -6007,7 +6007,7 @@
 					OCLocalizedFormat,
 					OCLocalizedString,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-File-Provider";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-Provider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6037,9 +6037,9 @@
 					OCLocalizedFormat,
 					OCLocalizedString,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-File-Provider";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-Provider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app.ownCloud-File-Provider";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app.ownCloud-File-Provider";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -6075,7 +6075,7 @@
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
@@ -6109,9 +6109,9 @@
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.owncloud.ios-app.ownCloud-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.owncloud.ios-app.ownCloud-Share-Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore online.owncloud.ios-app.ownCloud-Share-Extension";
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				SWIFT_EMIT_LOC_STRINGS = YES;
