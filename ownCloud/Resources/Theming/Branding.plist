@@ -7,7 +7,7 @@
 	<key>branding.can-edit-account</key>
 	<true/>
 	<key>branding.enable-review-prompt</key>
-	<true/>
+	<false/>
 	<key>branding.organization-name</key>
 	<string>ownCloud Online</string>
 	<key>branding.profile-definitions</key>
@@ -71,5 +71,16 @@
 	<string>https://owncloud.online/privacy-policy/</string>
 	<key>branding.url-terms-of-use</key>
 	<string>https://owncloud.online/terms-of-use/</string>
+	<key>authentication-oauth2.oa2-client-id</key>
+	<string>TODO_REGISTER_ON_OWNCLOUD_ONLINE</string>
+	<key>authentication-oauth2.oa2-client-secret</key>
+	<string>TODO_REGISTER_ON_OWNCLOUD_ONLINE</string>
+	<key>authentication-oauth2.oa2-redirect-uri</key>
+	<string>oc://ios.owncloud.online</string>
+	<key>connection.allowed-authentication-methods</key>
+	<array>
+		<string>com.owncloud.oauth2</string>
+		<string>com.owncloud.basicauth</string>
+	</array>
 </dict>
 </plist>
