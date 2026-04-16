@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>branding.can-add-account</key>
+	<false/>
+	<key>branding.can-edit-account</key>
+	<true/>
+	<key>branding.enable-review-prompt</key>
+	<true/>
+	<key>branding.organization-name</key>
+	<string>ownCloud Online</string>
+	<key>branding.profile-definitions</key>
+	<array>
+		<dict>
+			<key>allowedHosts</key>
+			<array>
+				<string>owncloud.online</string>
+				<string>owncloud.com</string>
+				<string>owncloud.team</string>
+				<string>owncloud.works</string>
+				<string>owncloud.org</string>
+			</array>
+			<key>bookmarkName</key>
+			<string>ownCloud Online</string>
+			<key>canConfigureURL</key>
+			<true/>
+			<key>helpURL</key>
+			<string>https://owncloud.online/try/</string>
+			<key>helpURLButtonString</key>
+			<string>TRY IT FOR FREE</string>
+			<key>identifier</key>
+			<string>ownCloud-online</string>
+			<key>name</key>
+			<string>ownCloud Online</string>
+			<key>promptForHelpURL</key>
+			<string>If you do not have an ownCloud Online account yet, you can request a free test account.</string>
+			<key>promptForURL</key>
+			<string>Please enter your ownCloud Online URL</string>
+			<key>url</key>
+			<string>https://owncloud.online</string>
+		</dict>
+	</array>
+	<key>branding.send-feedback-address</key>
+	<string></string>
+	<key>branding.theme-colors</key>
+	<dict>
+		<key>branding-background-color</key>
+		<string>#688D9E</string>
+		<key>setup-status-bar-style</key>
+		<string>white</string>
+		<key>folder-icon-color</key>
+		<string>#00E2BB</string>
+		<key>file-icon-color</key>
+		<string>#00E2BB</string>
+	</dict>
+	<key>branding.theme-definitions</key>
+	<array>
+		<dict>
+			<key>identifier</key>
+			<string>com.owncloud.online.dark</string>
+			<key>darkBrandColor</key>
+			<string>#688D9E</string>
+			<key>lightBrandColor</key>
+			<string>#00E2BB</string>
+		</dict>
+	</array>
+	<key>branding.url-help</key>
+	<string>https://owncloud.online/faq/</string>
+	<key>branding.url-privacy</key>
+	<string>https://owncloud.online/privacy-policy/</string>
+	<key>branding.url-terms-of-use</key>
+	<string>https://owncloud.online/terms-of-use/</string>
+</dict>
 </plist>
