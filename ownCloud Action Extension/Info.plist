@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>OCKeychainAccessGroupIdentifier</key>
-	<string>group.com.owncloud.ios-app</string>
+	<string>group.online.owncloud.ios-app</string>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
@@ -21,7 +21,7 @@
 	<key>OCAppIdentifierPrefix</key>
 	<string>$(AppIdentifierPrefix)</string>
 	<key>OCAppGroupIdentifier</key>
-	<string>group.com.owncloud.ios-app</string>
+	<string>group.online.owncloud.ios-app</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
