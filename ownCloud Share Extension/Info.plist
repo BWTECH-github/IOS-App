@@ -48,7 +48,7 @@
 		<true/>
 	</dict>
 	<key>OCAppGroupIdentifier</key>
-	<string>group.com.owncloud.ios-app</string>
+	<string>group.online.owncloud.ios-app</string>
 	<key>OCAppIdentifierPrefix</key>
 	<string>$(AppIdentifierPrefix)</string>
 	<key>OCAppComponentIdentifier</key>
@@ -56,6 +56,6 @@
 	<key>OCHasFileProvider</key>
 	<true/>
 	<key>OCKeychainAccessGroupIdentifier</key>
-	<string>group.com.owncloud.ios-app</string>
+	<string>group.online.owncloud.ios-app</string>
 </dict>
 </plist>
