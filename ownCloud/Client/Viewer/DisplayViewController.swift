@@ -304,6 +304,7 @@ class DisplayViewController: UIViewController, Themeable, OCQueryDelegate {
 		])
 
 		view.isAccessibilityElement = true
+		view.accessibilityLabel = displayTitle ?? item?.name ?? OCLocalizedString("File", nil)
 		view.focusGroupIdentifier = "com.owncloud.viewer"
 		view.focusEffect = UIFocusHaloEffect(rect: CGRect(x: 0, y: 0, width: 0, height: 0)) // Avoid "bluish" overlay over viewed content when using the accessibility option keyboard navigation
 	}

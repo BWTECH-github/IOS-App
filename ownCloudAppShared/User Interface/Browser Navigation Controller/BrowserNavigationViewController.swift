@@ -247,6 +247,7 @@ open class BrowserNavigationViewController: EmbeddingViewController, BrowserNavi
 			let item = reuseOrBuild(.backButton, {
 				let backButtonItem = UIBarButtonItem(image: OCSymbol.icon(forSymbolName: "chevron.backward"), style: .plain, target: self, action: #selector(navBack))
 				backButtonItem.tag = BarButtonTags.backButton.rawValue
+				backButtonItem.accessibilityLabel = OCLocalizedString("Back", nil)
 
 				return backButtonItem
 			})
@@ -260,6 +261,7 @@ open class BrowserNavigationViewController: EmbeddingViewController, BrowserNavi
 			let item = reuseOrBuild(.forwardButton, {
 				let forwardButtonItem = UIBarButtonItem(image: OCSymbol.icon(forSymbolName: "chevron.forward"), style: .plain, target: self, action: #selector(navForward))
 				forwardButtonItem.tag = BarButtonTags.forwardButton.rawValue
+				forwardButtonItem.accessibilityLabel = OCLocalizedString("Forward", nil)
 
 				return forwardButtonItem
 			})
