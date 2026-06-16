@@ -93,6 +93,10 @@ class PDFSearchResultsView : UIView {
 		backButton.setImage(UIImage(systemName: "chevron.left")?.tinted(with: .white), for: .normal)
 		forwardButton.setImage(UIImage(systemName: "chevron.right")?.tinted(with: .white), for: .normal)
 
+		closeButtton.accessibilityLabel = OCLocalizedString("Close", nil)
+		backButton.accessibilityLabel = OCLocalizedString("Previous match", nil)
+		forwardButton.accessibilityLabel = OCLocalizedString("Next match", nil)
+
 		searchTermButton.titleLabel?.textColor = .white
 		searchTermButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
 		searchTermButton.titleLabel?.adjustsFontForContentSizeCategory = true

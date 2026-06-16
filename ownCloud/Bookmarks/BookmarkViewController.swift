@@ -1254,6 +1254,10 @@ extension BookmarkViewController {
 
 			vectorImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(BookmarkViewController.openPasswordManagerSheet(sender:))))
 
+			vectorImageView.isAccessibilityElement = true
+			vectorImageView.accessibilityTraits = .button
+			vectorImageView.accessibilityLabel = OCLocalizedString("Open password manager", nil)
+
 			self.passwordRow?.cell?.accessoryView = vectorImageView
 		}
 	}

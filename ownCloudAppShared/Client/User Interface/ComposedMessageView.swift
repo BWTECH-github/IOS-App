@@ -50,6 +50,8 @@ public class ComposedMessageElement: NSObject {
 	public var style: ThemeItemStyle?
 	public var textView: ThemeCSSLabel?
 
+	public var buttonAccessibilityLabel: String?
+
 	public var imageView: UIImageView?
 
 	public var progress: Progress?
@@ -298,6 +300,8 @@ public class ComposedMessageElement: NSObject {
 					let button = ThemeButton(withSelectors: cssSelectors ?? [], configuration: buttonConfig)
 					button.translatesAutoresizingMaskIntoConstraints = false
 
+					button.accessibilityLabel = text ?? buttonAccessibilityLabel
+
 					button.addAction(action, for: .primaryActionTriggered)
 
 					_view = button
@@ -378,9 +382,10 @@ public class ComposedMessageElement: NSObject {
 		return element
 	}
 
-	static public func imageButton(_ image: UIImage, action: UIAction, alignment: Alignment = .leading, cssSelectors: [ThemeCSSSelector]? = nil, insets altInsets: NSDirectionalEdgeInsets? = nil) -> ComposedMessageElement {
+	static public func imageButton(_ image: UIImage, action: UIAction, accessibilityLabel: String? = nil, alignment: Alignment = .leading, cssSelectors: [ThemeCSSSelector]? = nil, insets altInsets: NSDirectionalEdgeInsets? = nil) -> ComposedMessageElement {
 		let element = ComposedMessageElement(kind: .button(action: action, image: image), alignment: alignment, insets: altInsets)
 		element.cssSelectors = cssSelectors
+		element.buttonAccessibilityLabel = accessibilityLabel
 
 		return element
 	}
