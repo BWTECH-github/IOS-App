@@ -3,7 +3,7 @@ name: Generate/Update SBOM
 on:
   push:
     branches:
-    - master
+    - main
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: "master"
+          ref: "main"
           persist-credentials: false
           submodules: true
       - name: Xcode version
@@ -63,9 +63,9 @@ jobs:
           add-paths: sbom.json
           token: ${{ steps.app-token.outputs.token }}
           branch: chore/sbom-update
-          base: master
+          base: main
           commit-message: "chore: update SBOM"
           title: "chore: update sbom.json"
-          body: "Automated SBOM update. This pull request is updated on each push to `master` — merging it will close it and a fresh one will be opened on the next change."
+          body: "Automated SBOM update. This pull request is updated on each push to `main` — merging it will close it and a fresh one will be opened on the next change."
           delete-branch: true
           sign-commits: true

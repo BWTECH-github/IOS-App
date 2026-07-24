@@ -3,7 +3,7 @@ name: Calens Changelog
 on:
   push:
     branches:
-    - master
+    - main
 
 permissions: {}
 
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: "master"
+          ref: "main"
           persist-credentials: false
 
       - uses: actionhippie/calens@244f3e5c328b842a740113859b87bbebf697f63b # v1.13.1
@@ -35,9 +35,9 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           branch: chore/changelog-update
-          base: master
+          base: main
           commit-message: "chore: update changelog"
           title: "chore: update changelog"
-          body: "Automated changelog update via Calens. This pull request is updated on each push to `master` — merging it will close it and a fresh one will be opened on the next change."
+          body: "Automated changelog update via Calens. This pull request is updated on each push to `main` — merging it will close it and a fresh one will be opened on the next change."
           delete-branch: true
           sign-commits: true
