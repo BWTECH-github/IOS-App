@@ -46,13 +46,13 @@
 	<key>branding.theme-colors</key>
 	<dict>
 		<key>branding-background-color</key>
-		<string>#688D9E</string>
+		<string>#041E42</string>
 		<key>setup-status-bar-style</key>
 		<string>white</string>
 		<key>folder-icon-color</key>
-		<string>#00E2BB</string>
+		<string>#00E4BD</string>
 		<key>file-icon-color</key>
-		<string>#00E2BB</string>
+		<string>#00E4BD</string>
 	</dict>
 	<key>branding.theme-definitions</key>
 	<array>
@@ -60,9 +60,9 @@
 			<key>identifier</key>
 			<string>com.owncloud.online.dark</string>
 			<key>darkBrandColor</key>
-			<string>#688D9E</string>
+			<string>#041E42</string>
 			<key>lightBrandColor</key>
-			<string>#00E2BB</string>
+			<string>#00E4BD</string>
 		</dict>
 	</array>
 	<key>branding.url-help</key>
@@ -79,7 +79,6 @@
 	<string>oc://ios.owncloud.online</string>
 	<key>connection.allowed-authentication-methods</key>
 	<array>
-		<string>com.owncloud.oauth2</string>
 		<string>com.owncloud.basicauth</string>
 	</array>
 </dict>
