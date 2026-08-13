@@ -1,73 +1,47 @@
-# [ownCloud](https://owncloud.org) iOS App
+# owncloud.online für iOS
 
-## 📲 Download
+Die iOS-App zu owncloud.online: Dateien ansehen, teilen und über die
+Dateien-App von iOS direkt in anderen Programmen weiterverwenden.
 
-Our iOS app is free for downloading available on the AppStore
+| Kontenliste | Dateiliste | Aktionen | Vorschau | Schnellzugriff | Einstellungen |
+| --- | --- | --- | --- | --- | --- |
+| <img src="doc/images/en-US/iPhone 11 Pro Max-11_ios_accounts_list_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-20_ios_files_list_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-21_ios_files_actions_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-22_ios_files_preview_pdf_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-40_ios_quick_access_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-60_ios_settings_demo.png"> |
 
-<a href="https://apps.apple.com/app/id1359583808?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1561593600" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+## Was sie kann
 
-####  🌎 https://ownCloud.com
+* **Einbindung in die Dateien-App** von iOS — Inhalte stehen jedem Programm zur
+  Verfügung, das Dateien öffnen kann
+* **Mehrfachauswahl und Ziehen und Ablegen**, auf dem iPad auch zwischen
+  Programmen
+* **Vorschau** für Bilder, PDF und Videos ohne vollständigen Download
+* **Mehrere Konten** gleichzeitig
+* **Zertifikatsverwaltung** und Zusammenspiel mit Passwortverwaltungen
+* **Helles und dunkles Erscheinungsbild**
+* In Swift geschrieben, ausschließlich für iOS
 
-| Account List                                                 | File List                                                    | File Actions                                                 | Preview Files                                                | Quick Access                                                 | Settings                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="doc/images/en-US/iPhone 11 Pro Max-11_ios_accounts_list_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> | <img src="doc/images/en-US/iPhone 11 Pro Max-20_ios_files_list_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> | <img src="doc/images/en-US/iPhone 11 Pro Max-21_ios_files_actions_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> | <img src="doc/images/en-US/iPhone 11 Pro Max-22_ios_files_preview_pdf_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> | <img src="doc/images/en-US/iPhone 11 Pro Max-40_ios_quick_access_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> | <img src="doc/images/en-US/iPhone 11 Pro Max-60_ios_settings_demo.png" alt="Simulator Screen Shot - iPhone 11 Pro"> |
+## Bauen
 
-## 😍 Features
+Die Schritte stehen in [SETUP.md](SETUP.md).
 
-* 🦋 Using the current iOS frameworks
-* ⭐️ Exclusively built for iOS
-* 🛠 Written in Swift
-* 📂 Seamless integration with iOS files for improved collaboration
-* 🕹 Multi-select with drag and drop features for efficient file management
-* 👑 Using iPadOS features for pro users
-* ✅ Certificate management and password manager integration for boosting security
-* 🏳️‍🌈 Multiple UI themes with dark and light colors
-* 🚢 Free on the AppStore
-* 🇪🇺 Localised in many languages
-* 📱iOS 11+
-* 🧩 License: [GPLv3](https://github.com/owncloud/ios-app/LICENSE)
+## Dokumentation
 
-## 🛠 Build our App
+<https://docs.owncloud.online/>
 
-To build our App, please read our [SETUP.md](https://github.com/owncloud/ios-app/blob/master/SETUP.md)
+## Fehler melden
 
-```
-$ read SETUP.md
-```
+Als [Issue](https://github.com/BWTECH-github/IOS-App/issues), bitte mit Version
+von App und Server, iOS-Version, Gerät und den Schritten zum Nachstellen.
 
-## 📖 Documentation & Help
+**Sicherheitslücken nicht als Issue**, sondern vertraulich an
+**security@bw.tech**.
 
-The documentation for the app can be viewed here: [iOS Documentation](https://doc.owncloud.com/ios-app/)
+## Übersetzungen
 
-Support and help can be found here: [Docs & Guides](https://owncloud.com/docs-guides/)
+Die Übersetzungen liegen im Repository und werden dort gepflegt — ein Konto bei
+einem externen Übersetzungsdienst wird nicht gebraucht.
 
-## 🇪🇺 Translate
+## Herkunft und Lizenz
 
-The App is translated in many languages. If your language is missing or if you want to improve a string, you are welcome!
-This can be done in [Transifex](https://www.transifex.com/signup/?join_project=owncloud).
-
-
-## 💡 Found a bug or have some ideas for improvement?
-
-- 💬 Open a new issue on [Github](https://github.com/owncloud/ios-app/issues/new)
-- 🐥 Don't forget to follow us on [Twitter](https://twitter.com/owncloud) 
-
-## 📋 Start Contributing
-
-Make sure you read [SETUP.md](https://github.com/owncloud/ios-app/blob/master/SETUP.md) when you start working on this project. Basically: Fork this repository and contribute back using pull requests to the master branch.
-Easy starting points are also reviewing [pull requests](https://github.com/owncloud/ios-app/pulls) and working on [good first issue](https://github.com/owncloud/ios-app/labels/good%20first%20issue).
-
-## ☁️ ownCloud Server
-
-[Learn](https://owncloud.org/news/how-to-set-up-an-owncloud-in-3-minutes/), how you can easily setup your own ownCloud server in 3 minutes or test our ownCloud iOS app with our demo server:
-
-- [Download](https://apps.apple.com/app/id1359583808) our iOS App
-- Add account 
-
-### Demo credentials
-
-| Server URL | demo.owncloud.com |
-| ---------- | ----------------- |
-| User       | demo              |
-| Password   | demo              |
-
+Fork der ownCloud-iOS-App, gepflegt von der BW-Tech GmbH für owncloud.online.
+Der Dank für die ursprüngliche Arbeit gehört der ownCloud-Gemeinschaft.
+Lizenz: [GPLv3](LICENSE).
