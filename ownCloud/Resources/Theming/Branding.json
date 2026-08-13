@@ -1,13 +1,15 @@
 {
     "ios_branding.organization-name_text": "ownCloud Online",
     "ios_branding.profile-bookmark-name_text": "ownCloud Online",
-    "ios_branding.theme-definitions$[0].darkBrandColor_color": "#688D9E",
-    "ios_branding.theme-definitions$[0].lightBrandColor_color": "#00E2BB",
+    "ios_branding.theme-colors$tint-color_color": "#00866F",
+    "ios_branding.theme-colors$branding-background-color_color": "#547A9E",
+    "ios_branding.theme-colors$folder-icon-color_color": "#00E4BD",
+    "ios_branding.theme-colors$file-icon-color_color": "#00E4BD",
     "ios_branding.send-feedback-address_text": "",
     "ios_branding.profile-url_text": "https://owncloud.online",
     "ios_branding.navigation.style_select": "colored",
-    "ios_branding.profile-help-url_text": "https://owncloud.online/faq/",
-    "ios_branding.profile-help-button-label_text": "Help & Support",
-    "ios_branding.profile-open-help-message_text": "Visit the ownCloud Online FAQ for help.",
+    "ios_branding.profile-help-url_text": "https://owncloud.online/try/",
+    "ios_branding.profile-help-button-label_text": "TRY IT FOR FREE",
+    "ios_branding.url-documentation_text": "https://owncloud.online/faq/",
     "ios_branding.style_select": "light"
 }

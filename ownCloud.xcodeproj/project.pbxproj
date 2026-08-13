@@ -526,6 +526,7 @@
 		DCBAEAED29A627D900BFF393 /* DataSourceCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBAEAEC29A627D900BFF393 /* DataSourceCondition.swift */; };
 		DCBD8EA824B3751900D92E1F /* OCItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397754E123279EED00119FCB /* OCItem+Extension.swift */; };
 		DCBE9C812D08E2A200332D3B /* SpaceManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE9C802D08E2A200332D3B /* SpaceManagementViewController.swift */; };
+		DCC077832F02D1FA007D6CD3 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DCC077822F02D1FA007D6CD3 /* AppIcon.icon */; };
 		DCC077852F02D7DE007D6CD3 /* ownCloud Action Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 391933B42B0B81DB007DF90B /* ownCloud Action Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCC077862F02D841007D6CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233BDEA6204FEFE500C06732 /* Assets.xcassets */; };
 		DCC077872F02D890007D6CD3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 395E3B162C8B0E83007979C9 /* Localizable.xcstrings */; };
@@ -4264,6 +4265,7 @@
 				DC9BFBB320A19AF4007064B5 /* doc in Resources */,
 				233BDEA7204FEFE500C06732 /* Assets.xcassets in Resources */,
 				DC6C68362574FD0400E46BD4 /* PLCrashReporter.LICENSE in Resources */,
+				DCC077832F02D1FA007D6CD3 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

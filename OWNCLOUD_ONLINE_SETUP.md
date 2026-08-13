@@ -18,10 +18,21 @@ This repository contains the ownCloud iOS app, adapted for use with the **ownClo
 - **Team**: BW-TECH GmbH (4545KLA52K), automatic signing (no manual profiles)
 - **URL schemes**: `owncloud-online` (app/private links) and `oco` (auth) — no
   collision with the official ownCloud app
-- **Branding Assets**: `online.owncloud.ios-app` branding theme (logo, icons,
-  colors; `branding.theme-colors` drives the system light/dark themes). The
-  Icon Composer `AppIcon.icon` is intentionally NOT bundled so the branded
-  appiconset is used on iOS 26, too
+- **Branding Assets**: `online.owncloud.ios-app` branding theme, generated from
+  the official owncloud.online logo SVGs. All logo PNGs carry built-in
+  transparent padding; `branding-logo-sidebar.png` (2:1) and
+  `branding-logo-setup.png` are picked up automatically via the asset-suffix
+  mechanism so the "ONLINE" wordmark is never clipped in the sidebar banner.
+  The Icon Composer `AppIcon.icon` IS bundled (white cloud on brand navy) for
+  the native iOS 26 glass icon; older iOS versions use the branded appiconset
+- **Colors** (official owncloud.online web palette):
+  - Tint: `#00866F` (dark mint — readable links/accents on white, AA)
+  - CTA buttons: mint `#00E4BD` fill with navy `#262B45` text via
+    `branding.theme-css-records` (matches the website's button style)
+  - Backgrounds: slate `#547A9E` → navy `#262B45` gradient
+  - Folder icons: mint `#00E4BD` via the `icon-folder.fill` CSS record (the
+    TVG icons read `tvgIcon.[icon].[variable].fill`, NOT the legacy
+    `folder-icon-color` key)
 - **Help / Privacy / Terms URLs**: `owncloud.online/faq/`, `/privacy-policy/`, `/terms/`
 
 ### Authentication
@@ -65,7 +76,7 @@ The ownCloud Online backend runs PHP 8.4 with the following key dependencies:
 ### Steps
 ```bash
 # 1. Clone repository
-git clone https://github.com/GrossLukas/IOS-App.git
+git clone https://github.com/BWTECH-github/IOS-App.git
 cd IOS-App
 
 # 2. Initialize submodules

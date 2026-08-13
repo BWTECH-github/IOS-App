@@ -41,7 +41,7 @@ class ReleaseNotesHostViewController: UIViewController {
 
 		ReleaseNotesDatasource.setUserPreferenceValue(NSString(utf8String: VendorServices.shared.appBuildNumber), forClassSettingsKey: .lastSeenReleaseNotesVersion)
 
-		let appName = OCAppIdentity.shared.appName ?? "ownCloud"
+		let appName = OCAppIdentity.shared.appName ?? "ownCloud Online"
 
 		let headerView = UIView()
 		headerView.backgroundColor = .clear

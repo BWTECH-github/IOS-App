@@ -23,6 +23,7 @@
                                 <rect key="frame" x="200" y="24" width="624" height="1322"/>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.47843137254901963" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WtJ-CJ-2he" secondAttribute="trailing" constant="200" id="2fV-dO-1FA">
@@ -39,8 +40,8 @@
                             </constraint>
                             <constraint firstItem="30I-hD-9cc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Q19-X8-qdh"/>
                             <constraint firstAttribute="trailing" secondItem="30I-hD-9cc" secondAttribute="trailing" id="Q4l-GC-1vN"/>
-                            <constraint firstItem="30I-hD-9cc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vfm-pl-KRo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30I-hD-9cc" secondAttribute="bottom" constant="-34" id="gDC-aP-ayz"/>
+                            <constraint firstItem="30I-hD-9cc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Vfm-pl-KRo"/>
+                            <constraint firstAttribute="bottom" secondItem="30I-hD-9cc" secondAttribute="bottom" id="gDC-aP-ayz"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -3,9 +3,12 @@
 Die iOS-App zu owncloud.online: Dateien ansehen, teilen und über die
 Dateien-App von iOS direkt in anderen Programmen weiterverwenden.
 
-| Kontenliste | Dateiliste | Aktionen | Vorschau | Schnellzugriff | Einstellungen |
-| --- | --- | --- | --- | --- | --- |
-| <img src="doc/images/en-US/iPhone 11 Pro Max-11_ios_accounts_list_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-20_ios_files_list_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-21_ios_files_actions_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-22_ios_files_preview_pdf_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-40_ios_quick_access_demo.png"> | <img src="doc/images/en-US/iPhone 11 Pro Max-60_ios_settings_demo.png"> |
+| Willkommen | Einrichtung | Anmeldung | Kontenliste | Dateien |
+| --- | --- | --- | --- | --- |
+| <img src="doc/images/owncloud-online/01-willkommen.png"> | <img src="doc/images/owncloud-online/02-einrichtung.png"> | <img src="doc/images/owncloud-online/03-anmeldung.png"> | <img src="doc/images/owncloud-online/04-kontenliste.png"> | <img src="doc/images/owncloud-online/05-dateiliste.png"> |
+
+Die Screenshots stammen aus der aktuellen owncloud.online-Version der App
+(Anmeldebeispiel gegen einen lokalen Testserver).
 
 ## Was sie kann
 

@@ -27,16 +27,30 @@
 	<key>branding.theme-colors</key>
 	<dict>
 		<key>tint-color</key>
-		<string>#00E2BB</string>
+		<string>#00866F</string>
 		<key>branding-background-color</key>
-		<string>#688D9E</string>
+		<string>#547A9E</string>
 		<key>setup-status-bar-style</key>
 		<string>white</string>
 		<key>folder-icon-color</key>
-		<string>#00E2BB</string>
+		<string>#00E4BD</string>
 		<key>file-icon-color</key>
-		<string>#00E2BB</string>
+		<string>#00E4BD</string>
 	</dict>
+	<key>branding.theme-css-records</key>
+	<array>
+		<string>cancel.fill: #00E4BD</string>
+		<string>cancel.stroke: #262B45</string>
+		<string>proceed.fill: #00E4BD</string>
+		<string>proceed.stroke: #262B45</string>
+		<string>info.fill: #00E4BD</string>
+		<string>info.stroke: #262B45</string>
+		<string>accountSetup.step.button.filled.fill: #00E4BD</string>
+		<string>accountSetup.step.button.filled.stroke: #262B45</string>
+		<string>icon-folder.fill: #00E4BD</string>
+	</array>
+	<key>branding.url-documentation</key>
+	<string>https://owncloud.online/faq/</string>
 	<key>branding.url-help</key>
 	<string>https://owncloud.online/faq/</string>
 	<key>branding.url-privacy</key>
