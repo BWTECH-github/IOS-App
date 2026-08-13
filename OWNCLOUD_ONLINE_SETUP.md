@@ -8,15 +8,30 @@ This repository contains the ownCloud iOS app, adapted for use with the **ownClo
 
 ### Branding
 - **Organization Name**: "ownCloud Online"
-- **Default Server URL**: `https://owncloud.online` (pre-filled in onboarding)
-- **Bundle Identifier**: `online.owncloud.ios-app` (and extensions)
-- **Branding Assets**: Uses `online.owncloud.ios-app` branding theme (logo, icons, colors)
-- **Help & Privacy URLs**: Point to `owncloud.online/faq/` and `owncloud.online/privacy-policy/`
+- **Default Server URL**: `https://owncloud.online` — pre-filled via the flat
+  `branding.profile-url` key (the array-style `branding.profile-definitions`
+  from older docs is NOT read by this app version); the URL stays editable
+  (`branding.profile-allow-url-configuration`)
+- **App display name**: "ownCloud Online" (hardcoded CFBundleDisplayName; the
+  extensions derive theirs from APP_PRODUCT_NAME)
+- **Bundle Identifier**: `online.owncloud.ios-app` (and `.ownCloud-*` extension ids)
+- **Team**: BW-TECH GmbH (4545KLA52K), automatic signing (no manual profiles)
+- **URL schemes**: `owncloud-online` (app/private links) and `oco` (auth) — no
+  collision with the official ownCloud app
+- **Branding Assets**: `online.owncloud.ios-app` branding theme (logo, icons,
+  colors; `branding.theme-colors` drives the system light/dark themes). The
+  Icon Composer `AppIcon.icon` is intentionally NOT bundled so the branded
+  appiconset is used on iOS 26, too
+- **Help / Privacy / Terms URLs**: `owncloud.online/faq/`, `/privacy-policy/`, `/terms/`
 
 ### Authentication
-- **Basic Auth**: Fully supported (primary method for owncloud.online)
-- **OAuth2 / OpenID Connect**: Supported if configured on the server
-- The app automatically detects available authentication methods via the server's capabilities endpoint
+- **Basic Auth**: the only allowed method right now
+  (`connection.allowed-authentication-methods = [com.owncloud.basicauth]`)
+- **OAuth2 / OpenID Connect**: currently DISABLED — no client is registered on
+  owncloud.online yet. To enable: register the iOS client on the server
+  (redirect URI `oco://ios.owncloud.online`), then re-add
+  `com.owncloud.oauth2` to the allowed methods and set
+  `authentication-oauth2.oa2-client-id`/`-secret` in Branding.plist
 
 ### PHP 8.4 Compatibility
 The ownCloud Online backend runs PHP 8.4 with the following key dependencies:

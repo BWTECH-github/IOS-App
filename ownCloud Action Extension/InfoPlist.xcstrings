@@ -1,481 +1,481 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "CFBundleDisplayName" : {
-      "comment" : "Bundle display name",
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desa a ownCloud"
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleDisplayName": {
+      "comment": "Bundle display name",
+      "localizations": {
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desa a ownCloud Online"
           }
         },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Speichern in ownCloud"
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speichern in ownCloud Online"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salva su ownCloud"
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva su ownCloud Online"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "lo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "mk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сохранить в ownCloud"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить в ownCloud Online"
           }
         },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ruajeni në ownCloud"
+        "sq": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ruajeni në ownCloud Online"
           }
         },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to ownCloud"
-          }
-        }
-      }
-    },
-    "CFBundleName" : {
-      "comment" : "Bundle name",
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Extensió Acció ownCloud"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estensione attività di ownCloud"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ownCloud Action Extension"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save to ownCloud Online"
           }
         }
       }
     },
-    "NSHumanReadableCopyright" : {
-      "comment" : "Copyright (human-readable)",
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. Tots els drets reservats."
+    "CFBundleName": {
+      "comment": "Bundle name",
+      "localizations": {
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensió Acció ownCloud Online"
           }
         },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. Alle Rechte vorbehalten."
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. Tutti i diritti riservati."
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estensione attività di ownCloud Online"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "lo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "mk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. Все права защищены."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Të drejta kopjimi © 2023 ownCloud GmbH. Tërë të drejtat të rezervuara."
+        "sq": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copyright © 2023 ownCloud GmbH. All rights reserved."
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ownCloud Online Action Extension"
           }
         }
       }
     },
-    "Share Extension unavailable" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L'extensió Compartir no disponible"
+    "NSHumanReadableCopyright": {
+      "comment": "Copyright (human-readable)",
+      "localizations": {
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. Tots els drets reservats."
           }
         },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erweiterung nicht verfügbar"
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. Alle Rechte vorbehalten."
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estensione di condivisione non disponibile"
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. Tutti i diritti riservati."
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "lo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "mk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension недоступно"
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. Все права защищены."
           }
         },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zgjerimi për Ndarje jo i pranishëm"
+        "sq": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Të drejta kopjimi © 2023 ownCloud Online GmbH. Tërë të drejtat të rezervuara."
           }
         },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Extension unavailable"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copyright © 2023 ownCloud Online GmbH. All rights reserved."
           }
         }
       }
     },
-    "The Share Extension is not available on this system." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L'extensió Compartir no està disponible en aquest sistema."
+    "Share Extension unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'extensió Compartir no disponible"
           }
         },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Die Erweiterung ist auf diesem System nicht verfügbar."
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erweiterung nicht verfügbar"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "L'estensione per la condivisione non è disponibile in questo sistema."
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estensione di condivisione non disponibile"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "lo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "mk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension недоступно на этой системе."
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension недоступно"
           }
         },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zgjerimi për Ndarje s’është i pranishëm në këtë sistem."
+        "sq": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zgjerimi për Ndarje jo i pranishëm"
           }
         },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The Share Extension is not available on this system."
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share Extension unavailable"
+          }
+        }
+      }
+    },
+    "The Share Extension is not available on this system.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'extensió Compartir no està disponible en aquest sistema."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Erweiterung ist auf diesem System nicht verfügbar."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'estensione per la condivisione non è disponibile in questo sistema."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "lo": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "mk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension недоступно на этой системе."
+          }
+        },
+        "sq": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zgjerimi për Ndarje s’është i pranishëm në këtë sistem."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Share Extension is not available on this system."
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

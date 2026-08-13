@@ -304,21 +304,22 @@ platform :ios do
 
 lane :owncloud_online_build do
   build_ipa_in_house(
+    # Bundle-IDs identisch mit ownCloud.xcodeproj (PRODUCT_BUNDLE_IDENTIFIER)
     ENTERPRISE_APP_ID: "online.owncloud.ios-app",
     ENTERPRISE_APP_PROFILE: "ownCloud online AppStore",
-    ENTERPRISE_FP_ID: "online.owncloud.ios-app.DocumentProvider",
-    ENTERPRISE_FP_PROFILE: "ownCloud online AppStore DocumentProvider",
-    ENTERPRISE_FP_UI_ID: "online.owncloud.ios-app.DocumentProviderUI",
-    ENTERPRISE_FP_UI_PROFILE: "ownCloud online AppStore DocumentProviderUI",
-    ENTERPRISE_INTENT_ID: "online.owncloud.ios-app.Intents",
+    ENTERPRISE_FP_ID: "online.owncloud.ios-app.ownCloud-File-Provider",
+    ENTERPRISE_FP_PROFILE: "ownCloud online AppStore File Provider",
+    ENTERPRISE_FP_UI_ID: "online.owncloud.ios-app.ownCloud-File-ProviderUI",
+    ENTERPRISE_FP_UI_PROFILE: "ownCloud online AppStore File Provider UI",
+    ENTERPRISE_INTENT_ID: "online.owncloud.ios-app.ownCloud-Intents",
     ENTERPRISE_INTENT_PROFILE: "ownCloud online AppStore Intents",
-    ENTERPRISE_SHARE_EXTENSION_ID: "online.owncloud.ios-app.ShareExtApp",
+    ENTERPRISE_SHARE_EXTENSION_ID: "online.owncloud.ios-app.ownCloud-Share-Extension",
     ENTERPRISE_SHARE_EXTENSION_PROFILE: "ownCloud online AppStore Share Ext",
-    ENTERPRISE_ACTION_EXTENSION_ID: "online.owncloud.ios-app.Action-Extension",
+    ENTERPRISE_ACTION_EXTENSION_ID: "online.owncloud.ios-app.ownCloud-Action-Extension",
     ENTERPRISE_ACTION_EXTENSION_PROFILE: "ownCloud online AppStore Action Extension",
     ENTERPRISE_APP_FW_ID: "online.owncloud.ios-app.ownCloudApp",
-    ENTERPRISE_TEAM: "4AP2STM4H5",
-    ENTERPRISE_IDENTITY: "Apple Distribution: ownCloud GmbH",
+    ENTERPRISE_TEAM: "4545KLA52K",
+    ENTERPRISE_IDENTITY: "Apple Distribution: BW-TECH GmbH, IT Service fuer Systemintegration und Datensicherheit (4545KLA52K)",
     APP_GROUP_IDENTIFIERS: "group.online.owncloud.ios-app",
     EXPORT_METHOD: "app-store",
     CONFIGURATION: "Release",
@@ -627,29 +628,29 @@ end
     set_info_plist_value(path: "ownCloud Action Extension/Info.plist", key: "CFBundleDisplayName", value: "Save to " + appName)
     set_info_plist_value(path: "ownCloud Action Extension/Info.plist", key: "CFBundleName", value: appName)
     
-    # Read InfoPlist.xcstrings JSON content from the file
-    json_file_path = "../ownCloud Action Extension/InfoPlist.xcstrings"
-    json_content = File.read(json_file_path)
-    json_data = JSON.parse(json_content)
-    
-    # Update the CFBundleDisplayName value for all localizations
-    if json_data["strings"] && json_data["strings"]["CFBundleDisplayName"]
-        UI.message("CFBundleDisplayName key found, updating values...")
-        
+    # Update the localized CFBundleDisplayName in BOTH extensions' xcstrings
+    ["../ownCloud Action Extension/InfoPlist.xcstrings", "../ownCloud Share Extension/InfoPlist.xcstrings"].each do |json_file_path|
+      next unless File.exist?(json_file_path)
+      json_data = JSON.parse(File.read(json_file_path))
+
+      if json_data["strings"] && json_data["strings"]["CFBundleDisplayName"]
+        UI.message("CFBundleDisplayName key found in #{json_file_path}, updating values...")
+
         json_data["strings"]["CFBundleDisplayName"]["localizations"].each do |locale, localization_data|
           old_value = localization_data["stringUnit"]["value"]
-          
-          # Replace "ownCloud" with appName
-          new_value = old_value.gsub("ownCloud", appName)
-          localization_data["stringUnit"]["value"] = new_value
+
+          # Replace "ownCloud" with appName (skip values already branded)
+          unless old_value.include?(appName)
+            localization_data["stringUnit"]["value"] = old_value.gsub("ownCloud", appName)
+          end
         end
       else
-        UI.error("CFBundleDisplayName key not found in the JSON data!")
+        UI.error("CFBundleDisplayName key not found in #{json_file_path}!")
       end
-    
-    # Write the updated JSON back to the file
-    File.open(json_file_path, "w") do |f|
-      f.write(JSON.pretty_generate(json_data))
+
+      File.open(json_file_path, "w") do |f|
+        f.write(JSON.pretty_generate(json_data))
+      end
     end
 
     update_app_identifier(

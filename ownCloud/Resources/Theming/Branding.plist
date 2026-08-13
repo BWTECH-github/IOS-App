@@ -10,41 +10,24 @@
 	<false/>
 	<key>branding.organization-name</key>
 	<string>ownCloud Online</string>
-	<key>branding.profile-definitions</key>
-	<array>
-		<dict>
-			<key>allowedHosts</key>
-			<array>
-				<string>owncloud.online</string>
-				<string>owncloud.com</string>
-				<string>owncloud.team</string>
-				<string>owncloud.works</string>
-				<string>owncloud.org</string>
-			</array>
-			<key>bookmarkName</key>
-			<string>ownCloud Online</string>
-			<key>canConfigureURL</key>
-			<true/>
-			<key>helpURL</key>
-			<string>https://owncloud.online/try/</string>
-			<key>helpURLButtonString</key>
-			<string>TRY IT FOR FREE</string>
-			<key>identifier</key>
-			<string>ownCloud-online</string>
-			<key>name</key>
-			<string>ownCloud Online</string>
-			<key>promptForHelpURL</key>
-			<string>If you do not have an ownCloud Online account yet, you can request a free test account.</string>
-			<key>promptForURL</key>
-			<string>Please enter your ownCloud Online URL</string>
-			<key>url</key>
-			<string>https://owncloud.online</string>
-		</dict>
-	</array>
+	<key>branding.profile-bookmark-name</key>
+	<string>ownCloud Online</string>
+	<key>branding.profile-url</key>
+	<string>https://owncloud.online</string>
+	<key>branding.profile-allow-url-configuration</key>
+	<true/>
+	<key>branding.profile-help-url</key>
+	<string>https://owncloud.online/try/</string>
+	<key>branding.profile-help-button-label</key>
+	<string>TRY IT FOR FREE</string>
+	<key>branding.profile-open-help-message</key>
+	<string>If you do not have an ownCloud Online account yet, you can request a free test account.</string>
 	<key>branding.send-feedback-address</key>
 	<string></string>
 	<key>branding.theme-colors</key>
 	<dict>
+		<key>tint-color</key>
+		<string>#00E2BB</string>
 		<key>branding-background-color</key>
 		<string>#688D9E</string>
 		<key>setup-status-bar-style</key>
@@ -54,32 +37,18 @@
 		<key>file-icon-color</key>
 		<string>#00E2BB</string>
 	</dict>
-	<key>branding.theme-definitions</key>
-	<array>
-		<dict>
-			<key>identifier</key>
-			<string>com.owncloud.online.dark</string>
-			<key>darkBrandColor</key>
-			<string>#688D9E</string>
-			<key>lightBrandColor</key>
-			<string>#00E2BB</string>
-		</dict>
-	</array>
 	<key>branding.url-help</key>
 	<string>https://owncloud.online/faq/</string>
 	<key>branding.url-privacy</key>
 	<string>https://owncloud.online/privacy-policy/</string>
 	<key>branding.url-terms-of-use</key>
-	<string>https://owncloud.online/terms-of-use/</string>
-	<key>authentication-oauth2.oa2-client-id</key>
-	<string>TODO_REGISTER_ON_OWNCLOUD_ONLINE</string>
-	<key>authentication-oauth2.oa2-client-secret</key>
-	<string>TODO_REGISTER_ON_OWNCLOUD_ONLINE</string>
-	<key>authentication-oauth2.oa2-redirect-uri</key>
-	<string>oc://ios.owncloud.online</string>
+	<string>https://owncloud.online/terms/</string>
+	<key>build.custom-app-scheme</key>
+	<string>owncloud-online</string>
+	<key>build.custom-auth-scheme</key>
+	<string>oco</string>
 	<key>connection.allowed-authentication-methods</key>
 	<array>
-		<string>com.owncloud.oauth2</string>
 		<string>com.owncloud.basicauth</string>
 	</array>
 </dict>
