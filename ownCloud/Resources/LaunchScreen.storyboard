@@ -23,7 +23,7 @@
                                 <rect key="frame" x="200" y="24" width="624" height="1322"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.89411764705882357" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WtJ-CJ-2he" secondAttribute="trailing" constant="200" id="2fV-dO-1FA">

@@ -29,9 +29,9 @@
 		<key>tint-color</key>
 		<string>#00866F</string>
 		<key>branding-background-color</key>
-		<string>#00866F</string>
+		<string>#FFFFFF</string>
 		<key>setup-status-bar-style</key>
-		<string>white</string>
+		<string>black</string>
 		<key>folder-icon-color</key>
 		<string>#00E4BD</string>
 		<key>file-icon-color</key>
@@ -40,13 +40,16 @@
 	<key>branding.theme-css-records</key>
 	<array>
 		<string>cancel.fill: #00E4BD</string>
-		<string>cancel.stroke: #262B45</string>
+		<string>cancel.stroke: #FFFFFF</string>
 		<string>proceed.fill: #00E4BD</string>
-		<string>proceed.stroke: #262B45</string>
+		<string>proceed.stroke: #FFFFFF</string>
 		<string>info.fill: #00E4BD</string>
-		<string>info.stroke: #262B45</string>
+		<string>info.stroke: #FFFFFF</string>
 		<string>accountSetup.step.button.filled.fill: #00E4BD</string>
-		<string>accountSetup.step.button.filled.stroke: #262B45</string>
+		<string>accountSetup.step.button.filled.stroke: #FFFFFF</string>
+		<string>accountSetup.message.title.stroke: #262B45</string>
+		<string>accountSetup.header.title.stroke: #262B45</string>
+		<string>accountSetup.help.subtitle.stroke: #464D6A</string>
 		<string>icon-folder.fill: #00E4BD</string>
 	</array>
 	<key>branding.url-documentation</key>
