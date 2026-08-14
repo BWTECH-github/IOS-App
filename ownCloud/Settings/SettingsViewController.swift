@@ -37,6 +37,7 @@ class SettingsViewController: StaticTableViewController {
 
 		if self.navigationController?.isBeingPresented ?? false {
 			let doneBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissAnimated))
+			doneBarButtonItem.tintColor = Theme.shared.activeCollection.css.getColor(.stroke, selectors: [.button], for: nil)
 			self.navigationItem.rightBarButtonItem = doneBarButtonItem
 		}
 

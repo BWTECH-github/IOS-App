@@ -93,6 +93,12 @@ extension VendorServices {
 		}
 	}
 
+	private func brandedSafariViewController(for url: URL) -> SFSafariViewController {
+		let safariViewController = SFSafariViewController(url: url)
+		safariViewController.preferredControlTintColor = Theme.shared.activeCollection.css.getColor(.stroke, selectors: [.button], for: nil)
+		return safariViewController
+	}
+
 	public func openSFWebView(on viewController: UIViewController, for url: URL, withConfirmation: Bool = true) {
 		if withConfirmation {
 			let alert = ThemedAlertController(title: OCLocalizedString("Do you want to open the following URL?", nil),
@@ -100,14 +106,14 @@ extension VendorServices {
 						      preferredStyle: .alert)
 
 			let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-				viewController.present(SFSafariViewController(url: url), animated: true)
+				viewController.present(self.brandedSafariViewController(for: url), animated: true)
 			}
 			let cancelAction = UIAlertAction(title: OCLocalizedString("Cancel", nil), style: .cancel)
 			alert.addAction(okAction)
 			alert.addAction(cancelAction)
 			viewController.present(alert, animated: true)
 		} else {
-			viewController.present(SFSafariViewController(url: url), animated: true)
+			viewController.present(brandedSafariViewController(for: url), animated: true)
 		}
 	}
 }
