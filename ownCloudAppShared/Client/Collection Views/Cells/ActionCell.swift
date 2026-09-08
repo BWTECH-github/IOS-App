@@ -220,6 +220,9 @@ extension ActionCell {
 					}
 
 					backgroundConfiguration = UIBackgroundConfiguration.listSidebarCell()
+					if action.type == .warning {
+						backgroundConfiguration?.backgroundInsets.bottom = 6
+					}
 
 					if let buttonLabel = action.buttonLabel {
 						let context = cellConfiguration.clientContext
