@@ -97,8 +97,8 @@ public class ClientSidebarViewController: CollectionSidebarViewController, Navig
 		navigationItem.largeTitleDisplayMode = .never
 		navigationItem.titleView = ClientSidebarViewController.buildNavigationLogoView()
 
-		// Add 10pt space at the top so that the first section's account doesn't "stick" to the top
-		collectionView.contentInset.top += 10
+		// Add space at the top so that the first section's account doesn't "stick" to the top
+		collectionView.contentInset.top += 16
 
 		// Temporary, ugly fix for "empty bookmarks list in sidebar"
 		// Actual issue, as far as understood, is that if that error occurs, the created AccountControllerSections
