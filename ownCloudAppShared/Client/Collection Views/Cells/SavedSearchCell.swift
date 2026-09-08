@@ -113,8 +113,8 @@ class SavedSearchCell: ThemeableCollectionViewCell {
 		titleLabel.setContentHuggingPriority(.required, for: .vertical)
 		titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
 
-		titleLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
-		titleLabel.lineBreakMode = .byWordWrapping
+		titleLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+		titleLabel.lineBreakMode = .byTruncatingTail
 		titleLabel.numberOfLines = 1
 
 		titleLabel.isAccessibilityElement = false
@@ -153,7 +153,7 @@ class SavedSearchCell: ThemeableCollectionViewCell {
 			iconView.widthAnchor.constraint(equalToConstant: 24),
 			iconView.heightAnchor.constraint(equalToConstant: 24),
 
-			titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -titleInsets.right),
+			titleLabel.trailingAnchor.constraint(lessThanOrEqualTo: sideButton.leadingAnchor, constant: -8),
 			titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: titleInsets.top),
 			titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -titleInsets.bottom).with(priority: .defaultHigh), // Constraint effective if the cell has no items, overridden by hasItemsConstraint if active
 			hasItemsConstraint!, // Constraint effective if the cell has items
