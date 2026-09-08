@@ -499,7 +499,7 @@ extension Branding {
 								addCSSRecord([.accountSetup], property: .statusBarStyle, value: value)
 
 							case .folderIconColor:
-								addCSSRecord([.vectorImage, .folderColor], property: .fill, value: value)
+								addCSSRecord([.vectorImage, .accentColor], property: .fill, value: value)
 
 							case .fileIconColor:
 								addCSSRecord([.vectorImage, .fileColor], property: .fill, value: value)

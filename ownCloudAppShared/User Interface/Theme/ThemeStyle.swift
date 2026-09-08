@@ -113,5 +113,10 @@ public extension ThemeCollection {
 		if let cssRecordStrings = style.cssRecordStrings, let records = ThemeCSSRecord.from(cssRecordStrings) {
 			css.add(records: records)
 		}
+
+		if style.themeStyle == .light,
+		   let accentColor = css.getColor(.fill, selectors: [.vectorImage, .accentColor], for: nil) {
+			css.add(record: ThemeCSSRecord(selectors: [.sidebar, .collection, .selected, .cell], property: .fill, value: accentColor))
+		}
 	}
 }

@@ -401,7 +401,7 @@ public class ThemeCollection : NSObject {
 				sidebarCellStateSet.regular.backgroundColor =  .secondarySystemBackground.resolvedColor(with: styleTraitCollection)
 				sidebarCellStateSet.selected.labelColor = .white
 				sidebarCellStateSet.selected.iconColor = .white
-				sidebarCellStateSet.selected.backgroundColor = useSystemColors ? resolvedSystemTintColor : darkBrandColor
+				sidebarCellStateSet.selected.backgroundColor = css.getColor(.fill, selectors: [.vectorImage, .accentColor], for: nil) ?? (useSystemColors ? resolvedSystemTintColor : darkBrandColor)
 
 				sidebarLogoIconColor = darkBrandColor
 				sidebarLogoLabel = darkBrandColor
@@ -702,7 +702,7 @@ public class ThemeCollection : NSObject {
 			ThemeCSSRecord(selectors: [.more, .favorite, .disabled],	property: .stroke, value: favoriteDisabledColor),
 
 			// - TVG icon colors
-			// ThemeCSSRecord(selectors: [.vectorImage, .folderColor], 	property: .fill, value: iconSymbolColor), // make TVG files use default colors extracted from original SVG files
+			// ThemeCSSRecord(selectors: [.vectorImage, .accentColor], 	property: .fill, value: iconSymbolColor), // make TVG files use default colors extracted from original SVG files
 			// ThemeCSSRecord(selectors: [.vectorImage, .fileColor], 	property: .fill, value: iconSymbolColor), // make TVG files use default colors extracted from original SVG files
 			ThemeCSSRecord(selectors: [.vectorImage, .logoColor], 		property: .fill, value: logoFillColor ?? UIColor.white),
 			ThemeCSSRecord(selectors: [.vectorImage, .iconColor], 		property: .fill, value: iconSymbolColor),
@@ -811,7 +811,7 @@ public class ThemeCollection : NSObject {
 		if _iconColors == nil {
 			_iconColors = [:]
 
-			_iconColors?["folderFillColor"] = css.getColor(.fill, selectors: [.vectorImage, .folderColor], for: nil)?.hexString()
+			_iconColors?["folderFillColor"] = css.getColor(.fill, selectors: [.vectorImage, .accentColor], for: nil)?.hexString()
 
 			_iconColors?["fileFillColor"] = css.getColor(.fill, selectors: [.vectorImage, .fileColor], for: nil)?.hexString()
 			_iconColors?["documentFileFillColor"] = css.getColor(.fill, selectors: [.vectorImage, .documentFileColor], for: nil)?.hexString()
@@ -829,7 +829,7 @@ public class ThemeCollection : NSObject {
 }
 
 extension ThemeCSSSelector {
-	static let folderColor = ThemeCSSSelector(rawValue: "folderColor")
+	static let accentColor = ThemeCSSSelector(rawValue: "accentColor")
 	static let fileColor = ThemeCSSSelector(rawValue: "fileColor")
 	static let documentFileColor = ThemeCSSSelector(rawValue: "documentFileColor")
 	static let presentationFileColor = ThemeCSSSelector(rawValue: "presentationFileColor")

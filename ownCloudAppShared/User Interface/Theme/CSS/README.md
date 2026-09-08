@@ -319,7 +319,7 @@ Icon colors are now also configured via CSS selectors:
 
 TVG/Legacy Color  | CSS selector string
 ------------------|------------------------------------
-`folderFillColor` | `vectorImage.folderColor.fill`
+`folderFillColor` | `vectorImage.accentColor.fill`
 `fileFillColor`   | `vectorImage.fileColor.fill`
 `logoFillColor`   | `vectorImage.logoColor.fill`
 `iconFillColor`   | `vectorImage.iconColor.fill`
