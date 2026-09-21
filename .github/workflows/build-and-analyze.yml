@@ -1,10 +1,13 @@
+# Modified by BW-Tech GmbH: the default branch of this fork is `main`, not
+# `master`, so the build never ran. Manual runs are possible as well.
 name: Build Xcode project
 
 on:
+  workflow_dispatch:
   push:
-    branches: ["master"]
+    branches: ["main"]
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   build:

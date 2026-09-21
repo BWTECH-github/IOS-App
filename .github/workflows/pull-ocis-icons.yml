@@ -1,8 +1,10 @@
+# Modified by BW-Tech GmbH: the automatic run on release pull requests is
+# disabled for BW-Tech forks. It needs the upstream DEPLOYMENT_SSH_KEY secret
+# and commits as devops@owncloud.com, and it would overwrite the branded
+# icons of this fork. The workflow stays available for manual runs.
 name: "Pull icons from ocis/web"
 on:
   workflow_dispatch:
-  pull_request:
-    branches: ["release/*"]
 permissions:
   contents: write
 

@@ -1,11 +1,9 @@
+# Modified by BW-Tech GmbH: the automatic run is disabled for BW-Tech forks.
+# It needs the upstream DEPLOYMENT_SSH_KEY secret and commits as
+# devops@owncloud.com. The workflow stays available for manual runs.
 name: Update Configuration Documentation
-# This workflow is triggered on pushes to the repository.
 on:
-  push:
-    branches:
-    - fix/*
-    - feature/*
-    - milestone/*
+  workflow_dispatch:
 
 jobs:
   build:

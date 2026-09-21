@@ -1,9 +1,11 @@
+# Modified by BW-Tech GmbH: the nightly Transifex sync is disabled for BW-Tech
+# forks. The translations of this fork are maintained in this repository and
+# not in the upstream Transifex project, so there is nothing to pull on a
+# schedule. The workflow stays available for manual runs.
 name: "Pull translations from Transifex"
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * *"
 
 permissions: {}
 
@@ -16,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: "master"
+          ref: "main"
           persist-credentials: false
 
       - name: l10n-pull
@@ -62,7 +64,7 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           branch: chore/translations-update
-          base: master
+          base: main
           commit-message: "chore: update translations from transifex"
           title: "chore: update translations from transifex"
           body: "Automated translation update from Transifex. This pull request is updated on each sync run — merging it will close it and a fresh one will be opened on the next change."

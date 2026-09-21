@@ -1,10 +1,10 @@
+# Modified by BW-Tech GmbH: pushing source strings to the upstream Transifex
+# project is disabled for BW-Tech forks. The workflow stays available for
+# manual runs.
 name: "Push source language to Transifex"
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
 
 jobs:
   push-translations:
