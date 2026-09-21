@@ -115,3 +115,24 @@ git submodule update --init --recursive
 
 > **Note**: After merging upstream changes, verify that the branding configuration
 > and bundle identifiers haven't been overwritten.
+
+### Workflows after an upstream merge
+
+An upstream merge brings back the workflow files of `owncloud/ios-app`. Those are
+written for the upstream repository, whose default branch is `master` and which
+owns the Transifex project and the deployment secrets. In this fork they either
+never run or fail — the nightly "Pull translations from Transifex" already failed
+this way every night once before.
+
+So check `.github/workflows/` after every upstream merge:
+
+| Workflow | Expected in this fork |
+|---|---|
+| `build-and-analyze.yml` | runs on `push`/`pull_request` for **`main`** — the only automatic workflow |
+| `pull-transifex.yml` | `workflow_dispatch` only, no `schedule`; `ref`/`base` = `main` |
+| `push-transifex.yml` | `workflow_dispatch` only, no `push` trigger |
+| `calens.yml`, `generate-sbom.yml` | `workflow_dispatch` only; `ref`/`base` = `main` |
+| `configuration-documentation.yml`, `pull-ocis-icons.yml` | `workflow_dispatch` only (need the upstream `DEPLOYMENT_SSH_KEY`) |
+
+A quick check: `grep -rn "master" .github/workflows/` should not report any
+`ref:`, `base:` or `branches:` entry.

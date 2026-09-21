@@ -21,6 +21,19 @@ jobs:
           ref: "main"
           persist-credentials: false
 
+      - name: Check Transifex credentials
+        shell: bash
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: |
+          if [ -z "$TX_TOKEN" ]; then
+            echo "::error::No TX_TOKEN secret is configured in this repository."
+            echo "The translations of this fork are maintained in the repository itself."
+            echo "To sync with Transifex, set up an own Transifex project, adjust .tx/config"
+            echo "and add TX_TOKEN as a repository secret."
+            exit 1
+          fi
+
       - name: l10n-pull
         uses: transifex/cli-action@584fd205cbe598773b5a81ce711fa44842678189 # v2
         with:
