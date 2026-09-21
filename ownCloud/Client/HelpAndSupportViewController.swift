@@ -73,7 +73,7 @@ class HelpAndSupportViewController: CollectionViewController {
 
 			.button(OCLocalizedString("File an issue", nil), action: UIAction(handler: { [weak self] _ in
 				if let self {
-					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://github.com/owncloud/ios-app/issues/new/choose")!)
+					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://github.com/BWTECH-github/IOS-App/issues/new/choose")!)
 				}
 			}), image: nil, cssSelectors: [ .info ]),
 
