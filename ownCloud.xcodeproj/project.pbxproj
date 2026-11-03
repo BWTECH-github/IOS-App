@@ -665,6 +665,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB7E0F0A2E1A000100A1B2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233BDE94204FEFE500C06732 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC0855B2293F1FD008CC05C;
+			remoteInfo = ownCloudApp;
+		};
 		233BDEB1204FEFE500C06732 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 233BDE94204FEFE500C06732 /* Project object */;
@@ -4043,6 +4050,7 @@
 			);
 			dependencies = (
 				DC27A19320CAA0C6008ACB6C /* PBXTargetDependency */,
+				BB7E0F0B2E1A000100A1B2C3 /* PBXTargetDependency */,
 			);
 			name = "ownCloud File Provider";
 			packageProductDependencies = (
@@ -5053,6 +5061,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB7E0F0B2E1A000100A1B2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC0855B2293F1FD008CC05C /* ownCloudApp */;
+			targetProxy = BB7E0F0A2E1A000100A1B2C3 /* PBXContainerItemProxy */;
+		};
 		233BDEB2204FEFE500C06732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 233BDE9B204FEFE500C06732 /* ownCloud */;
