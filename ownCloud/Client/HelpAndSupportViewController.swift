@@ -73,13 +73,13 @@ class HelpAndSupportViewController: CollectionViewController {
 
 			.button(OCLocalizedString("File an issue", nil), action: UIAction(handler: { [weak self] _ in
 				if let self {
-					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://github.com/BWTECH-github/IOS-App/issues/new/choose")!)
+					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://owncloud.online/contact/")!)
 				}
 			}), image: nil, cssSelectors: [ .info ]),
 
 			.button(OCLocalizedString("Visit the forums", nil), action: UIAction(handler: { [weak self] _ in
 				if let self {
-					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://central.owncloud.org/c/ios/")!)
+					VendorServices.shared.openSFWebView(on: self, for: URL(string: "https://owncloud.online/faq/")!)
 				}
 			}), image: nil, cssSelectors: [ .info ]),
 

@@ -24,6 +24,8 @@
 	<string>If you do not have an ownCloud Online account yet, you can request a free test account.</string>
 	<key>branding.send-feedback-address</key>
 	<string></string>
+	<key>branding.send-feedback-url</key>
+	<string>https://owncloud.online/contact/</string>
 	<key>branding.theme-colors</key>
 	<dict>
 		<key>tint-color</key>
