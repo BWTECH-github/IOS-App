@@ -57,9 +57,9 @@ while [ $# -gt 0 ]; do
 	esac
 done
 
-plist_get() { /usr/libexec/PlistBuddy -c "Print :$2" "$1" 2>/dev/null || true; }
+plist_get() { [ -s "$1" ] || return 0; /usr/libexec/PlistBuddy -c "Print :$2" "$1" 2>/dev/null || true; }
 # Array-Eintraege eines Plists kommagetrennt ausgeben
-plist_list() { /usr/libexec/PlistBuddy -c "Print :$2" "$1" 2>/dev/null | sed -e "s/^ *//" -e "s/ *$//" | grep -v -e "^Array {$" -e "^}$" -e "^$" | paste -sd, - || true; }
+plist_list() { [ -s "$1" ] || return 0; /usr/libexec/PlistBuddy -c "Print :$2" "$1" 2>/dev/null | sed -e "s/^ *//" -e "s/ *$//" | grep -v -e "^Array {$" -e "^}$" -e "^$" | paste -sd, - || true; }
 
 # ---------------------------------------------------------------------------
 # IPA-Pruefung
@@ -92,7 +92,7 @@ verify_ipa() {
 		get_task="$(plist_get "$tmp/ents.plist" get-task-allow)"
 		groups="$(plist_list "$tmp/ents.plist" com.apple.security.application-groups)"
 		kc="$(plist_list "$tmp/ents.plist" keychain-access-groups)"
-		ents="$(plutil -p "$tmp/ents.plist" 2>/dev/null | tr -d "\n" | tr -s " ")"
+		ents="$(plutil -p "$tmp/ents.plist" 2>/dev/null | tr -d "\n" | tr -s " ")" || ents=""
 		if [ -f "$b/embedded.mobileprovision" ]; then
 			security cms -D -i "$b/embedded.mobileprovision" > "$tmp/prof.plist" 2>/dev/null
 			prof_name="$(plist_get "$tmp/prof.plist" Name)"
@@ -125,7 +125,7 @@ verify_ipa() {
 	for f in "$app"/Frameworks/*.framework; do
 		[ -e "$f" ] || continue
 		local auth privacy="nein"
-		auth="$(codesign -dvv "$f" 2>&1 | grep -E '^Authority=' | head -1 | cut -d= -f2-)"
+		auth="$(codesign -dvv "$f" 2>&1 | grep -E '^Authority=' | head -1 | cut -d= -f2-)" || auth="unsigniert"
 		[ -f "$f/PrivacyInfo.xcprivacy" ] && privacy="ja"
 		echo "    $(basename "$f"): $auth, PrivacyInfo: $privacy"
 		codesign --verify --strict "$f" 2>/dev/null || { echo "    !! codesign --verify fehlgeschlagen: $f"; failed=1; }
