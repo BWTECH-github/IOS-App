@@ -108,5 +108,10 @@ und für die Unit-Tests: Die StoreKit-Tests in `LicensingTests` werden dann übe
 
 - [ ] Demo-Konto für das App-Review auf einer owncloud.online-Instanz anlegen und in App Store Connect unter „App-Review-Informationen“ eintragen. Die App lässt nur Basic-Auth-Konten zu.
 - [ ] Hinweis zum Hintergrund-Standort in die Review-Notizen übernehmen (siehe store-texte.md).
-- [ ] Screenshots: 6,9" iPhone und 13" iPad.
+- [ ] Screenshots: 6,9" iPhone und 13" iPad. Nach dem Logo-Tausch neu erzeugen: `tools/appstore/screenshots/make-screenshots.sh`.
+- [ ] Neues Logo einsetzen, auch im **App-Icon**: `ownCloud/Resources/AppIcon.icon` (Ebene `owncloud-logo.svg`
+  zeigt noch das Wolkensymbol der ownCloud GmbH in anderer Farbe; Verwechslungsgefahr, App Review 4.1/5.2.1)
+  und `fastlane/metadata-owncloud-online/app_icon.jpg`. Ebenso Onboarding und Seitenleiste.
+- [ ] Freigabe-Screenshot (`04-teilen.png`) zeigt einen Link auf `testoo.bw.tech`: akzeptieren oder die
+  Aufnahmen gegen einen Server mit neutraler/produktiver Domain erzeugen (`OCO_SERVER=… make-screenshots.sh`).
 - [ ] Datenschutz-URL, Support-URL, Kategorie, Altersfreigabe und App-Datenschutz-Angaben in App Store Connect eintragen.
