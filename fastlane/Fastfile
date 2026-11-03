@@ -113,7 +113,8 @@ platform :ios do
       lane :release_on_appstore do |options|
 
         # Set options, which action should not performed, by default all actions will be performed
-        # Disable all options: fastlane release_on_appstore create_release_notes:false create_screenshots:false deliver:false build_regular_app:false build_emm_app:false
+        # Disable all options: fastlane release_on_appstore create_release_notes:false create_screenshots:false build_regular_app:false build_emm_app:false
+        # Upload only with deliver:true (default: no upload)
 
         create_screenshots = true
         skip_screenshots = false
@@ -122,10 +123,10 @@ platform :ios do
           skip_screenshots = true
         end
 
-        deliver = true
-        if options[:deliver] == false
-          deliver = options[:deliver]
-        end
+        # Hochladen (deliver) nur mit ausdruecklichem Schalter: fastlane release_on_appstore deliver:true
+        # Fuer owncloud.online ist der vorgesehene Weg tools/appstore/release.sh (siehe doc/appstore/README.md);
+        # die Metadaten in fastlane/metadata-owncloud-online (nur en-US, altes app_icon.jpg) sind nicht aktuell.
+        deliver = (options[:deliver] == true)
 
         build_regular_app = true
         if options[:build_regular_app] == false
