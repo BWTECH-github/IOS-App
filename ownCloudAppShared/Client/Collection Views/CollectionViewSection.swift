@@ -316,8 +316,8 @@ public class CollectionViewSection: NSObject, OCDataItem, OCDataItemVersioning {
 			_hideIfEmptyDataSourceCondition = nil
 		}
 		didSet {
-			_hideIfEmptyDataSourceCondition = DataSourceCondition(.empty, with: hideIfEmptyDataSource, initial: true, action: { condition in
-				OnMainThread { [weak self] in
+			_hideIfEmptyDataSourceCondition = DataSourceCondition(.empty, with: hideIfEmptyDataSource, initial: true, action: { [weak self] condition in
+				OnMainThread {
 					self?.hidden = (condition.fulfilled == true)
 				}
 			})

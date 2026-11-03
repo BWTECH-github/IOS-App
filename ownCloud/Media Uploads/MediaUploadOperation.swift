@@ -22,7 +22,7 @@ import ownCloudSDK
 import ownCloudAppShared
 import ownCloudApp
 
-class MediaUploadOperation : Operation {
+class MediaUploadOperation : Operation, @unchecked Sendable {
 
 	private weak var core: OCCore?
 	private var mediaUploadJob: MediaUploadJob
