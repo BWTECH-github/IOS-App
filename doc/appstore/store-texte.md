@@ -164,4 +164,4 @@ Diese Nutzung fällt unter die Ausnahmen (Authentifizierung, Integrität, Versch
 > The app contains no in-app purchases.
 > Accounts cannot be created in the app. They are provisioned by BW-TECH GmbH as part of a subscription contract and deleted when it is cancelled. On first launch, enter the server URL below, then the user name and password.
 >
-> Demo account: <Server-URL> / <Benutzer> / <Passwort>
+> Demo account: server URL https://testoo.bw.tech, user name appreview, password: see the App Review Information fields (the password is not stored in this repository). The account contains sample documents, photos and a project folder.

@@ -106,7 +106,8 @@ und für die Unit-Tests: Die StoreKit-Tests in `LicensingTests` werden dann übe
 
 ## Checkliste vor der Einreichung
 
-- [ ] Demo-Konto für das App-Review auf einer owncloud.online-Instanz anlegen und in App Store Connect unter „App-Review-Informationen“ eintragen. Die App lässt nur Basic-Auth-Konten zu.
+- [x] Demo-Konto für das App-Review angelegt: `appreview` auf https://testoo.bw.tech, mit Beispieldateien (Dokumente, Fotos, Projekte). Nur für Apple, nicht für eigene Tests benutzen. Die App lässt nur Basic-Auth-Konten zu.
+- [ ] Demo-Konto in App Store Connect unter „App-Review-Informationen“ eintragen. Das Passwort steht nicht im Repo, BW-TECH verwahrt es (Schlüsselbund des Release-Macs).
 - [ ] Hinweis zum Hintergrund-Standort in die Review-Notizen übernehmen (siehe store-texte.md).
 - [ ] Screenshots: 6,9" iPhone und 13" iPad. Nach dem Logo-Tausch neu erzeugen: `tools/appstore/screenshots/make-screenshots.sh`.
 - [ ] Neues Logo einsetzen, auch im **App-Icon**: `ownCloud/Resources/AppIcon.icon` (Ebene `owncloud-logo.svg`
