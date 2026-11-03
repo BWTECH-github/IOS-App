@@ -197,7 +197,7 @@ class BookmarkViewController: StaticTableViewController {
 					nameRowTextField.attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [.foregroundColor : placeholderColor])
 				}
 			}
-		}, placeholder: "https://", keyboardType: .URL, autocorrectionType: .no, identifier: "row-url-url", accessibilityLabel: OCLocalizedString("Server URL", nil))
+		}, placeholder: "https://cloud.example.com", keyboardType: .URL, autocorrectionType: .no, identifier: "row-url-url", accessibilityLabel: OCLocalizedString("Server URL", nil))
 
 		certificateRow = StaticTableViewRow(rowWithAction: { [weak self] (_, _) in
 			if let certificate = self?.bookmark?.primaryCertificate {

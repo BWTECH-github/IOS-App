@@ -58,7 +58,7 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Verschlüsselte Übertragung (HTTPS)
 > • App-Sperre mit Code sowie Face ID oder Touch ID
 >
-> Für die Nutzung brauchen Sie ein owncloud.online-Konto. Sie haben noch keins? Unter owncloud.online/try können Sie einen kostenlosen Testzugang anfordern.
+> Für die Nutzung brauchen Sie ein bestehendes owncloud.online-Konto der BW-TECH GmbH. Die Server-Adresse und Ihre Zugangsdaten erhalten Sie von BW-TECH.
 
 **Keywords** (100): `Cloud,Speicher,Dateien,Upload,Foto,Backup,DSGVO,Datenschutz,Deutschland,Sync,Teilen,Dokumente` (93)
 
@@ -101,7 +101,7 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Encrypted transfer (HTTPS)
 > • App lock with passcode and Face ID or Touch ID
 >
-> You need an owncloud.online account to use the app. Don't have one yet? Request a free trial account at owncloud.online/try.
+> You need an existing owncloud.online account from BW-TECH GmbH. BW-TECH provides your server address and login details.
 
 **Keywords** (100): `cloud,storage,files,upload,photo,backup,GDPR,privacy,Germany,sync,share,documents` (81)
 
@@ -162,5 +162,6 @@ Diese Nutzung fällt unter die Ausnahmen (Authentifizierung, Integrität, Versch
 > This app is the client for owncloud.online, a hosted file storage service operated by BW-TECH GmbH (Germany). A demo account is provided below.
 > Background location (UIBackgroundModes "location") is optional and used only when the user enables "Auto Upload" with location-based background triggering: significant location changes wake the app to upload new photos and videos. No location data is collected or transmitted.
 > The app contains no in-app purchases.
+> Accounts cannot be created in the app. They are provisioned by BW-TECH GmbH as part of a subscription contract and deleted when it is cancelled. On first launch, enter the server URL below, then the user name and password.
 >
 > Demo account: <Server-URL> / <Benutzer> / <Passwort>

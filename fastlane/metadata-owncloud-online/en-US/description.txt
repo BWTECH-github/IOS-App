@@ -26,4 +26,4 @@ SECURITY
 • Encrypted transfer (HTTPS)
 • App lock with passcode and Face ID or Touch ID
 
-You need an owncloud.online account to use the app. Don't have one yet? Request a free trial account at owncloud.online/try.
+You need an existing owncloud.online account from BW-TECH GmbH. BW-TECH provides your server address and login details.

@@ -17,10 +17,14 @@ modules, file names) are unchanged.
 
 ### Branding
 - **Organization Name**: "owncloud.online"
-- **Default Server URL**: `https://owncloud.online` — pre-filled via the flat
-  `branding.profile-url` key (the array-style `branding.profile-definitions`
-  from older docs is NOT read by this app version); the URL stays editable
+- **Server URL**: no pre-filled address (every customer has their own server);
+  `branding.profile-url` is intentionally absent, the field shows the neutral
+  placeholder `https://cloud.example.com` and stays editable
   (`branding.profile-allow-url-configuration`)
+- **No account creation / trial offer**: `branding.profile-help-url`,
+  `-help-button-label` and `-open-help-message` are intentionally absent
+  (App Review 3.1.3(f), 5.1.1(v)); accounts exist only through a BW-TECH
+  subscription and are deleted by cancelling it
 - **App display name**: "owncloud.online" (CFBundleDisplayName/CFBundleName in
   the app Info.plist; the extensions derive theirs from the project build
   setting `APP_PRODUCT_NAME = owncloud.online`, Share/Action extension names

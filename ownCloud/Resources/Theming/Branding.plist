@@ -12,16 +12,8 @@
 	<string>owncloud.online</string>
 	<key>branding.profile-bookmark-name</key>
 	<string>owncloud.online</string>
-	<key>branding.profile-url</key>
-	<string>https://owncloud.online</string>
 	<key>branding.profile-allow-url-configuration</key>
 	<true/>
-	<key>branding.profile-help-url</key>
-	<string>https://owncloud.online/try/</string>
-	<key>branding.profile-help-button-label</key>
-	<string>TRY IT FOR FREE</string>
-	<key>branding.profile-open-help-message</key>
-	<string>If you do not have an owncloud.online account yet, you can request a free test account.</string>
 	<key>branding.send-feedback-address</key>
 	<string></string>
 	<key>branding.send-feedback-url</key>

@@ -30,7 +30,7 @@ class BookmarkSetupStepEnterURLViewController: BookmarkSetupStepViewController {
 
 		urlTextField = buildTextField(withAction: UIAction(handler: { [weak self] _ in
 			self?.updateState()
-		}), placeholder: "https://", keyboardType: .URL, autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server URL", nil), borderStyle: .roundedRect)
+		}), placeholder: "https://cloud.example.com", keyboardType: .URL, autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server URL", nil), borderStyle: .roundedRect)
 
 		urlTextField?.text = setupViewController?.composer?.configuration.url?.absoluteString
 
