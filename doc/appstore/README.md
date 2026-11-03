@@ -49,7 +49,7 @@ geändert werden soll, `APP_SHORT_VERSION` im Projekt anpassen (eine Stelle je K
 # Archiv + IPA (kein Upload), Ergebnis unter build/appstore/<N>/export/
 tools/appstore/release.sh --build 303
 
-# Archiv + Upload zu App Store Connect (nur mit ausdrücklichem Schalter)
+# Archiv + IPA + Prüfung, danach Upload zu App Store Connect (nur mit ausdrücklichem Schalter)
 tools/appstore/release.sh --build 303 --upload
 
 # Vorhandenes IPA prüfen (Signatur, Entitlements, Profile, Versionen, Privacy-Manifeste)
@@ -61,16 +61,18 @@ Was das Skript macht:
 1. `xcodebuild archive`: Schema `ownCloud`, Konfiguration Release, `generic/platform=iOS`,
    automatische Signierung, `-allowProvisioningUpdates`. Dabei werden `DEVELOPMENT_TEAM=4545KLA52K`
    (auch für die Targets im Submodul `ios-sdk`, in denen noch das ownCloud-Team steht), `APP_VERSION`
-   und `APP_BUILD_FLAGS` gesetzt. `APP_BUILD_FLAGS` kommt wie beim Fastfile aus `build.flags` in `Branding.plist`.
+   und `APP_BUILD_FLAGS` gesetzt. `APP_BUILD_FLAGS` kommt wie beim Fastfile aus `build.flags` in `Branding.plist`;
+   `DISABLE_APPSTORE_LICENSING` wird immer ergänzt (keine In-App-Käufe). Das Flag steht zusätzlich auf
+   Projektebene, damit auch ein Archiv direkt aus Xcode (Product > Archive) keine Kaufangebote enthält.
 2. `xcodebuild -exportArchive` mit `tools/appstore/ExportOptions.plist`
    (`app-store-connect`, Team `4545KLA52K`, `signingStyle automatic`, `destination export`).
-   Mit `--upload` wird `destination` auf `upload` gestellt.
-3. Prüfung des IPA (nur ohne `--upload`).
+3. Prüfung des IPA (immer, auch vor einem Upload). Schlägt sie fehl, bricht das Skript ab.
+4. Nur mit `--upload`: zweiter `-exportArchive` mit `destination upload` (Log `upload.log`).
 
 Upload ohne Xcode-Konto: einen App Store Connect API-Key per Umgebung übergeben:
 `ASC_KEY_PATH=…/AuthKey_XXXX.p8 ASC_KEY_ID=XXXX ASC_ISSUER_ID=… tools/appstore/release.sh --build N --upload`.
 
-Logs: `build/appstore/<N>/archive.log` und `export.log`.
+Logs: `build/appstore/<N>/archive.log`, `export.log` und (bei `--upload`) `upload.log`.
 
 ## Build-Flags (Branding.plist → `build.flags`)
 

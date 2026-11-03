@@ -5,17 +5,18 @@
 # Ablauf: xcodebuild archive (Release, generic/platform=iOS, automatische Signierung)
 #         -> xcodebuild -exportArchive (app-store-connect, Team 4545KLA52K)
 #         -> Pruefung des IPA (Signatur, Entitlements, Profile, Versionen)
+#         -> nur mit --upload und nach erfolgreicher Pruefung: Upload (zweiter Export, destination upload)
 #
 # Hochgeladen wird NUR mit --upload. Ohne den Schalter entsteht ausschliesslich ein lokales IPA.
 #
 # Aufruf:
 #   tools/appstore/release.sh --build 303            # Archiv + IPA, kein Upload
-#   tools/appstore/release.sh --build 303 --upload   # Archiv + Upload zu App Store Connect
+#   tools/appstore/release.sh --build 303 --upload   # Archiv + IPA + Pruefung, danach Upload
 #   tools/appstore/release.sh --verify build/appstore/303/export/ownCloud.ipa
 #
 # Optionen:
 #   --build N          Build-Nummer (CFBundleVersion). Muss pro Upload steigen. Pflicht bei --upload.
-#   --upload           Nach dem Archivieren direkt zu App Store Connect hochladen (destination upload).
+#   --upload           Nach Export und erfolgreicher IPA-Pruefung zu App Store Connect hochladen.
 #   --export-only      Kein neues Archiv, vorhandenes Archiv aus --output exportieren.
 #   --output DIR       Ausgabeverzeichnis (Standard: build/appstore/<build>).
 #   --verify IPA       Nur ein vorhandenes IPA pruefen.
@@ -94,10 +95,12 @@ verify_ipa() {
 		kc="$(plist_list "$tmp/ents.plist" keychain-access-groups)"
 		ents="$(plutil -p "$tmp/ents.plist" 2>/dev/null | tr -d "\n" | tr -s " ")" || ents=""
 		if [ -f "$b/embedded.mobileprovision" ]; then
-			security cms -D -i "$b/embedded.mobileprovision" > "$tmp/prof.plist" 2>/dev/null
+			# Nicht an set -e scheitern lassen: ein unlesbares Profil wird unten als Fehler gemeldet
+			security cms -D -i "$b/embedded.mobileprovision" > "$tmp/prof.plist" 2>/dev/null || : > "$tmp/prof.plist"
 			prof_name="$(plist_get "$tmp/prof.plist" Name)"
 			prof_team="$(plist_get "$tmp/prof.plist" TeamIdentifier:0)"
-			if [ "$(plist_get "$tmp/prof.plist" ProvisionedDevices)" != "" ]; then prof_type="mit Geraeteliste (KEIN App-Store-Profil)"; else prof_type="App Store"; fi
+			if [ ! -s "$tmp/prof.plist" ] || [ -z "$prof_team" ]; then prof_type="UNLESBAR (security cms -D fehlgeschlagen)"
+			elif [ "$(plist_get "$tmp/prof.plist" ProvisionedDevices)" != "" ]; then prof_type="mit Geraeteliste (KEIN App-Store-Profil)"; else prof_type="App Store"; fi
 		else
 			prof_name="-"; prof_team="-"; prof_type="FEHLT"
 		fi
@@ -163,6 +166,9 @@ mkdir -p "$OUTPUT"
 
 # Build-Flags wie im Fastfile aus dem Branding lesen (z. B. DISABLE_APPSTORE_LICENSING)
 BUILD_FLAGS="$(plist_get "$BRANDING_PLIST" build.flags)"
+# APP_BUILD_FLAGS auf der Kommandozeile ersetzt den Projektwert - fuer die App gibt es keine
+# In-App-Kaeufe, daher DISABLE_APPSTORE_LICENSING immer setzen (auch wenn das Branding es nicht nennt)
+[[ " $BUILD_FLAGS " == *" DISABLE_APPSTORE_LICENSING "* ]] || BUILD_FLAGS="${BUILD_FLAGS:+$BUILD_FLAGS }DISABLE_APPSTORE_LICENSING"
 MARKETING_VERSION="$(xcodebuild -project "$PROJECT" -target "$SCHEME" -configuration "$CONFIGURATION" -showBuildSettings 2>/dev/null | awk '$1=="APP_SHORT_VERSION"{print $3; exit}')"
 
 info "Version $MARKETING_VERSION ($BUILD_NUMBER), Team $TEAM_ID, Build-Flags: '${BUILD_FLAGS}'"
@@ -213,32 +219,37 @@ fi
 [ -d "$ARCHIVE" ] || die "Kein Archiv unter $ARCHIVE"
 
 # ---------------------------------------------------------------------------
-# Exportieren / Hochladen
+# Exportieren, pruefen, erst dann (nur mit --upload) hochladen
 # ---------------------------------------------------------------------------
-EXPORT_OPTIONS="$OUTPUT/ExportOptions.plist"
-cp "$EXPORT_OPTIONS_TEMPLATE" "$EXPORT_OPTIONS"
-if [ $UPLOAD -eq 1 ]; then
-	/usr/libexec/PlistBuddy -c "Set :destination upload" "$EXPORT_OPTIONS"
-	info "UPLOAD zu App Store Connect ist aktiviert (--upload)"
-fi
+# Export mit den Optionen aus EXPORT_OPTIONS_TEMPLATE (destination muss dort "export" sein)
+# und der angegebenen destination nach $2; Log nach $3
+export_archive() {
+	local destination="$1" export_path="$2" log="$3" options="$OUTPUT/ExportOptions-$1.plist"
+	cp "$EXPORT_OPTIONS_TEMPLATE" "$options"
+	/usr/libexec/PlistBuddy -c "Set :destination $destination" "$options"
+	rm -rf "$export_path"
+	if ! xcodebuild -exportArchive \
+		-archivePath "$ARCHIVE" \
+		-exportPath "$export_path" \
+		-exportOptionsPlist "$options" \
+		-allowProvisioningUpdates \
+		${AUTH_ARGS[@]+"${AUTH_ARGS[@]}"} > "$log" 2>&1; then
+		grep -E 'error|Error|errSec|No signing certificate|No profiles|not permitted|role|agreement' "$log" | sort -u | head -30
+		die "Export ($destination) fehlgeschlagen (vollstaendiges Log: $log)"
+	fi
+}
 
+# 1. Immer zuerst lokal exportieren und das IPA pruefen - auch vor einem Upload
 info "Exportiere (Log: $OUTPUT/export.log)"
-rm -rf "$EXPORT_DIR"
-if ! xcodebuild -exportArchive \
-	-archivePath "$ARCHIVE" \
-	-exportPath "$EXPORT_DIR" \
-	-exportOptionsPlist "$EXPORT_OPTIONS" \
-	-allowProvisioningUpdates \
-	${AUTH_ARGS[@]+"${AUTH_ARGS[@]}"} > "$OUTPUT/export.log" 2>&1; then
-	grep -E 'error|Error|errSec|No signing certificate|No profiles|not permitted|role|agreement' "$OUTPUT/export.log" | sort -u | head -30
-	die "Export fehlgeschlagen (vollstaendiges Log: $OUTPUT/export.log)"
-fi
+export_archive export "$EXPORT_DIR" "$OUTPUT/export.log"
+IPA="$(find "$EXPORT_DIR" -maxdepth 1 -name '*.ipa' | head -1)"
+[ -n "$IPA" ] || die "Kein IPA im Export"
+verify_ipa "$IPA"
+info "Fertig: $IPA"
 
+# 2. Upload nur mit --upload und nur nach erfolgreicher Pruefung (verify_ipa bricht sonst ab)
 if [ $UPLOAD -eq 1 ]; then
+	info "UPLOAD zu App Store Connect (--upload, Log: $OUTPUT/upload.log)"
+	export_archive upload "$OUTPUT/upload" "$OUTPUT/upload.log"
 	info "Upload abgeschlossen. Die Verarbeitung in App Store Connect dauert einige Minuten."
-else
-	IPA="$(find "$EXPORT_DIR" -maxdepth 1 -name '*.ipa' | head -1)"
-	[ -n "$IPA" ] || die "Kein IPA im Export"
-	verify_ipa "$IPA"
-	info "Fertig: $IPA"
 fi
