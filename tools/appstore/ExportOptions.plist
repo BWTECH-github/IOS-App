@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App-Store-Export fuer ownCloud.online (BW-TECH GmbH) -->
+	<key>method</key>
+	<string>app-store-connect</string>
+	<key>teamID</key>
+	<string>4545KLA52K</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<!-- "export" schreibt nur das IPA; release.sh setzt "upload" ausschliesslich mit dem Schalter --upload -->
+	<key>destination</key>
+	<string>export</string>
+	<!-- Build-Nummer kommt aus release.sh (--build), Xcode soll sie nicht selbst hochzaehlen -->
+	<key>manageAppVersionAndBuildNumber</key>
+	<false/>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>stripSwiftSymbols</key>
+	<true/>
+</dict>
+</plist>

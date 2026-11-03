@@ -1,0 +1,80 @@
+# App-Store-Release (ownCloud.online iOS)
+
+Kurzanleitung für den Store-Build der App `online.owncloud.ios-app` (Team `4545KLA52K`, BW-TECH GmbH).
+
+## Voraussetzungen
+
+- Xcode mit angemeldetem Apple-Konto des Teams `4545KLA52K` (Xcode → Settings → Accounts).
+  Das Konto braucht die Rolle **Admin** oder **App Manager** mit Zugriff auf Zertifikate,
+  damit Xcode das Zertifikat **Apple Distribution** automatisch anlegen kann
+  (alternativ einmalig in Xcode → Accounts → Manage Certificates → „+“ → Apple Distribution).
+- Xcode-Lizenz akzeptiert (`sudo xcodebuild -license accept`). Nach einem Xcode-Update außerdem einmal `sudo xcodebuild -runFirstLaunch`.
+- Submodul ausgecheckt: `git submodule update --init`.
+- Für den Upload: App-Eintrag in App Store Connect mit der Bundle-ID `online.owncloud.ios-app`.
+
+## Versionen
+
+| Wert | Quelle | Aktuell |
+|---|---|---|
+| Marketing-Version (`CFBundleShortVersionString`) | Projekt-Build-Setting `APP_SHORT_VERSION` (`ownCloud.xcodeproj`, Projekt-Ebene). App: `MARKETING_VERSION = ${APP_SHORT_VERSION}`, Extensions lesen `$(APP_SHORT_VERSION)` direkt in ihrer Info.plist | `12.7.0` |
+| Build-Nummer (`CFBundleVersion`) | Projekt-Build-Setting `APP_VERSION`. App/Action-Extension: `CURRENT_PROJECT_VERSION = $(APP_VERSION)`, übrige Extensions `$(APP_VERSION)` in der Info.plist | `302` im Projekt |
+
+Die Build-Nummer muss bei jedem Upload höher sein als die vorherige. `release.sh --build N`
+setzt `APP_VERSION=N` für alle Targets, ohne das Projekt zu ändern. Wenn die Marketing-Version
+geändert werden soll, `APP_SHORT_VERSION` im Projekt anpassen (eine Stelle je Konfiguration).
+
+## Build
+
+```sh
+# Archiv + IPA (kein Upload), Ergebnis unter build/appstore/<N>/export/
+tools/appstore/release.sh --build 303
+
+# Archiv + Upload zu App Store Connect (nur mit ausdrücklichem Schalter)
+tools/appstore/release.sh --build 303 --upload
+
+# Vorhandenes IPA prüfen (Signatur, Entitlements, Profile, Versionen, Privacy-Manifeste)
+tools/appstore/release.sh --verify build/appstore/303/export/ownCloud.ipa
+```
+
+Was das Skript macht:
+
+1. `xcodebuild archive`: Schema `ownCloud`, Konfiguration Release, `generic/platform=iOS`,
+   automatische Signierung, `-allowProvisioningUpdates`. Dabei werden `DEVELOPMENT_TEAM=4545KLA52K`
+   (auch für die Targets im Submodul `ios-sdk`, in denen noch das ownCloud-Team steht), `APP_VERSION`
+   und `APP_BUILD_FLAGS` gesetzt. `APP_BUILD_FLAGS` kommt wie beim Fastfile aus `build.flags` in `Branding.plist`.
+2. `xcodebuild -exportArchive` mit `tools/appstore/ExportOptions.plist`
+   (`app-store-connect`, Team `4545KLA52K`, `signingStyle automatic`, `destination export`).
+   Mit `--upload` wird `destination` auf `upload` gestellt.
+3. Prüfung des IPA (nur ohne `--upload`).
+
+Upload ohne Xcode-Konto: einen App Store Connect API-Key per Umgebung übergeben:
+`ASC_KEY_PATH=…/AuthKey_XXXX.p8 ASC_KEY_ID=XXXX ASC_ISSUER_ID=… tools/appstore/release.sh --build N --upload`.
+
+Logs: `build/appstore/<N>/archive.log` und `export.log`.
+
+## Build-Flags (Branding.plist → `build.flags`)
+
+- `DISABLE_APPSTORE_LICENSING`: Die In-App-Käufe der Upstream-App (Dokumentenscanner, Markup,
+  Kurzbefehle, Foto-Pro-Funktionen, Pro-Abo) werden aus der App entfernt und diese Funktionen
+  für alle Konten freigeschaltet (`OCLicenseBuildUnlockProvider`). Ohne das Flag würde die App
+  Käufe anbieten, die es in App Store Connect für diese App nicht gibt.
+
+Builds direkt aus Xcode (Run im Simulator) bekommen das Flag nicht automatisch. Bei Bedarf
+`APP_BUILD_FLAGS = DISABLE_APPSTORE_LICENSING` im Scheme oder in den Build-Settings setzen.
+
+## Store-Compliance
+
+- **Exportkonformität:** `ITSAppUsesNonExemptEncryption = NO` in `ownCloud/Resources/Info.plist`.
+  Begründung in [store-texte.md](store-texte.md#exportkonformität).
+- **Privacy-Manifest:** `PrivacyInfo.xcprivacy` (Projektwurzel) liegt in der App, in allen fünf Extensions
+  und in den Frameworks `ownCloudApp` und `ownCloudAppShared`. Die Build-Phase
+  „Add privacy manifest to SDK frameworks“ des App-Targets kopiert es außerdem in `ownCloudSDK.framework`
+  und `ownCloudUI.framework`, weil das Upstream-Submodul keins mitliefert.
+- **Angaben für App Store Connect** (Datenschutz, Altersfreigabe, Texte): [store-texte.md](store-texte.md).
+
+## Checkliste vor der Einreichung
+
+- [ ] Demo-Konto für das App-Review auf einer ownCloud.online-Instanz anlegen und in App Store Connect unter „App-Review-Informationen“ eintragen. Die App lässt nur Basic-Auth-Konten zu.
+- [ ] Hinweis zum Hintergrund-Standort in die Review-Notizen übernehmen (siehe store-texte.md).
+- [ ] Screenshots: 6,9" iPhone und 13" iPad.
+- [ ] Datenschutz-URL, Support-URL, Kategorie, Altersfreigabe und App-Datenschutz-Angaben in App Store Connect eintragen.
