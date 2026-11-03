@@ -517,6 +517,8 @@
 		DCB86E922BD7B9EE00492C09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DCB86E8E2BD7B9EE00492C09 /* PrivacyInfo.xcprivacy */; };
 		DCB86E932BD7B9EE00492C09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DCB86E8E2BD7B9EE00492C09 /* PrivacyInfo.xcprivacy */; };
 		DCB86E942BD7B9EE00492C09 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DCB86E8E2BD7B9EE00492C09 /* PrivacyInfo.xcprivacy */; };
+		B7A1C0DE0000000000000001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DCB86E8E2BD7B9EE00492C09 /* PrivacyInfo.xcprivacy */; };
+		B7A1C0DE0000000000000002 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DCB86E8E2BD7B9EE00492C09 /* PrivacyInfo.xcprivacy */; };
 		DCBAEADB29A3674700BFF393 /* OCItemPolicy+UniversalItemListCellContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBAEAD429A361C100BFF393 /* OCItemPolicy+UniversalItemListCellContentProvider.swift */; };
 		DCBAEADE29A5536F00BFF393 /* CollectionViewSupplementaryCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBAEADD29A5536F00BFF393 /* CollectionViewSupplementaryCellProvider.swift */; };
 		DCBAEAE029A554CC00BFF393 /* CollectionViewSupplementaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBAEADF29A554CC00BFF393 /* CollectionViewSupplementaryItem.swift */; };
@@ -3827,6 +3829,7 @@
 			buildPhases = (
 				23813A32205286E100DB9488 /* Run SwiftLint */,
 				233BDE98204FEFE500C06732 /* Sources */,
+				B7A1C0DE0000000000000003 /* Add privacy manifest to SDK frameworks */,
 				DC85573420513CCC00189B9A /* Copy Frameworks */,
 				233BDE99204FEFE500C06732 /* Frameworks */,
 				233BDE9A204FEFE500C06732 /* Resources */,
@@ -4292,6 +4295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A1C0DE0000000000000001 /* PrivacyInfo.xcprivacy in Resources */,
 				DCDE0FF52F41212B000F57D2 /* tvg-icons in Resources */,
 				DC0A356E24C0E42200FB58FC /* PasscodeViewController.xib in Resources */,
 				DCB330EB29F6864D00BFF393 /* Assets.xcassets in Resources */,
@@ -4323,6 +4327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A1C0DE0000000000000002 /* PrivacyInfo.xcprivacy in Resources */,
 				DC66F3AD2396630100CF4812 /* AppleIncRootCertificate.cer in Resources */,
 				DCA344952C94369D004DFC73 /* Localizable.xcstrings in Resources */,
 			);
@@ -4351,6 +4356,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B7A1C0DE0000000000000003 /* Add privacy manifest to SDK frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PROJECT_DIR}/PrivacyInfo.xcprivacy",
+			);
+			name = "Add privacy manifest to SDK frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ios-sdk (upstream submodule) ships no PrivacyInfo.xcprivacy. Place the app's manifest into the\n# SDK frameworks before \"Copy Frameworks\" embeds and re-signs them (CodeSignOnCopy).\nfor FRAMEWORK in ownCloudSDK ownCloudUI; do\n\tFRAMEWORK_PATH=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK}.framework\"\n\tif [ -d \"${FRAMEWORK_PATH}\" ]; then\n\t\tcp \"${PROJECT_DIR}/PrivacyInfo.xcprivacy\" \"${FRAMEWORK_PATH}/PrivacyInfo.xcprivacy\"\n\tfi\ndone\n";
+			showEnvVarsInLog = 0;
+		};
 		23813A32205286E100DB9488 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
