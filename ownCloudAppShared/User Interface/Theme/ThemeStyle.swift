@@ -115,6 +115,7 @@ public extension ThemeCollection {
 		}
 
 		if style.themeStyle == .light,
+		   style.cssRecordStrings?.contains(where: { $0.hasPrefix("sidebar.collection.selected.cell.fill") }) != true, // Branding legt die Auswahlfarbe selbst fest
 		   let accentColor = css.getColor(.fill, selectors: [.vectorImage, .accentColor], for: nil) {
 			css.add(record: ThemeCSSRecord(selectors: [.sidebar, .collection, .selected, .cell], property: .fill, value: accentColor))
 		}
