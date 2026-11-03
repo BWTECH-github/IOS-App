@@ -30,9 +30,18 @@ final class OCOScreenshotsUITests: XCTestCase {
 
 	/// Bildschirmfoto inkl. Statusleiste (Originalaufloesung des Geraets).
 	func shot(_ name: String, numbered: Bool = true) {
+		waitForIdle()
 		var base = "\(out)/\(name)"
 		if numbered { step += 1; base = "\(out)/\(String(format: "%02d", step))-\(name)" }
 		try? XCUIScreen.main.screenshot().pngRepresentation.write(to: URL(fileURLWithPath: base + ".png"))
+	}
+
+	/// Vor dem Foto warten, bis keine Aktivitaetsanzeige (Ladekreisel) mehr sichtbar ist (max. 15 s).
+	func waitForIdle(timeout: TimeInterval = 15) {
+		let deadline = Date().addingTimeInterval(timeout)
+		while Date() < deadline, app.activityIndicators.allElementsBoundByIndex.contains(where: { $0.exists && $0.isHittable }) {
+			Thread.sleep(forTimeInterval: 0.5)
+		}
 	}
 
 	func dump(_ name: String) {

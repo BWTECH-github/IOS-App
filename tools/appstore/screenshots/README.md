@@ -2,8 +2,8 @@
 
 `make-screenshots.sh` baut die App für den Simulator (signiert mit Team 4545KLA52K,
 damit die App-Group-Entitlements greifen; Build-Flags aus `Branding.plist`), richtet
-je einen Simulator ein (Deutsch, hell, Statusleiste 9:41 mit vollen Balken und vollem
-Akku) und erzeugt per XCUITest sechs Motive:
+je einen Simulator ein (Deutsch, 24-Stunden-Format, hell, Statusleiste 09:41 mit vollen Balken und vollem
+Akku) und erzeugt per XCUITest sechs Motive (vor jedem Foto wird gewartet, bis kein Ladekreisel mehr sichtbar ist):
 
 | Datei | Motiv |
 | --- | --- |

@@ -67,12 +67,9 @@ prepare() { # prepare <udid> <iphone|ipad>
 	xcrun simctl bootstatus "$d" >/dev/null
 	xcrun simctl spawn "$d" defaults write "Apple Global Domain" AppleLanguages -array de-DE
 	xcrun simctl spawn "$d" defaults write "Apple Global Domain" AppleLocale -string de_DE
-	# iPhone: 12-Stunden-Format, damit die Statusleiste "9:41" statt "09:41" zeigt (das iPad zeigte sonst "9:41 AM")
-	if [ "${2:-}" = iphone ]; then
-		xcrun simctl spawn "$d" defaults write "Apple Global Domain" AppleICUForce12HourTime -bool true
-	else
-		xcrun simctl spawn "$d" defaults delete "Apple Global Domain" AppleICUForce12HourTime 2>/dev/null || true
-	fi
+	# Deutsches 24-Stunden-Format auf allen Geraeten (keine 12-Stunden-Erzwingung, sonst "Heute, 4:34 PM")
+	xcrun simctl spawn "$d" defaults delete "Apple Global Domain" AppleICUForce12HourTime 2>/dev/null || true
+	xcrun simctl spawn "$d" defaults delete "Apple Global Domain" AppleICUForce24HourTime 2>/dev/null || true
 	# Sprache/Uhrformat greifen erst nach Neustart
 	xcrun simctl shutdown "$d"; xcrun simctl boot "$d"; xcrun simctl bootstatus "$d" >/dev/null
 	xcrun simctl ui "$d" appearance light
@@ -135,4 +132,4 @@ if [ -z "$ONLY" ] || [ "$ONLY" = ipad ]; then
 	run_shots "$IPAD" "$ROOT/doc/appstore/screenshots/ipad-13"
 fi
 
-echo "Fertig. Bilder pruefen: kein Logo/kein 'ownCloud' im Bild, Statusleiste 9:41."
+echo "Fertig. Bilder pruefen: kein Logo/kein 'ownCloud' im Bild, Statusleiste 09:41, 24-Stunden-Format."
