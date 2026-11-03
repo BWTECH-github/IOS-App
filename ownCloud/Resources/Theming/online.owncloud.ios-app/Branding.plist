@@ -66,6 +66,8 @@
 	<string>owncloud-online</string>
 	<key>build.custom-auth-scheme</key>
 	<string>oco</string>
+	<key>build.flags</key>
+	<string>DISABLE_APPSTORE_LICENSING</string>
 	<key>connection.allowed-authentication-methods</key>
 	<array>
 		<string>com.owncloud.basicauth</string>

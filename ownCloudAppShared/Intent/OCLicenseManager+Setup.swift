@@ -79,6 +79,9 @@ public extension OCLicenseManager {
 
 			add(appStoreLicenseProvider)
 		}
+		#else
+		// Without App Store licensing there is nothing to purchase: unlock all Pro features (build.flags DISABLE_APPSTORE_LICENSING)
+		add(OCLicenseBuildUnlockProvider(unlockedProductIdentifiers: [.bundlePro]))
 		#endif
 
 		// Set up Enterprise Provider
@@ -137,3 +140,24 @@ extension OCLicenseManager : ownCloudSDK.OCClassSettingsSupport {
 		]
 	}
 }
+
+#if DISABLE_APPSTORE_LICENSING
+/// Grants the given products unconditionally. Used for builds without App Store in-app purchases
+/// (ownCloud.online), so the Pro features are available to every account.
+class OCLicenseBuildUnlockProvider : OCLicenseProvider {
+	let unlockedProductIdentifiers: [OCLicenseProductIdentifier]
+
+	init(unlockedProductIdentifiers: [OCLicenseProductIdentifier]) {
+		self.unlockedProductIdentifiers = unlockedProductIdentifiers
+		super.init(identifier: OCLicenseProviderIdentifier(rawValue: "build-unlock"))
+	}
+
+	override func startProviding(completionHandler: @escaping OCLicenseProviderCompletionHandler) {
+		entitlements = unlockedProductIdentifiers.map({ productIdentifier in
+			return OCLicenseEntitlement(identifier: nil, forProduct: productIdentifier, type: .purchase, valid: true, expiryDate: nil, applicability: nil)
+		})
+
+		completionHandler(self, nil)
+	}
+}
+#endif
