@@ -203,6 +203,9 @@ if [ $EXPORT_ONLY -eq 0 ]; then
 		${AUTH_ARGS[@]+"${AUTH_ARGS[@]}"} \
 		"${BUILD_SETTINGS[@]}" > "$OUTPUT/archive.log" 2>&1; then
 		grep -E 'error:|errSec|requires a provisioning|No Account|No profiles|Signing for' "$OUTPUT/archive.log" | sort -u | head -30
+		if grep -qE 'were rejected|No Account for Team' "$OUTPUT/archive.log"; then
+			echo "Hinweis: Xcode hat keine gueltige Anmeldung fuer Team $TEAM_ID. In Xcode -> Settings -> Accounts das Konto des Teams neu anmelden (bzw. das abgelaufene entfernen) und release.sh erneut starten. Erst dann legt die automatische Signierung App-IDs, App-Group und Profile an." >&2
+		fi
 		die "Archivieren fehlgeschlagen (vollstaendiges Log: $OUTPUT/archive.log)"
 	fi
 	info "Archiv erstellt"
