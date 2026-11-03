@@ -63,9 +63,9 @@
 	<key>branding.url-terms-of-use</key>
 	<string>https://owncloud.online/terms/</string>
 	<key>build.custom-app-scheme</key>
-	<string>owncloud-online</string>
+	<string>owncloud-online-bwtech</string>
 	<key>build.custom-auth-scheme</key>
-	<string>oco</string>
+	<string>owncloud-online-bwtech-auth</string>
 	<key>build.flags</key>
 	<string>DISABLE_APPSTORE_LICENSING</string>
 	<key>connection.allowed-authentication-methods</key>

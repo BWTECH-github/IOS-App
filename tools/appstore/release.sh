@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# release.sh - App-Store-Build der iOS-App ownCloud.online (BW-TECH GmbH)
+# release.sh - App-Store-Build der iOS-App owncloud.online (BW-TECH GmbH)
 #
 # Ablauf: xcodebuild archive (Release, generic/platform=iOS, automatische Signierung)
 #         -> xcodebuild -exportArchive (app-store-connect, Team 4545KLA52K)
@@ -26,8 +26,8 @@
 set -euo pipefail
 
 TEAM_ID="4545KLA52K"
-APP_BUNDLE_ID="online.owncloud.ios-app"
-APP_GROUP="group.online.owncloud.ios-app"
+APP_BUNDLE_ID="owncloud.online.bw.tech"
+APP_GROUP="group.owncloud.online.bw.tech"
 SCHEME="ownCloud"
 CONFIGURATION="Release"
 

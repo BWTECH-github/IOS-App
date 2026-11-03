@@ -5439,7 +5439,7 @@
 					OCLocalizedFormat,
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app";
+				PRODUCT_BUNDLE_IDENTIFIER = owncloud.online.bw.tech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -5474,7 +5474,7 @@
 					OCLocalizedFormat,
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app";
+				PRODUCT_BUNDLE_IDENTIFIER = owncloud.online.bw.tech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -5560,7 +5560,7 @@
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Action-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.ActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -5603,7 +5603,7 @@
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Action-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.ActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -5728,7 +5728,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Intents";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5757,7 +5757,7 @@
 					OCLocalizedString,
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Intents";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5793,7 +5793,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-ProviderUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.FileProviderUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5823,7 +5823,7 @@
 					OCLocalizedString,
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-ProviderUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.FileProviderUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6017,7 +6017,7 @@
 					OCLocalizedFormat,
 					OCLocalizedString,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-Provider";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.FileProvider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6045,7 +6045,7 @@
 					OCLocalizedFormat,
 					OCLocalizedString,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-File-Provider";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.FileProvider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6082,7 +6082,7 @@
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.ShareExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
@@ -6115,7 +6115,7 @@
 				);
 				MARKETING_VERSION = "${APP_SHORT_VERSION}";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "online.owncloud.ios-app.ownCloud-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "owncloud.online.bw.tech.ShareExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
