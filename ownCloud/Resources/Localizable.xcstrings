@@ -959,13 +959,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "{{itemCount}} Elemente mit Gesamtgröße {{totalSize}} ({{fileCount}} Dateien, {{folderCount}} Ordner)"
+            "value" : "Elemente: {{itemCount}}, Gesamtgröße: {{totalSize}} (Dateien: {{fileCount}}, Ordner: {{folderCount}})"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "{{itemCount}} items with {{totalSize}} total ({{fileCount}} files, {{folderCount}} folders)"
+            "value" : "Items: {{itemCount}}, total size: {{totalSize}} (files: {{fileCount}}, folders: {{folderCount}})"
           }
         },
         "en-GB" : {
@@ -6032,7 +6032,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "nach %@"
+            "value" : "%@"
           }
         },
         "en" : {
@@ -20215,7 +20215,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Konvertiere HEIC zu JPEG"
+            "value" : "HEIC in JPEG umwandeln"
           }
         },
         "en" : {
@@ -20357,7 +20357,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Videos konvertieren zu MP4"
+            "value" : "Videos in MP4 umwandeln"
           }
         },
         "en" : {
@@ -25199,7 +25199,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Standard Suchbereich"
+            "value" : "Standard-Suchbereich"
           }
         },
         "en" : {
@@ -26317,7 +26317,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lösche ungenutzte lokale Kopien"
+            "value" : "Ungenutzte lokale Kopien löschen"
           }
         },
         "en" : {
@@ -32069,7 +32069,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "aktiviert"
+            "value" : "Aktiviert"
           }
         },
         "en" : {
@@ -38523,7 +38523,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Für Offline-Verfügbarkeit ausgewählte und heruntergeladenen Dateien werden hier angezeigt."
+            "value" : "Für Offline-Verfügbarkeit ausgewählte und heruntergeladene Dateien werden hier angezeigt."
           }
         },
         "en" : {
@@ -40422,6 +40422,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "禁止的字符"
+          }
+        }
+      }
+    },
+    "Forward" : {
+      "comment" : "Text for the forward button in the browser navigation bar.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorwärts"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forward"
           }
         }
       }
@@ -47575,7 +47592,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Freigaben"
+            "value" : "Einladen"
           }
         },
         "en" : {
@@ -54305,7 +54322,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Medien Dateien"
+            "value" : "Mediendateien"
           }
         },
         "en" : {
@@ -58974,6 +58991,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Next item"
+          }
+        }
+      }
+    },
+    "Next match" : {
+      "comment" : "Accessibility label for the forward button.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nächster Treffer"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next match"
           }
         }
       }
@@ -64309,6 +64343,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open login page"
+          }
+        }
+      }
+    },
+    "Open password manager" : {
+      "comment" : "Accessibility label for the password manager button.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort-Manager öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open password manager"
           }
         }
       }
@@ -72137,7 +72188,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ursprüngliche Mediendateinamen beibehalten"
+            "value" : "Originaldateinamen beibehalten"
           }
         },
         "en" : {
@@ -72279,7 +72330,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verhindert das verschieben von Dateien und Ordnern und die Mehrfachauswahl durch Gesten"
+            "value" : "Verhindert das Verschieben von Dateien und Ordnern sowie die Mehrfachauswahl per Geste"
           }
         },
         "en" : {
@@ -72797,6 +72848,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Previous item"
+          }
+        }
+      }
+    },
+    "Previous match" : {
+      "comment" : "Accessibility label for the back button.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorheriger Treffer"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous match"
           }
         }
       }
@@ -83731,7 +83799,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sucht NUR im aktuellen Space."
+            "value" : "Sucht nur im aktuellen Space."
           }
         },
         "en" : {
@@ -83991,7 +84059,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sucht NUR im aktuellen Ordner."
+            "value" : "Sucht nur im aktuellen Ordner."
           }
         },
         "en" : {
@@ -88492,142 +88560,6 @@
         }
       }
     },
-    "Shared with others" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geteilt von mir"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Compartido por mi"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "lo" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "mk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "nb-NO" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "nn-NO" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Compartilhado por mim"
-          }
-        },
-        "pt-PT" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "sq" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ndarë nga unë"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "th-TH" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shared with others"
-          }
-        }
-      }
-    },
     "Shared with" : {
       "localizations" : {
         "ar" : {
@@ -89174,6 +89106,142 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Shared with me"
+          }
+        }
+      }
+    },
+    "Shared with others" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geteilt von mir"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartido por mi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "lo" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "mk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "nn-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartilhado por mim"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "sq" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ndarë nga unë"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "th-TH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shared with others"
           }
         }
       }
@@ -90693,7 +90761,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zeige versteckte Dateien und Ordner"
+            "value" : "Versteckte Dateien und Ordner anzeigen"
           }
         },
         "en" : {
@@ -91232,7 +91300,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seiteleiste zeigen/verstecken"
+            "value" : "Seitenleiste ein-/ausblenden"
           }
         },
         "en" : {
@@ -98749,7 +98817,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Theme"
+            "value" : "Erscheinungsbild"
           }
         },
         "en" : {
@@ -108521,5 +108589,5 @@
       }
     }
   },
-  "version" : "1.0"
+  "version" : "1.1"
 }

@@ -58,12 +58,12 @@ class BookmarkSetupStepAuthenticateViewController: BookmarkSetupStepViewControll
 		if withCredentials {
 			usernameField = buildTextField(withAction: UIAction(handler: { [weak self] _ in
 				self?.updateState()
-			}), placeholder: "Username", value: prefillUsername ?? "", autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server Username", nil), borderStyle: .roundedRect)
+			}), placeholder: OCLocalizedString("Username", nil), value: prefillUsername ?? "", autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server Username", nil), borderStyle: .roundedRect)
 			usernameField?.textContentType = .username
 
 			passwordField = buildTextField(withAction: UIAction(handler: { [weak self] _ in
 				self?.updateState()
-			}), placeholder: "Password", value: prefillPassword ?? "", secureTextEntry: true, autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server Password", nil), borderStyle: .roundedRect)
+			}), placeholder: OCLocalizedString("Password", nil), value: prefillPassword ?? "", secureTextEntry: true, autocorrectionType: .no, autocapitalizationType: .none, accessibilityLabel: OCLocalizedString("Server Password", nil), borderStyle: .roundedRect)
 			passwordField?.textContentType = .password
 
 			focusTextFields = [ usernameField!, passwordField! ]
