@@ -9,9 +9,9 @@
 	<key>branding.enable-review-prompt</key>
 	<false/>
 	<key>branding.organization-name</key>
-	<string>ownCloud Online</string>
+	<string>owncloud.online</string>
 	<key>branding.profile-bookmark-name</key>
-	<string>ownCloud Online</string>
+	<string>owncloud.online</string>
 	<key>branding.profile-url</key>
 	<string>https://owncloud.online</string>
 	<key>branding.profile-allow-url-configuration</key>
@@ -21,7 +21,7 @@
 	<key>branding.profile-help-button-label</key>
 	<string>TRY IT FOR FREE</string>
 	<key>branding.profile-open-help-message</key>
-	<string>If you do not have an ownCloud Online account yet, you can request a free test account.</string>
+	<string>If you do not have an owncloud.online account yet, you can request a free test account.</string>
 	<key>branding.send-feedback-address</key>
 	<string></string>
 	<key>branding.send-feedback-url</key>
@@ -72,5 +72,53 @@
 	<array>
 		<string>com.owncloud.basicauth</string>
 	</array>
+	<key>locale.overrides</key>
+	<dict>
+		<key>Server detection failed, i.e. when the server at a URL is not an ownCloud instance.</key>
+		<dict>
+			<key>ca</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>cs</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>de</key>
+			<string>Die Servererkennung ist fehlgeschlagen, was z.B. passiert, wenn der Server unter der URL keine owncloud.online-Instanz ist.</string>
+			<key>en</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>en-GB</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>es</key>
+			<string>La detección del servidor falló, p.e. cuando la dirección URL del servidor no contiene una instancia de owncloud.online.</string>
+			<key>fr</key>
+			<string>La détection du serveur a échoué, c.-à-d lorsque le serveur d'une URL n'est pas une instance owncloud.online.</string>
+			<key>it</key>
+			<string>Rilevamento del server non riuscito, cioè quando il server a un URL non è un'istanza owncloud.online.</string>
+			<key>ko</key>
+			<string>서버 감지에 실패했습니다. URL의 서버가 클라우드 인스턴스가 아닙니다.</string>
+			<key>lo</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>mk</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>nb-NO</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>nn-NO</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>pt-BR</key>
+			<string>A detecção do servidor falhou, ou seja, quando o servidor em uma URL não é uma instância do owncloud.online.</string>
+			<key>pt-PT</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>ru</key>
+			<string>Не прошло определение сервера, то есть сервер по ссылке не является экземпляром owncloud.online.</string>
+			<key>sq</key>
+			<string>Zbulimi i shërbyesit dështoi, domethënë, kur shërbyesi te një URL s’është instancë owncloud.online.</string>
+			<key>sv</key>
+			<string>Server detection failed, i.e. when the server at a URL is not an owncloud.online instance.</string>
+			<key>th-TH</key>
+			<string>การตรวจหาเซิร์ฟเวอร์ล้มเหลวเช่น เมื่อใช้ URL ของเซิร์ฟเวอร์ที่ไม่ใช่อินสแตนซ์ของ owncloud.online</string>
+			<key>tr</key>
+			<string>Sunucu algılama başarısız oldu, bu durum örneğin URL'deki sunucu owncloud.online örneği olmadığında olduğu gibi.</string>
+			<key>zh-Hans</key>
+			<string>服务器检测失败，可能由于此 URL 上运行的不是 owncloud.online 示例。</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

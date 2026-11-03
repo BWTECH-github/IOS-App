@@ -156,7 +156,7 @@ INCLUDE_IN_CLASS_SETTINGS_SNAPSHOTS(Branding)
 	if ((appName = self.organizationName) != nil) { return (appName); }
 	if ((appName = OCAppIdentity.sharedAppIdentity.appDisplayName) != nil) { return (appName); }
 
-	return (@"ownCloud");
+	return (@"owncloud.online");
 }
 
 - (NSDictionary *)userDefaultsDefaultValues

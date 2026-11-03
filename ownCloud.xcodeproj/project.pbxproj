@@ -5278,7 +5278,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BUILD_FLAGS = "$(inherited)";
 				APP_BUILD_FLAGS_SWIFT = "$(APP_BUILD_FLAGS)";
-				APP_PRODUCT_NAME = "ownCloud Online";
+				APP_PRODUCT_NAME = owncloud.online;
 				APP_SHORT_VERSION = 12.7.0;
 				APP_VERSION = 302;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -5349,7 +5349,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BUILD_FLAGS = "$(inherited)";
 				APP_BUILD_FLAGS_SWIFT = "$(APP_BUILD_FLAGS)";
-				APP_PRODUCT_NAME = "ownCloud Online";
+				APP_PRODUCT_NAME = owncloud.online;
 				APP_SHORT_VERSION = 12.7.0;
 				APP_VERSION = 302;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -5543,7 +5543,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ownCloud Action Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Save to $(APP_PRODUCT_NAME)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 ownCloud GmbH. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 BW-TECH GmbH. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5587,7 +5587,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ownCloud Action Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Save to $(APP_PRODUCT_NAME)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 ownCloud GmbH. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 BW-TECH GmbH. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

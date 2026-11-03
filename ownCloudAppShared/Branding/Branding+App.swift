@@ -68,10 +68,10 @@ enum BrandingColorAlias: String, CaseIterable {
 extension Branding : ownCloudApp.BrandingInitialization {
 	public static func initializeBranding() {
 		self.registerOCClassSettingsDefaults([
-			.documentationURL : "https://doc.owncloud.com/ios-app/latest/",
-			.helpURL 	  : "https://owncloud.com/docs-guides/",
-			.privacyURL 	  : "https://owncloud.org/privacy-policy/",
-			.termsOfUseURL 	  : "https://raw.githubusercontent.com/owncloud/ios-app/master/LICENSE",
+			.documentationURL : "https://owncloud.online/faq/",
+			.helpURL 	  : "https://owncloud.online/faq/",
+			.privacyURL 	  : "https://owncloud.online/privacy-policy/",
+			.termsOfUseURL 	  : "https://owncloud.online/terms/",
 			.canAddAccount : true,
 			.canEditAccount : true,
 			.enableReviewPrompt : false,

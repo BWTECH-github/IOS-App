@@ -104944,139 +104944,139 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "استخدم إجراءات ownCloud في الاختصارات."
+            "value" : "استخدم إجراءات owncloud.online في الاختصارات."
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verwenden Sie ownCloud-Aktionen in Kurzbefehle."
+            "value" : "Verwenden Sie owncloud.online-Aktionen in Kurzbefehle."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use acciones de ownCloud en Atajos"
+            "value" : "Use acciones de owncloud.online en Atajos"
           }
         },
         "eu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Utilisez les actions ownCloud dans les raccourcis."
+            "value" : "Utilisez les actions owncloud.online dans les raccourcis."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "단축어로 ownCloud 동작 이용"
+            "value" : "단축어로 owncloud.online 동작 이용"
           }
         },
         "lo" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "mk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "nn-NO" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ações ownCloud em Atalhos."
+            "value" : "Use ações owncloud.online em Atalhos."
           }
         },
         "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Использовать действия ownCloud в сокращениях."
+            "value" : "Использовать действия owncloud.online в сокращениях."
           }
         },
         "sq" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Përdorni veprime ownCloud te Shkurtoret."
+            "value" : "Përdorni veprime owncloud.online te Shkurtoret."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "th-TH" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "สร้างทางลัด ownCloud"
+            "value" : "สร้างทางลัด owncloud.online"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use ownCloud actions in Shortcuts."
+            "value" : "Use owncloud.online actions in Shortcuts."
           }
         }
       }

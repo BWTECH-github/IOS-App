@@ -578,7 +578,7 @@
 
 /* Release Notes */
 "Proceed" = "Ga verder";
-"New in ownCloud" = "Nieuw in ownCloud";
+"New in ownCloud" = "Nieuw in owncloud.online";
 "Thank you for using %@.\nIf you like our App, please leave an AppStore review.\n❤️" = "Bedankt voor het gebruiken van %@.\nAls je onze app fijn vind, laat dan graag een beoordeling achter in de AppStore.\n‭❤️";
 
 /* Key Commands */
@@ -650,7 +650,7 @@
 "Document Scanner" = "Document Scanner";
 "Scan documents and photos with your camera." = "Scan documents and photos with your camera.";
 "Shortcuts Actions" = "Shortcuts Actions";
-"Use ownCloud actions in Shortcuts." = "Use ownCloud actions in Shortcuts.";
+"Use ownCloud actions in Shortcuts." = "Use owncloud.online actions in Shortcuts.";
 "Markup Documents" = "Markup Documents";
 "Markup photos and PDF files." = "Markup photos and PDF files.";
 "Unlock all Pro Features." = "Unlock all Pro Features.";
