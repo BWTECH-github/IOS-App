@@ -1,1 +1,1 @@
-file, sync, share, cloud, storage, upload, document, backup, offline, secure
+cloud,storage,files,upload,photo,backup,GDPR,privacy,Germany,sync,share,documents

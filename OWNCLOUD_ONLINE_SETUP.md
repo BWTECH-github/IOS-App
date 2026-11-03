@@ -1,24 +1,44 @@
-# ownCloud Online iOS App — Setup Guide
+# owncloud.online iOS App — Setup Guide
 
 ## Overview
 
-This repository contains the ownCloud iOS app, adapted for use with the **ownCloud Online** backend (`owncloud.online`) running PHP 8.4.
+This repository contains the ownCloud iOS app, adapted by BW-TECH GmbH as its own app **owncloud.online** for the
+owncloud.online backend running PHP 8.4. It is not related to the
+"ownCloud Online" app of ownCloud GmbH (bundle id `online.owncloud.ios-app`) and
+can be installed side by side with it (own bundle ids, app group, keychain
+group, URL schemes).
+
+Visible texts never say "ownCloud"; the brand is written `owncloud.online`.
+The GPL copyright notices of the original authors stay in the license /
+acknowledgements area, source headers and internal identifiers (classes,
+modules, file names) are unchanged.
 
 ## Changes from Upstream
 
 ### Branding
-- **Organization Name**: "ownCloud Online"
+- **Organization Name**: "owncloud.online"
 - **Default Server URL**: `https://owncloud.online` — pre-filled via the flat
   `branding.profile-url` key (the array-style `branding.profile-definitions`
   from older docs is NOT read by this app version); the URL stays editable
   (`branding.profile-allow-url-configuration`)
-- **App display name**: "ownCloud Online" (hardcoded CFBundleDisplayName; the
-  extensions derive theirs from APP_PRODUCT_NAME)
-- **Bundle Identifier**: `online.owncloud.ios-app` (and `.ownCloud-*` extension ids)
+- **App display name**: "owncloud.online" (CFBundleDisplayName/CFBundleName in
+  the app Info.plist; the extensions derive theirs from the project build
+  setting `APP_PRODUCT_NAME = owncloud.online`, Share/Action extension names
+  are localized in their `InfoPlist.xcstrings`)
+- **Bundle Identifier**: `owncloud.online.bw.tech` (extensions:
+  `owncloud.online.bw.tech.<Suffix>`, see table below)
+- **App Group**: `group.owncloud.online.bw.tech` (`OCAppGroupIdentifier`,
+  `NSExtensionFileProviderDocumentGroup`, entitlements of all targets)
+- **Keychain Access Group**: `$(AppIdentifierPrefix)group.owncloud.online.bw.tech`
+  (`OCKeychainAccessGroupIdentifier = group.owncloud.online.bw.tech`)
 - **Team**: BW-TECH GmbH (4545KLA52K), automatic signing (no manual profiles)
-- **URL schemes**: `owncloud-online` (app/private links) and `oco` (auth) — no
-  collision with the official ownCloud app
-- **Branding Assets**: `online.owncloud.ios-app` branding theme, generated from
+- **URL schemes**: `owncloud-online-bwtech` (app/private links) and
+  `owncloud-online-bwtech-auth` (auth) — no collision with the apps of
+  ownCloud GmbH (`owncloud`, `oc`, `owncloud-online`)
+- **SDK texts**: SDK strings that name the original product are overridden
+  via `locale.overrides` in Branding.plist
+- **Branding Assets**: theme folder `Theming/online.owncloud.ios-app` (folder
+  name kept, internal), generated from
   the official owncloud.online logo SVGs. All logo PNGs carry built-in
   transparent padding; `branding-logo-sidebar.png` (2:1) and
   `branding-logo-setup.png` are picked up automatically via the asset-suffix
@@ -40,12 +60,13 @@ This repository contains the ownCloud iOS app, adapted for use with the **ownClo
   (`connection.allowed-authentication-methods = [com.owncloud.basicauth]`)
 - **OAuth2 / OpenID Connect**: currently DISABLED — no client is registered on
   owncloud.online yet. To enable: register the iOS client on the server
-  (redirect URI `oco://ios.owncloud.online`), then re-add
+  (the SDK default redirect URI `oc://ios.owncloud.com` is unchanged; a new
+  redirect URI must first be registered on the server), then re-add
   `com.owncloud.oauth2` to the allowed methods and set
   `authentication-oauth2.oa2-client-id`/`-secret` in Branding.plist
 
 ### PHP 8.4 Compatibility
-The ownCloud Online backend runs PHP 8.4 with the following key dependencies:
+The owncloud.online backend runs PHP 8.4 with the following key dependencies:
 - Symfony 7.4
 - sabre/dav 4.4
 - firebase/php-jwt 6.8+
@@ -95,12 +116,14 @@ open ownCloud.xcodeproj
 ### Bundle Identifiers
 | Target | Bundle ID |
 |---|---|
-| Main App | `online.owncloud.ios-app` |
-| File Provider | `online.owncloud.ios-app.ownCloud-File-Provider` |
-| File Provider UI | `online.owncloud.ios-app.ownCloud-File-ProviderUI` |
-| Share Extension | `online.owncloud.ios-app.ownCloud-Share-Extension` |
-| Action Extension | `online.owncloud.ios-app.ownCloud-Action-Extension` |
-| Intents | `online.owncloud.ios-app.ownCloud-Intents` |
+| Main App | `owncloud.online.bw.tech` |
+| File Provider | `owncloud.online.bw.tech.FileProvider` |
+| File Provider UI | `owncloud.online.bw.tech.FileProviderUI` |
+| Share Extension | `owncloud.online.bw.tech.ShareExtension` |
+| Action Extension | `owncloud.online.bw.tech.ActionExtension` |
+| Intents | `owncloud.online.bw.tech.Intents` |
+
+App group: `group.owncloud.online.bw.tech` (all targets).
 
 ## Updating from Upstream
 

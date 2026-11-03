@@ -1,4 +1,4 @@
-# App-Store-Angaben: ownCloud.online (iOS)
+# App-Store-Angaben: owncloud.online (iOS)
 
 Alle Angaben stammen aus dem Code dieses Repositorys (Stand des Commits) und von https://owncloud.online.
 Längenbegrenzungen von App Store Connect stehen in Klammern.
@@ -7,8 +7,8 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 
 | Feld | Wert |
 |---|---|
-| Bundle-ID | `online.owncloud.ios-app` |
-| SKU (Vorschlag) | `owncloud-online-ios` |
+| Bundle-ID | `owncloud.online.bw.tech` (Extensions: `owncloud.online.bw.tech.FileProvider`, `.FileProviderUI`, `.ShareExtension`, `.ActionExtension`, `.Intents`) |
+| SKU (Vorschlag) | `owncloud-online-bwtech-ios` |
 | Primäre Sprache | Deutsch |
 | Kategorie | Produktivität (primär), Business (sekundär) |
 | Preis | Kostenlos. Die App enthält keine In-App-Käufe (`build.flags = DISABLE_APPSTORE_LICENSING`) |
@@ -16,21 +16,21 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 | Marketing-URL | https://owncloud.online/ |
 | Datenschutz-URL | https://owncloud.online/de/datenschutzrichtlinie/ (en: https://owncloud.online/privacy-policy/). Die englische Seite ist auch in der App hinterlegt (`branding.url-privacy`) |
 | Nutzungsbedingungen | Apple-Standard-EULA oder https://owncloud.online/terms/ (in der App hinterlegt) |
-| Copyright | 2026 BW-Tech GmbH |
+| Copyright | 2026 BW-TECH GmbH |
 | Support-E-Mail (laut Website) | support@owncloudonline.com |
 
 ## Deutsch
 
-**Name** (30): `ownCloud.online` (15 Zeichen)
+**Name** (30): `owncloud.online` (15 Zeichen). Falls App Store Connect den Namen ablehnt (bereits vergeben oder zu ähnlich zu einer bestehenden App): `owncloud.online – BW-TECH` (25 Zeichen)
 
 **Untertitel** (30): `Sicherer Cloud-Speicher` (23)
 
 **Werbetext** (170):
-> Ihre Dateien aus ownCloud.online immer dabei: ansehen, hochladen, teilen und offline verfügbar machen. Gespeichert ausschließlich in Rechenzentren in Deutschland.
+> Ihre Dateien aus owncloud.online immer dabei: ansehen, hochladen, teilen und offline verfügbar machen. Gespeichert ausschließlich in Rechenzentren in Deutschland.
 
 **Beschreibung** (4000):
 
-> Mit der App ownCloud.online greifen Sie auf Ihrem iPhone und iPad auf Ihre Dateien in ownCloud.online zu, der Cloud der BW-Tech GmbH. Ihre Daten liegen ausschließlich auf deutscher Infrastruktur, im eigenen Rechenzentrum der BW-Tech GmbH in Frankfurt am Main, und unterliegen der DSGVO.
+> Mit der App owncloud.online greifen Sie auf Ihrem iPhone und iPad auf Ihre Dateien in owncloud.online zu, der Cloud der BW-TECH GmbH. Ihre Daten liegen ausschließlich auf deutscher Infrastruktur, im eigenen Rechenzentrum der BW-TECH GmbH in Frankfurt am Main, und unterliegen der DSGVO.
 >
 > DATEIEN
 > • Ordner und Dateien durchsuchen, sortieren und als Liste oder Raster anzeigen
@@ -49,8 +49,8 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Öffentliche Links erstellen und verwalten
 >
 > INTEGRATION IN iOS
-> • Dateien-App: ownCloud.online erscheint als Speicherort in der Dateien-App
-> • Teilen-Erweiterung: Inhalte aus anderen Apps direkt in ownCloud.online speichern
+> • Dateien-App: owncloud.online erscheint als Speicherort in der Dateien-App
+> • Teilen-Erweiterung: Inhalte aus anderen Apps direkt in owncloud.online speichern
 > • Kurzbefehle-Aktionen
 > • Fotos und PDFs mit Markierungen versehen
 >
@@ -58,22 +58,22 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Verschlüsselte Übertragung (HTTPS)
 > • App-Sperre mit Code sowie Face ID oder Touch ID
 >
-> Für die Nutzung brauchen Sie ein ownCloud.online-Konto. Sie haben noch keins? Unter owncloud.online/try können Sie einen kostenlosen Testzugang anfordern.
+> Für die Nutzung brauchen Sie ein owncloud.online-Konto. Sie haben noch keins? Unter owncloud.online/try können Sie einen kostenlosen Testzugang anfordern.
 
-**Keywords** (100): `Cloud,Speicher,Dateien,Upload,Foto,Backup,DSGVO,Datenschutz,Deutschland,Sync,Teilen,ownCloud` (92)
+**Keywords** (100): `Cloud,Speicher,Dateien,Upload,Foto,Backup,DSGVO,Datenschutz,Deutschland,Sync,Teilen,Dokumente` (93)
 
 ## English
 
-**Name** (30): `ownCloud.online`
+**Name** (30): `owncloud.online` (fallback: `owncloud.online – BW-TECH`)
 
 **Subtitle** (30): `Secure cloud storage` (20)
 
 **Promotional text** (170):
-> Take your ownCloud.online files with you: view, upload, share and make them available offline. Stored exclusively in data centres in Germany.
+> Take your owncloud.online files with you: view, upload, share and make them available offline. Stored exclusively in data centres in Germany.
 
 **Description** (4000):
 
-> The ownCloud.online app gives you access to your files in ownCloud.online, the cloud operated by BW-Tech GmbH, on your iPhone and iPad. Your data is stored exclusively on German infrastructure, in BW-Tech GmbH's own data centre in Frankfurt am Main, and is subject to the GDPR.
+> The owncloud.online app gives you access to your files in owncloud.online, the cloud operated by BW-TECH GmbH, on your iPhone and iPad. Your data is stored exclusively on German infrastructure, in BW-TECH GmbH's own data centre in Frankfurt am Main, and is subject to the GDPR.
 >
 > FILES
 > • Browse and sort folders and files, in list or grid view
@@ -92,8 +92,8 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Create and manage public links
 >
 > iOS INTEGRATION
-> • Files app: ownCloud.online appears as a location in the Files app
-> • Share extension: save content from other apps directly to ownCloud.online
+> • Files app: owncloud.online appears as a location in the Files app
+> • Share extension: save content from other apps directly to owncloud.online
 > • Shortcuts actions
 > • Mark up photos and PDFs
 >
@@ -101,9 +101,9 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 > • Encrypted transfer (HTTPS)
 > • App lock with passcode and Face ID or Touch ID
 >
-> You need an ownCloud.online account to use the app. Don't have one yet? Request a free trial account at owncloud.online/try.
+> You need an owncloud.online account to use the app. Don't have one yet? Request a free trial account at owncloud.online/try.
 
-**Keywords** (100): `cloud,storage,files,upload,photo,backup,GDPR,privacy,Germany,sync,share,ownCloud` (80)
+**Keywords** (100): `cloud,storage,files,upload,photo,backup,GDPR,privacy,Germany,sync,share,documents` (81)
 
 ## Altersfreigabe (Fragebogen)
 
@@ -121,7 +121,7 @@ Alle Inhaltsfragen (Gewalt, sexuelle Inhalte, Nacktheit, Glücksspiel, Drogen/Al
 **Tracking:** Nein. Die App enthält kein Werbe-, Analyse- oder Tracking-SDK und keine IDFA-Nutzung.
 Eingebundene Pakete: OpenSSL, PLCrashReporter, PocketSVG, Down und SHA3IUF. Im Privacy-Manifest steht `NSPrivacyTracking = false`.
 
-**Werden Daten erhoben?** Ja. Die App überträgt Daten an den ownCloud.online-Server, den die BW-Tech GmbH betreibt:
+**Werden Daten erhoben?** Ja. Die App überträgt Daten an den owncloud.online-Server, den die BW-TECH GmbH betreibt:
 
 | Datentyp (Apple) | Erhoben | Mit Identität verknüpft | Tracking | Zweck |
 |---|---|---|---|---|
@@ -159,7 +159,7 @@ Diese Nutzung fällt unter die Ausnahmen (Authentifizierung, Integrität, Versch
 
 ## Review-Notizen (Vorschlag)
 
-> This app is the client for ownCloud.online, a hosted file storage service operated by BW-Tech GmbH (Germany). A demo account is provided below.
+> This app is the client for owncloud.online, a hosted file storage service operated by BW-TECH GmbH (Germany). A demo account is provided below.
 > Background location (UIBackgroundModes "location") is optional and used only when the user enables "Auto Upload" with location-based background triggering: significant location changes wake the app to upload new photos and videos. No location data is collected or transmitted.
 > The app contains no in-app purchases.
 >

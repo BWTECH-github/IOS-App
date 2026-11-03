@@ -1,7 +1,29 @@
-ownCloud gives organizations the ability to access, control and manage files across applications, on-premises or cloud storage, or other data silos.
+The owncloud.online app gives you access to your files in owncloud.online, the cloud operated by BW-TECH GmbH, on your iPhone and iPad. Your data is stored exclusively on German infrastructure, in BW-TECH GmbH's own data centre in Frankfurt am Main, and is subject to the GDPR.
 
-Security First
-ownCloud.online is hosted in Germany, ensuring the highest security standards and the complete privacy of your data. Your cloud is entirely private and dedicated and thanks to ownCloud's open-source codebase, we can guarantee the highest level of software security. What's more end-to-end encryption and related features keep you in control.
+FILES
+• Browse and sort folders and files, in list or grid view
+• View photos, videos, PDFs and many other file types right in the app
+• Create, rename, copy, move and delete files and folders
+• Favorites and recently used files
+• Make files available offline
 
-Focus on Productivity
-ownCloud.online is designed to boost your productivity. Use your time efficiently and let ownCloud.online handle any time-consuming information organization. Secure and state-of-the-art data handling — yet without expensive IT personnel or having to provision and maintain your own hardware — makes ownCloud.online the most effective cloud solution.
+UPLOAD
+• Upload files, photos and videos
+• Automatic upload of new photos and videos from your library
+• Scan documents with the camera and save them as files
+
+SHARE AND COLLABORATE
+• Share files and folders with other users
+• Create and manage public links
+
+iOS INTEGRATION
+• Files app: owncloud.online appears as a location in the Files app
+• Share extension: save content from other apps directly to owncloud.online
+• Shortcuts actions
+• Mark up photos and PDFs
+
+SECURITY
+• Encrypted transfer (HTTPS)
+• App lock with passcode and Face ID or Touch ID
+
+You need an owncloud.online account to use the app. Don't have one yet? Request a free trial account at owncloud.online/try.

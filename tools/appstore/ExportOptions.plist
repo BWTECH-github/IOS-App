@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- App-Store-Export fuer ownCloud.online (BW-TECH GmbH) -->
+	<!-- App-Store-Export fuer owncloud.online (BW-TECH GmbH) -->
 	<key>method</key>
 	<string>app-store-connect</string>
 	<key>teamID</key>

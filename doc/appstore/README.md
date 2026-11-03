@@ -1,6 +1,6 @@
-# App-Store-Release (ownCloud.online iOS)
+# App-Store-Release (owncloud.online iOS)
 
-Kurzanleitung für den Store-Build der App `online.owncloud.ios-app` (Team `4545KLA52K`, BW-TECH GmbH).
+Kurzanleitung für den Store-Build der App `owncloud.online.bw.tech` (Team `4545KLA52K`, BW-TECH GmbH).
 
 ## Voraussetzungen
 
@@ -10,7 +10,27 @@ Kurzanleitung für den Store-Build der App `online.owncloud.ios-app` (Team `4545
   (alternativ einmalig in Xcode → Accounts → Manage Certificates → „+“ → Apple Distribution).
 - Xcode-Lizenz akzeptiert (`sudo xcodebuild -license accept`). Nach einem Xcode-Update außerdem einmal `sudo xcodebuild -runFirstLaunch`.
 - Submodul ausgecheckt: `git submodule update --init`.
-- Für den Upload: App-Eintrag in App Store Connect mit der Bundle-ID `online.owncloud.ios-app`.
+- Für den Upload: App-Eintrag in App Store Connect mit der Bundle-ID `owncloud.online.bw.tech`.
+
+## Kennungen
+
+| Target | Bundle-ID |
+|---|---|
+| App | `owncloud.online.bw.tech` |
+| File Provider | `owncloud.online.bw.tech.FileProvider` |
+| File Provider UI | `owncloud.online.bw.tech.FileProviderUI` |
+| Share Extension | `owncloud.online.bw.tech.ShareExtension` |
+| Action Extension | `owncloud.online.bw.tech.ActionExtension` |
+| Intents | `owncloud.online.bw.tech.Intents` |
+
+- App-Group (alle Targets): `group.owncloud.online.bw.tech`
+- Keychain-Access-Group: `$(AppIdentifierPrefix)group.owncloud.online.bw.tech`
+- URL-Schemes: `owncloud-online-bwtech` (App) und `owncloud-online-bwtech-auth` (Auth)
+- Die Kennungen kollidieren nicht mit der App „ownCloud Online“ der ownCloud GmbH
+  (`online.owncloud.ios-app`, `group.online.owncloud.ios-app`, Scheme `owncloud-online`);
+  beide Apps laufen nebeneinander auf einem Gerät.
+- Die automatische Signierung (`-allowProvisioningUpdates`) legt fehlende App-IDs, die App-Group
+  und die App-Store-Profile im Team `4545KLA52K` selbst an.
 
 ## Versionen
 
@@ -72,9 +92,18 @@ Builds direkt aus Xcode (Run im Simulator) bekommen das Flag nicht automatisch. 
   und `ownCloudUI.framework`, weil das Upstream-Submodul keins mitliefert.
 - **Angaben für App Store Connect** (Datenschutz, Altersfreigabe, Texte): [store-texte.md](store-texte.md).
 
+## Stand der Signierung (2026-11-03)
+
+- Im Team registriert: nur die App-ID `owncloud.online.bw.tech`. Die fünf Extension-IDs und die
+  App-Group `group.owncloud.online.bw.tech` legt Xcode beim ersten signierten Archiv an.
+- Das Xcode-Konto `dev@bw.tech` wird seit dem Update auf Xcode 27.2 abgelehnt
+  („The login details … were rejected“). Mit App-Store-Connect-API-Schlüssel (`ASC_KEY_*`) meldet
+  `xcodebuild archive` „No Account for Team 4545KLA52K“. Vor `release.sh` deshalb in Xcode →
+  Settings → Accounts das Team-Konto neu anmelden.
+
 ## Checkliste vor der Einreichung
 
-- [ ] Demo-Konto für das App-Review auf einer ownCloud.online-Instanz anlegen und in App Store Connect unter „App-Review-Informationen“ eintragen. Die App lässt nur Basic-Auth-Konten zu.
+- [ ] Demo-Konto für das App-Review auf einer owncloud.online-Instanz anlegen und in App Store Connect unter „App-Review-Informationen“ eintragen. Die App lässt nur Basic-Auth-Konten zu.
 - [ ] Hinweis zum Hintergrund-Standort in die Review-Notizen übernehmen (siehe store-texte.md).
 - [ ] Screenshots: 6,9" iPhone und 13" iPad.
 - [ ] Datenschutz-URL, Support-URL, Kategorie, Altersfreigabe und App-Datenschutz-Angaben in App Store Connect eintragen.
