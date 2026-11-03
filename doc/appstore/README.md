@@ -79,8 +79,9 @@ Logs: `build/appstore/<N>/archive.log` und `export.log`.
   für alle Konten freigeschaltet (`OCLicenseBuildUnlockProvider`). Ohne das Flag würde die App
   Käufe anbieten, die es in App Store Connect für diese App nicht gibt.
 
-Builds direkt aus Xcode (Run im Simulator) bekommen das Flag nicht automatisch. Bei Bedarf
-`APP_BUILD_FLAGS = DISABLE_APPSTORE_LICENSING` im Scheme oder in den Build-Settings setzen.
+Das Flag steht auf Projektebene (`APP_BUILD_FLAGS = "$(inherited) DISABLE_APPSTORE_LICENSING"`,
+Debug und Release). Damit gilt es auch für Builds und Archive direkt aus Xcode (Run, Product > Archive)
+und für die Unit-Tests: Die StoreKit-Tests in `LicensingTests` werden dann übersprungen.
 
 ## Store-Compliance
 

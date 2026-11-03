@@ -396,6 +396,7 @@ typedef void(^LicenseProviderBlock)(OCLicenseProvider *provider, OCLicenseProvid
 
 }
 
+#ifndef DISABLE_APPSTORE_LICENSING
 - (NSArray <OCLicenseAppStoreItem *> *)_appStoreItems
 {
 	return (@[
@@ -482,6 +483,19 @@ typedef void(^LicenseProviderBlock)(OCLicenseProvider *provider, OCLicenseProvid
 
 	[self waitForExpectationsWithTimeout:30 handler:nil];
 }
+
+#else /* DISABLE_APPSTORE_LICENSING */
+// Builds without App Store licensing (DISABLE_APPSTORE_LICENSING) contain no StoreKit provider and no in-app purchases
+- (void)testAppStoreProductRequest
+{
+	XCTSkip(@"App Store licensing disabled (DISABLE_APPSTORE_LICENSING)");
+}
+
+- (void)testOfferObservation
+{
+	XCTSkip(@"App Store licensing disabled (DISABLE_APPSTORE_LICENSING)");
+}
+#endif /* DISABLE_APPSTORE_LICENSING */
 
 - (void)testDateDecoding
 {

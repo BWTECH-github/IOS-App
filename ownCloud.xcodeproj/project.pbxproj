@@ -5274,7 +5274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUILD_FLAGS = "$(inherited)";
+				APP_BUILD_FLAGS = "$(inherited) DISABLE_APPSTORE_LICENSING";
 				APP_BUILD_FLAGS_SWIFT = "$(APP_BUILD_FLAGS)";
 				APP_PRODUCT_NAME = owncloud.online;
 				APP_SHORT_VERSION = 12.7.0;
@@ -5345,7 +5345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BUILD_FLAGS = "$(inherited)";
+				APP_BUILD_FLAGS = "$(inherited) DISABLE_APPSTORE_LICENSING";
 				APP_BUILD_FLAGS_SWIFT = "$(APP_BUILD_FLAGS)";
 				APP_PRODUCT_NAME = owncloud.online;
 				APP_SHORT_VERSION = 12.7.0;
