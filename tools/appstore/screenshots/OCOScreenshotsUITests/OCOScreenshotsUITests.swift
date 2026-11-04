@@ -147,6 +147,21 @@ final class OCOScreenshotsUITests: XCTestCase {
 		}
 	}
 
+	/// Eintrag der Seitenleiste oeffnen (iPhone und iPad): Seitenleiste bei Bedarf einblenden, Eintrag waehlen,
+	/// danach wieder ausblenden, falls sie noch sichtbar ist
+	func openSidebarItem(_ label: String) {
+		if find(label, type: .cell) == nil { toggleSidebar() }
+		tap(label, type: .cell)
+		settle(2)
+		if find(label, type: .cell) != nil { toggleSidebar() }
+	}
+
+	func toggleSidebar() {
+		let toggles = app.buttons.matching(NSPredicate(format: "label == %@", "Seitenleiste ein-/ausblenden"))
+		for i in 0..<toggles.count where toggles.element(boundBy: i).isHittable { toggles.element(boundBy: i).tap(); break }
+		settle()
+	}
+
 	func setLayout(_ name: String) {
 		tap("Layout ändern")
 		tap(name, type: .button)
@@ -177,17 +192,12 @@ final class OCOScreenshotsUITests: XCTestCase {
 		back(until: "Projekte")
 		hideSidebarOnPad()
 
-		// Freigabe-Dialog mit oeffentlichem Link
-		tap("Projekte", type: .cell)
-		settle(2)
-		tap("Mehr zu Website-Relaunch")
-		settle(1.5)
-		tap("Teilen")
-		settle(5)
-		shot("04-teilen", numbered: false)
-		tap("Fertig", type: .button)
-		settle(1.5)
-		back(until: "Projektplan 2027")
+		// Favoriten (ohne Server-Adresse im Bild, anders als ein Freigabe-Link)
+		openSidebarItem("Favoriten")
+		settle(3)
+		shot("04-favoriten", numbered: false)
+		openSidebarItem("Dateien")
+		XCTAssertNotNil(wait("Projektplan 2027", timeout: 20, type: .cell), "Dateiliste nach den Favoriten nicht geladen")
 
 		// Suche
 		tap("client.search")

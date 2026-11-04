@@ -17,7 +17,7 @@ Längenbegrenzungen von App Store Connect stehen in Klammern.
 | Datenschutz-URL | https://owncloud.online/de/datenschutzrichtlinie/ (en: https://owncloud.online/privacy-policy/). Die englische Seite ist auch in der App hinterlegt (`branding.url-privacy`) |
 | Nutzungsbedingungen | Apple-Standard-EULA oder https://owncloud.online/terms/ (in der App hinterlegt) |
 | Copyright | 2026 BW-TECH GmbH |
-| Support-E-Mail (laut Website) | support@owncloudonline.com |
+| Support-E-Mail (bestätigt 2026-11-04) | support@owncloudonline.com |
 
 ## Deutsch
 
