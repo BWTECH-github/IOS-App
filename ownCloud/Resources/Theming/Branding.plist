@@ -15,7 +15,7 @@
 	<key>branding.profile-allow-url-configuration</key>
 	<true/>
 	<key>branding.send-feedback-address</key>
-	<string></string>
+	<string>support@owncloudonline.com</string>
 	<key>branding.send-feedback-url</key>
 	<string>https://owncloud.online/contact/</string>
 	<key>branding.theme-colors</key>
@@ -33,19 +33,20 @@
 	</dict>
 	<key>branding.theme-css-records</key>
 	<array>
-		<string>cancel.fill: #00866F</string>
-		<string>cancel.stroke: #FFFFFF</string>
-		<string>proceed.fill: #00866F</string>
-		<string>proceed.stroke: #FFFFFF</string>
-		<string>info.fill: #00866F</string>
-		<string>info.stroke: #FFFFFF</string>
-		<string>accountSetup.step.button.filled.fill: #00866F</string>
-		<string>accountSetup.step.button.filled.stroke: #FFFFFF</string>
+		<string>cancel.fill: #00E4BD</string>
+		<string>cancel.stroke: #262B45</string>
+		<string>proceed.fill: #00E4BD</string>
+		<string>proceed.stroke: #262B45</string>
+		<string>info.fill: #00E4BD</string>
+		<string>info.stroke: #262B45</string>
+		<string>accountSetup.step.button.filled.fill: #00E4BD</string>
+		<string>accountSetup.step.button.filled.stroke: #262B45</string>
 		<string>accountSetup.message.title.stroke: #262B45</string>
 		<string>accountSetup.header.title.stroke: #262B45</string>
 		<string>accountSetup.help.subtitle.stroke: #464D6A</string>
 		<string>icon-folder.fill: #00E4BD</string>
-		<string>sidebar.collection.selected.cell.fill: #00866F</string>
+		<string>sidebar.collection.selected.cell.fill: #00E4BD</string>
+		<string>sidebar.collection.selected.cell.stroke: #262B45</string>
 		<string>accountSetup.step.background.fill: #FFFFFF</string>
 		<string>accountSetup.step.title.stroke: #262B45</string>
 		<string>accountSetup.step.message.stroke: #464D6A</string>
