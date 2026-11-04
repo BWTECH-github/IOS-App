@@ -1,0 +1,507 @@
+"08siGk" = "Fil";
+
+"0hPNzX" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"0jWfGg" = "Kontrollera om sökvägen ${path} finns i ${account}";
+
+"0n7uf3" = "Mappen finns redan på den angivna sökvägen";
+
+"0pF5fq" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"0w7gOP" = "Okänt";
+
+"0xydIy" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"1KMplM" = "Den angivna sökvägen finns inte.";
+
+"1UkR2J" = "Spara fil";
+
+"1rpPPR" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"2IChwb" = "Hämta en mapplista för angivet konto och sökväg";
+
+"2etfeF" = "Bara för att bekräfta, ville du ha ‘${sortType}’?";
+
+"30uTS2" = "Radera objekt på sökväg";
+
+"38884k" = "Vilken fil behöver du?";
+
+"38uTf2" = "Skapandedatum";
+
+"3BsNkC" = "Server-URL";
+
+"3allZk" = "Sökväg";
+
+"3dRWka" = "Den angivna sökvägen finns inte.";
+
+"3uG0po" = "För vilken sökväg vill du ha filinformation?";
+
+"4BnO3u" = "Välj kontot";
+
+"4HFDB7" = "Filinformation";
+
+"4JjSYi" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"4U4XOu" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"4WGDPz" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"4eTrn2" = "Kontot med angivet UUID finns inte";
+
+"5bfpVi" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"5bvXKH" = "Var ska filen sparas?";
+
+"5tW7cP" = "Bara för att bekräfta, ville du ha ‘${sortDirection}’?";
+
+"61YuKy" = "Kontot med angivet UUID finns inte";
+
+"65dv1W" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"6JHJJP" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"6JcpPy" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"6a3odp" = "Spara filen ${file} i ${path} i ${account}";
+
+"6oQ3E3" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"6veqlK" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"6xEiIO" = "Ja";
+
+"74Rz1p" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"79FdrK" = "Kontrollera om sökvägen ${path} finns i ${account}";
+
+"79YEXU" = "Nätverket är för närvarande inte tillgängligt.";
+
+"7IlNsG" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"7NRaX2" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"7Rco9W" = "Hämta filinformation för ${path} i ${account}";
+
+"7Zv2I0" = "Nej";
+
+"7bVLsg" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"7ei7AX" = "Vänta tills mappen har skapats innan du fortsätter";
+
+"7leZJ9" = "Kontot med angivet UUID finns inte";
+
+"81IjYk" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"8CnkN3" = "Namn";
+
+"8ZZD23" = "Hämta konto";
+
+"8Ziepl" = "Hämta fil";
+
+"8a8rsQ" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"8cu3YB" = "Filen är inte tillgänglig offline.";
+
+"8ruaDW" = "Nätverket är för närvarande inte tillgängligt.";
+
+"8zt6Cl" = "Nätverket är för närvarande inte tillgängligt.";
+
+"9tIXKj" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"9uzczk" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"A3Pv0a" = "Filinformation";
+
+"ABZOUR" = "Kontot med angivet UUID finns inte";
+
+"ACWews" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"AG0qbP" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"AQ4lsZ" = "Skapa mapp";
+
+"ARGEYl" = "Nätverket är för närvarande inte tillgängligt.";
+
+"AtUMKl" = "Kontot med angivet UUID finns inte";
+
+"Aviuqh" = "Mappen finns redan på den angivna sökvägen";
+
+"B1lmXQ" = "Filnamn (valfritt)";
+
+"BOHYUX" = "Sökvägen finns";
+
+"C4qdxp" = "Kontot med angivet UUID finns inte";
+
+"Cfk0HW" = "Konto";
+
+"CtNzv7" = "Kontot med angivet UUID finns inte";
+
+"CwmgYp" = "Sorteringstyp";
+
+"D3oUHR" = "Hämta konto med ${accountUUID}";
+
+"DSSHvU" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"Dt0MVQ" = "Kontots UUID";
+
+"E5BAmD" = "Delad";
+
+"Ed4d2z" = "/";
+
+"Ezlwwe" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"FZOxYk" = "Namn";
+
+"Fe4YSc" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"GAhtDQ" = "Konto";
+
+"GJ25u2" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"GOVcde" = "Sökväg";
+
+"GUKqkE" = "Filen finns redan och överskrivning är inaktiverad.";
+
+"Iej0wL" = "Konto";
+
+"IklOI3" = "Sortera efter";
+
+"Iq98sA" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"J4AXzF" = "Nätverket är för närvarande inte tillgängligt.";
+
+"JPFL0e" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"JRUplN" = "Okänt";
+
+"KHwW13" = "Var ska mappen skapas?";
+
+"KLmGnh" = "Nätverket är för närvarande inte tillgängligt.";
+
+"KpcaUP" = "Ja";
+
+"Kr0sps" = "Kontot med angivet UUID finns inte";
+
+"KuSDoY" = "Nätverket är för närvarande inte tillgängligt.";
+
+"LJUrKB" = "Filsökväg";
+
+"LdHBeL" = "Hämta filinformation för den angivna sökvägen";
+
+"MGAYW2" = "Hämta filinformation";
+
+"MRTQ9c" = "Tidsstämpel för skapandedatum";
+
+"MVtUAV" = "Nätverket är för närvarande inte tillgängligt.";
+
+"N181Er" = "Den angivna sökvägen finns inte.";
+
+"NEiHz6" = "Det finns ingen fil på den angivna sökvägen.";
+
+"OBFBYf" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"OmLLGX" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"P6Xeu7" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"PHyaws" = "Hämta mapplista";
+
+"PthGCb" = "Kontrollera om den angivna sökvägen finns";
+
+"QIKvUr" = "Kontot med angivet UUID finns inte";
+
+"R54XCc" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"Rc9iDZ" = "Nätverket är för närvarande inte tillgängligt.";
+
+"Rh6ICd" = "Skapa mappen ${name} i ${path} för ${account}";
+
+"SP1wR2" = "Kontot med angivet UUID finns inte";
+
+"SW8AiH" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"TjffcC" = "Radera objektet på sökvägen ${path} i ${account}";
+
+"U3l2bk" = "Hämta kontot för angivet kontots UUID";
+
+"U4qBGg" = "Filen är inte tillgänglig offline.";
+
+"UaOocE" = "Filen finns redan och överskrivning är inaktiverad.";
+
+"UdyMQ5" = "Kontot med angivet UUID finns inte";
+
+"Ul4Kf0" = "Kontolista";
+
+"Us1jG9" = "Nätverket är för närvarande inte tillgängligt.";
+
+"V9kFMY" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"VHlRdG" = "Välj kontot";
+
+"VSQYEZ" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"VYw9o4" = "Ange UUID för det konto du vill använda";
+
+"Vbtkke" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"Vg8Ky0" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"VuUXmL" = "Nätverket är för närvarande inte tillgängligt.";
+
+"W2jbjk" = "Mappens namn";
+
+"WDPKZp" = "Det finns ingen fil på den angivna sökvägen.";
+
+"WfA15u" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"X0Zskf" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"X2zTIZ" = "Skriv över filen om den redan finns";
+
+"XEIycV" = "Mapplista";
+
+"XKCjDe" = "Hämta konton";
+
+"XVBTsw" = "Konto";
+
+"XmX9YS" = "Skapa en mapp med det angivna namnet i sökvägen.";
+
+"Xu46tf" = "Nätverket är för närvarande inte tillgängligt.";
+
+"Y16qbv" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"Y87IjO" = "Den angivna sökvägen finns inte.";
+
+"YDTXfI" = "Välj kontot";
+
+"YNY6aQ" = "Skriv över befintlig fil";
+
+"YzkaES" = "Fil";
+
+"ZB0VB7" = "Fallande";
+
+"ZRW2EV" = "Namn";
+
+"ZWoKzx" = "Den angivna sökvägen finns inte.";
+
+"ZXvi1J" = "Det finns ${count} alternativ som matchar ‘${sortDirection}’.";
+
+"ZhFjkx" = "Sökväg";
+
+"a5zbSk" = "Det finns ${count} alternativ som matchar ‘${sortType}’.";
+
+"ak80K0" = "Nätverket är för närvarande inte tillgängligt.";
+
+"axuc4N" = "Hämta mapplista för ${path} från ${account}";
+
+"b4VIz0" = "Valfritt filnamn när filen sparas";
+
+"b4pgUO" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"bPAspK" = "Nej";
+
+"bfU2dy" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"cDQ3EQ" = "Filändelse (valfritt)";
+
+"ceG0fs" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"cfhOuF" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"ctet5s" = "Den angivna sökvägen finns inte.";
+
+"dCe7NY" = "Hämta konto med ${accountUUID}";
+
+"dH8vD7" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"dRSMFQ" = "Valfri filändelse när filen sparas";
+
+"dWm6eD" = "Kontot med angivet UUID finns inte";
+
+"dlIKxE" = "Sökväg";
+
+"ds6RJ5" = "Sökvägen finns";
+
+"dtUvRf" = "Spara en fil på sökvägen i kontot";
+
+"e5LXg2" = "Välj kontot";
+
+"eATsqP" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"eGjKAM" = "Sökväg";
+
+"eJ8Zop" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"eZdCum" = "Storlek";
+
+"eg3e3D" = "Nej";
+
+"ficaax" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"fjiVU2" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"fotVdI" = "Välj kontot";
+
+"g1Zin1" = "Kontot med angivet UUID finns inte";
+
+"gDQ2EW" = "UUID";
+
+"gFiypL" = "Sorteringsordning";
+
+"gYCA4r" = "Radera objektet på sökvägen ${path} i ${account}";
+
+"ggYJ45" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"gxBJkl" = "Här är din kontolista";
+
+"hL4u0G" = "Sökväg";
+
+"hLfV0h" = "Kontot med angivet UUID finns inte";
+
+"hPuHs9" = "Vänta tills mappen har skapats";
+
+"iBm5P1" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"iDEwxe" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"icA1AQ" = "Ja";
+
+"idUnAy" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"ijKWiB" = "Vilken fil ska sparas?";
+
+"j7guHG" = "Hämta kontolista";
+
+"je9RXz" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"jkLupt" = "Radera den angivna sökvägen i kontot";
+
+"kfmZUU" = "Hämta filen ${path} från ${account}";
+
+"l1ScV6" = "Den angivna sökvägen finns inte.";
+
+"lIGrzU" = "Är favorit";
+
+"lNNcvh" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"lUzgvo" = "Kontot med angivet UUID finns inte";
+
+"leB73e" = "Den angivna sökvägen finns inte.";
+
+"lrF7G0" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"lsb3bf" = "Datum";
+
+"lyQhRe" = "Tidsstämpel för senaste ändring";
+
+"m6tE77" = "Lokalt ID";
+
+"mJL3AY" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"mRWXIl" = "Konto";
+
+"mjas8f" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"mmHd6b" = "Nätverket är för närvarande inte tillgängligt.";
+
+"mqKEhg" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"nZsCMf" = "Sorteringsordning";
+
+"nvFl2W" = "Hämta filen för den angivna sökvägen i kontot";
+
+"o7aBS2" = "Bara för att bekräfta, ville du ha ‘${account}’?";
+
+"odUmdN" = "Välj kontot";
+
+"ogx9ZM" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"ovRBKA" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"pDN16g" = "Nej";
+
+"pLbUOb" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"q5bi2K" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"qD6IIc" = "Senast ändrad";
+
+"qEUEIK" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"qWXOGM" = "För vilken sökväg vill du ha filinformation?";
+
+"rZf2ER" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"rzbAOP" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"sKUo1c" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"sLw6L8" = "Den angivna sökvägen finns inte.";
+
+"sdm6CF" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"sf57GO" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"sxd9RH" = "Konto";
+
+"tHgDsi" = "Stigande";
+
+"tIdL1f" = "Nätverket är för närvarande inte tillgängligt.";
+
+"tMYYpx" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"tiHX6L" = "Konto";
+
+"tiPumg" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"u8abus" = "Sökväg";
+
+"uP1q1e" = "Konto";
+
+"unxhTD" = "Sökväg";
+
+"uo96Pp" = "Vilken sökväg ska användas?";
+
+"vY7pxV" = "Typ";
+
+"vhZe7o" = "För vilken sökväg vill du ha filinformation?";
+
+"vyzXPW" = "Nätverket är för närvarande inte tillgängligt.";
+
+"w1TCyX" = "Ja";
+
+"wK4bqS" = "Hämta en lista över alla konfigurerade konton";
+
+"wPdYjH" = "Konto";
+
+"wbCXnN" = "Storlek";
+
+"wnOHo5" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"wvNr8g" = "Autentiseringen misslyckades. Öppna kontot i appen för att åtgärda problemet.";
+
+"xIWWfW" = "Kontot med angivet UUID finns inte";
+
+"xZDy1P" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"xaKzfr" = "Välj kontot";
+
+"xgwnia" = "Den angivna sökvägen finns inte.";
+
+"xseRVY" = "Fil-ID";
+
+"xzMJ1y" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";
+
+"y8oko2" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"yTzyi1" = "Den här åtgärden är en Pro-funktion och är för närvarande inte upplåst. Mer information och tillgängliga upplåsningsalternativ finns under Inställningar > Pro-funktioner > Genvägar.";
+
+"yeD8D7" = "Appen är för närvarande låst med lösenkod. Inaktivera lösenkoden för att fortsätta.";
+
+"yrLv2M" = "Här är din kontolista";
+
+"zAG76o" = "Det finns ${count} alternativ som matchar ‘${account}’.";
+
+"zKRAWH" = "MIME-typ";
+
+"znA04X" = "Stöd för Genvägar är inaktiverat. Öppna appen och aktivera Genvägar i Inställningar.";

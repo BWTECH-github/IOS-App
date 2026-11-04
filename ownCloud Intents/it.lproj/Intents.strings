@@ -1,0 +1,507 @@
+"08siGk" = "File";
+
+"0hPNzX" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"0jWfGg" = "Verifica se il percorso ${path} esiste in ${account}";
+
+"0n7uf3" = "Questa cartella esiste già nel percorso indicato";
+
+"0pF5fq" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"0w7gOP" = "Sconosciuto";
+
+"0xydIy" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"1KMplM" = "Il percorso indicato non esiste.";
+
+"1UkR2J" = "Salva file";
+
+"1rpPPR" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"2IChwb" = "Ottieni il contenuto della cartella per l'account e il percorso indicati";
+
+"2etfeF" = "Solo per conferma, volevi ‘${sortType}’?";
+
+"30uTS2" = "Elimina elemento del percorso";
+
+"38884k" = "Di quale file hai bisogno?";
+
+"38uTf2" = "Data di creazione";
+
+"3BsNkC" = "URL server";
+
+"3allZk" = "Percorso";
+
+"3dRWka" = "Il percorso indicato non esiste.";
+
+"3uG0po" = "Per quale percorso vuoi le info del file?";
+
+"4BnO3u" = "Seleziona l'account";
+
+"4HFDB7" = "Info file";
+
+"4JjSYi" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"4U4XOu" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"4WGDPz" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"4eTrn2" = "L'account con l'UUID indicato non esiste";
+
+"5bfpVi" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"5bvXKH" = "Dove salvare il file?";
+
+"5tW7cP" = "Solo per conferma, volevi ‘${sortDirection}’?";
+
+"61YuKy" = "L'account con l'UUID indicato non esiste";
+
+"65dv1W" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"6JHJJP" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"6JcpPy" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"6a3odp" = "Salva file ${file} in ${path} in ${account}";
+
+"6oQ3E3" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"6veqlK" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"6xEiIO" = "Sì";
+
+"74Rz1p" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"79FdrK" = "Verifica se il percorso ${path} esiste in ${account}";
+
+"79YEXU" = "La rete non è attualmente disponibile.";
+
+"7IlNsG" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"7NRaX2" = "Solo per conferma, volevi ‘${account}’?";
+
+"7Rco9W" = "Ottieni info file per ${path} in ${account}";
+
+"7Zv2I0" = "No";
+
+"7bVLsg" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"7ei7AX" = "Attendi il completamento della creazione della cartella prima di continuare";
+
+"7leZJ9" = "L'account con l'UUID indicato non esiste";
+
+"81IjYk" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"8CnkN3" = "Nome";
+
+"8ZZD23" = "Ottieni account";
+
+"8Ziepl" = "Ottieni file";
+
+"8a8rsQ" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"8cu3YB" = "Il file non è disponibile offline.";
+
+"8ruaDW" = "La rete non è attualmente disponibile.";
+
+"8zt6Cl" = "La rete non è attualmente disponibile.";
+
+"9tIXKj" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"9uzczk" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"A3Pv0a" = "Info file";
+
+"ABZOUR" = "L'account con l'UUID indicato non esiste";
+
+"ACWews" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"AG0qbP" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"AQ4lsZ" = "Crea cartella";
+
+"ARGEYl" = "La rete non è attualmente disponibile.";
+
+"AtUMKl" = "L'account con l'UUID indicato non esiste";
+
+"Aviuqh" = "Questa cartella esiste già nel percorso indicato";
+
+"B1lmXQ" = "Nome file (facoltativo)";
+
+"BOHYUX" = "Percorso esistente";
+
+"C4qdxp" = "L'account con l'UUID indicato non esiste";
+
+"Cfk0HW" = "Account";
+
+"CtNzv7" = "L'account con l'UUID indicato non esiste";
+
+"CwmgYp" = "Tipo di ordinamento";
+
+"D3oUHR" = "Ottieni account con ${accountUUID}";
+
+"DSSHvU" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"Dt0MVQ" = "UUID account";
+
+"E5BAmD" = "Condiviso";
+
+"Ed4d2z" = "/";
+
+"Ezlwwe" = "Solo per conferma, volevi ‘${account}’?";
+
+"FZOxYk" = "Nome";
+
+"Fe4YSc" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"GAhtDQ" = "Account";
+
+"GJ25u2" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"GOVcde" = "Percorso";
+
+"GUKqkE" = "Il file esiste già e la sovrascrittura è disattivata.";
+
+"Iej0wL" = "Account";
+
+"IklOI3" = "Ordina per";
+
+"Iq98sA" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"J4AXzF" = "La rete non è attualmente disponibile.";
+
+"JPFL0e" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"JRUplN" = "Sconosciuto";
+
+"KHwW13" = "Dove creare la cartella?";
+
+"KLmGnh" = "La rete non è attualmente disponibile.";
+
+"KpcaUP" = "Sì";
+
+"Kr0sps" = "L'account con l'UUID indicato non esiste";
+
+"KuSDoY" = "La rete non è attualmente disponibile.";
+
+"LJUrKB" = "Percorso file";
+
+"LdHBeL" = "Recupera le info del file per il percorso indicato";
+
+"MGAYW2" = "Ottieni info file";
+
+"MRTQ9c" = "Timestamp data di creazione";
+
+"MVtUAV" = "La rete non è attualmente disponibile.";
+
+"N181Er" = "Il percorso indicato non esiste.";
+
+"NEiHz6" = "Non esiste alcun file nel percorso indicato.";
+
+"OBFBYf" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"OmLLGX" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"P6Xeu7" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"PHyaws" = "Ottieni contenuto della cartella";
+
+"PthGCb" = "Verifica se il percorso indicato esiste";
+
+"QIKvUr" = "L'account con l'UUID indicato non esiste";
+
+"R54XCc" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"Rc9iDZ" = "La rete non è attualmente disponibile.";
+
+"Rh6ICd" = "Crea cartella ${name} in ${path} per ${account}";
+
+"SP1wR2" = "L'account con l'UUID indicato non esiste";
+
+"SW8AiH" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"TjffcC" = "Elimina elemento nel percorso ${path} in ${account}";
+
+"U3l2bk" = "Ottieni l'account per l'UUID indicato";
+
+"U4qBGg" = "Il file non è disponibile offline.";
+
+"UaOocE" = "Il file esiste già e la sovrascrittura è disattivata.";
+
+"UdyMQ5" = "L'account con l'UUID indicato non esiste";
+
+"Ul4Kf0" = "Elenco account";
+
+"Us1jG9" = "La rete non è attualmente disponibile.";
+
+"V9kFMY" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"VHlRdG" = "Seleziona l'account";
+
+"VSQYEZ" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"VYw9o4" = "Inserisci l'UUID dell'account desiderato";
+
+"Vbtkke" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"Vg8Ky0" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"VuUXmL" = "La rete non è attualmente disponibile.";
+
+"W2jbjk" = "Nome della cartella";
+
+"WDPKZp" = "Non esiste alcun file nel percorso indicato.";
+
+"WfA15u" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"X0Zskf" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"X2zTIZ" = "Sovrascrivi il file se esiste già";
+
+"XEIycV" = "Contenuto della cartella";
+
+"XKCjDe" = "Ottieni account";
+
+"XVBTsw" = "Account";
+
+"XmX9YS" = "Crea una cartella con il nome indicato nel percorso.";
+
+"Xu46tf" = "La rete non è attualmente disponibile.";
+
+"Y16qbv" = "Solo per conferma, volevi ‘${account}’?";
+
+"Y87IjO" = "Il percorso indicato non esiste.";
+
+"YDTXfI" = "Seleziona l'account";
+
+"YNY6aQ" = "Sovrascrivi file esistente";
+
+"YzkaES" = "File";
+
+"ZB0VB7" = "Decrescente";
+
+"ZRW2EV" = "Nome";
+
+"ZWoKzx" = "Il percorso indicato non esiste.";
+
+"ZXvi1J" = "Ci sono ${count} opzioni corrispondenti a ‘${sortDirection}’.";
+
+"ZhFjkx" = "Percorso";
+
+"a5zbSk" = "Ci sono ${count} opzioni corrispondenti a ‘${sortType}’.";
+
+"ak80K0" = "La rete non è attualmente disponibile.";
+
+"axuc4N" = "Ottieni contenuto della cartella ${path} da ${account}";
+
+"b4VIz0" = "Nome facoltativo per il salvataggio del file";
+
+"b4pgUO" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"bPAspK" = "No";
+
+"bfU2dy" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"cDQ3EQ" = "Estensione file (facoltativa)";
+
+"ceG0fs" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"cfhOuF" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"ctet5s" = "Il percorso indicato non esiste.";
+
+"dCe7NY" = "Ottieni account con ${accountUUID}";
+
+"dH8vD7" = "Solo per conferma, volevi ‘${account}’?";
+
+"dRSMFQ" = "Estensione facoltativa per il salvataggio del file";
+
+"dWm6eD" = "L'account con l'UUID indicato non esiste";
+
+"dlIKxE" = "Percorso";
+
+"ds6RJ5" = "Percorso esistente";
+
+"dtUvRf" = "Salva un file nel percorso dell'account";
+
+"e5LXg2" = "Seleziona l'account";
+
+"eATsqP" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"eGjKAM" = "Percorso";
+
+"eJ8Zop" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"eZdCum" = "Dimensione";
+
+"eg3e3D" = "No";
+
+"ficaax" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"fjiVU2" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"fotVdI" = "Seleziona l'account";
+
+"g1Zin1" = "L'account con l'UUID indicato non esiste";
+
+"gDQ2EW" = "UUID";
+
+"gFiypL" = "Direzione ordinamento";
+
+"gYCA4r" = "Elimina elemento nel percorso ${path} in ${account}";
+
+"ggYJ45" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"gxBJkl" = "Ecco il tuo elenco di account";
+
+"hL4u0G" = "Percorso";
+
+"hLfV0h" = "L'account con l'UUID indicato non esiste";
+
+"hPuHs9" = "Attendi il completamento della creazione della cartella";
+
+"iBm5P1" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"iDEwxe" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"icA1AQ" = "Sì";
+
+"idUnAy" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"ijKWiB" = "Quale file salvare?";
+
+"j7guHG" = "Ottieni elenco account";
+
+"je9RXz" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"jkLupt" = "Elimina il percorso indicato nell'account";
+
+"kfmZUU" = "Ottieni file ${path} da ${account}";
+
+"l1ScV6" = "Il percorso indicato non esiste.";
+
+"lIGrzU" = "Preferito";
+
+"lNNcvh" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"lUzgvo" = "L'account con l'UUID indicato non esiste";
+
+"leB73e" = "Il percorso indicato non esiste.";
+
+"lrF7G0" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"lsb3bf" = "Data";
+
+"lyQhRe" = "Timestamp ultima modifica";
+
+"m6tE77" = "ID locale";
+
+"mJL3AY" = "Solo per conferma, volevi ‘${account}’?";
+
+"mRWXIl" = "Account";
+
+"mjas8f" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"mmHd6b" = "La rete non è attualmente disponibile.";
+
+"mqKEhg" = "Solo per conferma, volevi ‘${account}’?";
+
+"nZsCMf" = "Direzione di ordinamento";
+
+"nvFl2W" = "Ottieni il file per il percorso indicato nell'account";
+
+"o7aBS2" = "Solo per conferma, volevi ‘${account}’?";
+
+"odUmdN" = "Seleziona l'account";
+
+"ogx9ZM" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"ovRBKA" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"pDN16g" = "No";
+
+"pLbUOb" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"q5bi2K" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"qD6IIc" = "Ultima modifica";
+
+"qEUEIK" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"qWXOGM" = "Per quale percorso vuoi le info del file?";
+
+"rZf2ER" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"rzbAOP" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"sKUo1c" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"sLw6L8" = "Il percorso indicato non esiste.";
+
+"sdm6CF" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"sf57GO" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"sxd9RH" = "Account";
+
+"tHgDsi" = "Crescente";
+
+"tIdL1f" = "La rete non è attualmente disponibile.";
+
+"tMYYpx" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"tiHX6L" = "Account";
+
+"tiPumg" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"u8abus" = "Percorso";
+
+"uP1q1e" = "Account";
+
+"unxhTD" = "Percorso";
+
+"uo96Pp" = "Quale percorso usare?";
+
+"vY7pxV" = "Tipo";
+
+"vhZe7o" = "Per quale percorso vuoi le info del file?";
+
+"vyzXPW" = "La rete non è attualmente disponibile.";
+
+"w1TCyX" = "Sì";
+
+"wK4bqS" = "Ottieni un elenco di tutti gli account configurati";
+
+"wPdYjH" = "Account";
+
+"wbCXnN" = "Dimensione";
+
+"wnOHo5" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"wvNr8g" = "Autenticazione non riuscita. Apri l'account nell'app per risolvere il problema.";
+
+"xIWWfW" = "L'account con l'UUID indicato non esiste";
+
+"xZDy1P" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"xaKzfr" = "Seleziona l'account";
+
+"xgwnia" = "Il percorso indicato non esiste.";
+
+"xseRVY" = "ID file";
+
+"xzMJ1y" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";
+
+"y8oko2" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"yTzyi1" = "Questa azione è una funzione Pro e al momento non è sbloccata. Per ulteriori informazioni e opzioni di sblocco disponibili, vai su Impostazioni > Funzioni Pro > Comandi Rapidi.";
+
+"yeD8D7" = "L'app è attualmente bloccata da un codice. Disattiva il codice per procedere.";
+
+"yrLv2M" = "Ecco il tuo elenco di account";
+
+"zAG76o" = "Ci sono ${count} opzioni corrispondenti a ‘${account}’.";
+
+"zKRAWH" = "Tipo MIME";
+
+"znA04X" = "Il supporto per Comandi Rapidi è disattivato. Apri l'app e attiva Comandi Rapidi nelle Impostazioni.";

@@ -1,0 +1,507 @@
+"08siGk" = "Fitxer";
+
+"0hPNzX" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"0jWfGg" = "Comprovar si el camí ${path} existeix a ${account}";
+
+"0n7uf3" = "Aquesta carpeta ja existeix al camí indicat";
+
+"0pF5fq" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"0w7gOP" = "Desconegut";
+
+"0xydIy" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"1KMplM" = "El camí indicat no existeix.";
+
+"1UkR2J" = "Desar fitxer";
+
+"1rpPPR" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"2IChwb" = "Obté el llistat del directori per al compte i el camí indicats";
+
+"2etfeF" = "Només per confirmar, volies ‘${sortType}’?";
+
+"30uTS2" = "Eliminar element del camí";
+
+"38884k" = "Quin fitxer necessites?";
+
+"38uTf2" = "Data de creació";
+
+"3BsNkC" = "URL del servidor";
+
+"3allZk" = "Camí";
+
+"3dRWka" = "El camí indicat no existeix.";
+
+"3uG0po" = "De quin camí vols la informació del fitxer?";
+
+"4BnO3u" = "Selecciona el compte";
+
+"4HFDB7" = "Informació del fitxer";
+
+"4JjSYi" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"4U4XOu" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"4WGDPz" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"4eTrn2" = "El compte amb l’UUID indicat no existeix";
+
+"5bfpVi" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"5bvXKH" = "On vols desar el fitxer?";
+
+"5tW7cP" = "Només per confirmar, volies ‘${sortDirection}’?";
+
+"61YuKy" = "El compte amb l’UUID indicat no existeix";
+
+"65dv1W" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"6JHJJP" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"6JcpPy" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"6a3odp" = "Desar el fitxer ${file} a ${path} de ${account}";
+
+"6oQ3E3" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"6veqlK" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"6xEiIO" = "Sí";
+
+"74Rz1p" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"79FdrK" = "Comprovar si el camí ${path} existeix a ${account}";
+
+"79YEXU" = "La xarxa no està disponible en aquest moment.";
+
+"7IlNsG" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"7NRaX2" = "Només per confirmar, volies ‘${account}’?";
+
+"7Rco9W" = "Obtenir la informació del fitxer de ${path} a ${account}";
+
+"7Zv2I0" = "No";
+
+"7bVLsg" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"7ei7AX" = "Espera que es completi la creació de la carpeta abans de continuar";
+
+"7leZJ9" = "El compte amb l’UUID indicat no existeix";
+
+"81IjYk" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"8CnkN3" = "Nom";
+
+"8ZZD23" = "Obtenir compte";
+
+"8Ziepl" = "Obtenir fitxer";
+
+"8a8rsQ" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"8cu3YB" = "El fitxer no està disponible sense connexió.";
+
+"8ruaDW" = "La xarxa no està disponible en aquest moment.";
+
+"8zt6Cl" = "La xarxa no està disponible en aquest moment.";
+
+"9tIXKj" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"9uzczk" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"A3Pv0a" = "Informació del fitxer";
+
+"ABZOUR" = "El compte amb l’UUID indicat no existeix";
+
+"ACWews" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"AG0qbP" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"AQ4lsZ" = "Crear carpeta";
+
+"ARGEYl" = "La xarxa no està disponible en aquest moment.";
+
+"AtUMKl" = "El compte amb l’UUID indicat no existeix";
+
+"Aviuqh" = "Aquesta carpeta ja existeix al camí indicat";
+
+"B1lmXQ" = "Nom del fitxer (opcional)";
+
+"BOHYUX" = "El camí existeix";
+
+"C4qdxp" = "El compte amb l’UUID indicat no existeix";
+
+"Cfk0HW" = "Compte";
+
+"CtNzv7" = "El compte amb l’UUID indicat no existeix";
+
+"CwmgYp" = "Tipus d’ordenació";
+
+"D3oUHR" = "Obtenir el compte amb ${accountUUID}";
+
+"DSSHvU" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"Dt0MVQ" = "UUID del compte";
+
+"E5BAmD" = "Compartit";
+
+"Ed4d2z" = "/";
+
+"Ezlwwe" = "Només per confirmar, volies ‘${account}’?";
+
+"FZOxYk" = "Nom";
+
+"Fe4YSc" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"GAhtDQ" = "Compte";
+
+"GJ25u2" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"GOVcde" = "Camí";
+
+"GUKqkE" = "El fitxer ja existeix i la sobreescriptura està desactivada.";
+
+"Iej0wL" = "Compte";
+
+"IklOI3" = "Ordenar per";
+
+"Iq98sA" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"J4AXzF" = "La xarxa no està disponible en aquest moment.";
+
+"JPFL0e" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"JRUplN" = "Desconegut";
+
+"KHwW13" = "On vols crear la carpeta?";
+
+"KLmGnh" = "La xarxa no està disponible en aquest moment.";
+
+"KpcaUP" = "Sí";
+
+"Kr0sps" = "El compte amb l’UUID indicat no existeix";
+
+"KuSDoY" = "La xarxa no està disponible en aquest moment.";
+
+"LJUrKB" = "Camí del fitxer";
+
+"LdHBeL" = "Obté la informació del fitxer del camí indicat";
+
+"MGAYW2" = "Obtenir informació del fitxer";
+
+"MRTQ9c" = "Marca de temps de creació";
+
+"MVtUAV" = "La xarxa no està disponible en aquest moment.";
+
+"N181Er" = "El camí indicat no existeix.";
+
+"NEiHz6" = "No hi ha cap fitxer al camí indicat.";
+
+"OBFBYf" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"OmLLGX" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"P6Xeu7" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"PHyaws" = "Obtenir llistat del directori";
+
+"PthGCb" = "Comprova si el camí indicat existeix";
+
+"QIKvUr" = "El compte amb l’UUID indicat no existeix";
+
+"R54XCc" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"Rc9iDZ" = "La xarxa no està disponible en aquest moment.";
+
+"Rh6ICd" = "Crear la carpeta ${name} a ${path} per a ${account}";
+
+"SP1wR2" = "El compte amb l’UUID indicat no existeix";
+
+"SW8AiH" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"TjffcC" = "Eliminar l’element del camí ${path} a ${account}";
+
+"U3l2bk" = "Obté el compte corresponent a l’UUID indicat";
+
+"U4qBGg" = "El fitxer no està disponible sense connexió.";
+
+"UaOocE" = "El fitxer ja existeix i la sobreescriptura està desactivada.";
+
+"UdyMQ5" = "El compte amb l’UUID indicat no existeix";
+
+"Ul4Kf0" = "Llista de comptes";
+
+"Us1jG9" = "La xarxa no està disponible en aquest moment.";
+
+"V9kFMY" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"VHlRdG" = "Selecciona el compte";
+
+"VSQYEZ" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"VYw9o4" = "Introdueix l’UUID del compte que vols";
+
+"Vbtkke" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"Vg8Ky0" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"VuUXmL" = "La xarxa no està disponible en aquest moment.";
+
+"W2jbjk" = "Nom de la carpeta";
+
+"WDPKZp" = "No hi ha cap fitxer al camí indicat.";
+
+"WfA15u" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"X0Zskf" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"X2zTIZ" = "Sobreescriu el fitxer si ja existeix";
+
+"XEIycV" = "Llistat del directori";
+
+"XKCjDe" = "Obtenir comptes";
+
+"XVBTsw" = "Compte";
+
+"XmX9YS" = "Crea una carpeta amb el nom indicat al camí.";
+
+"Xu46tf" = "La xarxa no està disponible en aquest moment.";
+
+"Y16qbv" = "Només per confirmar, volies ‘${account}’?";
+
+"Y87IjO" = "El camí indicat no existeix.";
+
+"YDTXfI" = "Selecciona el compte";
+
+"YNY6aQ" = "Sobreescriure el fitxer existent";
+
+"YzkaES" = "Fitxer";
+
+"ZB0VB7" = "Descendent";
+
+"ZRW2EV" = "Nom";
+
+"ZWoKzx" = "El camí indicat no existeix.";
+
+"ZXvi1J" = "Hi ha ${count} opcions que coincideixen amb ‘${sortDirection}’.";
+
+"ZhFjkx" = "Camí";
+
+"a5zbSk" = "Hi ha ${count} opcions que coincideixen amb ‘${sortType}’.";
+
+"ak80K0" = "La xarxa no està disponible en aquest moment.";
+
+"axuc4N" = "Obtenir el llistat del directori de ${path} de ${account}";
+
+"b4VIz0" = "Nom opcional per desar el fitxer";
+
+"b4pgUO" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"bPAspK" = "No";
+
+"bfU2dy" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"cDQ3EQ" = "Extensió del fitxer (opcional)";
+
+"ceG0fs" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"cfhOuF" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"ctet5s" = "El camí indicat no existeix.";
+
+"dCe7NY" = "Obtenir el compte amb ${accountUUID}";
+
+"dH8vD7" = "Només per confirmar, volies ‘${account}’?";
+
+"dRSMFQ" = "Extensió opcional per desar el fitxer";
+
+"dWm6eD" = "El compte amb l’UUID indicat no existeix";
+
+"dlIKxE" = "Camí";
+
+"ds6RJ5" = "El camí existeix";
+
+"dtUvRf" = "Desa un fitxer al camí del compte";
+
+"e5LXg2" = "Selecciona el compte";
+
+"eATsqP" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"eGjKAM" = "Camí";
+
+"eJ8Zop" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"eZdCum" = "Mida";
+
+"eg3e3D" = "No";
+
+"ficaax" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"fjiVU2" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"fotVdI" = "Selecciona el compte";
+
+"g1Zin1" = "El compte amb l’UUID indicat no existeix";
+
+"gDQ2EW" = "UUID";
+
+"gFiypL" = "Sentit d’ordenació";
+
+"gYCA4r" = "Eliminar l’element del camí ${path} a ${account}";
+
+"ggYJ45" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"gxBJkl" = "Aquí tens la llista de comptes";
+
+"hL4u0G" = "Camí";
+
+"hLfV0h" = "El compte amb l’UUID indicat no existeix";
+
+"hPuHs9" = "Esperar que es creï la carpeta";
+
+"iBm5P1" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"iDEwxe" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"icA1AQ" = "Sí";
+
+"idUnAy" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"ijKWiB" = "Quin fitxer vols desar?";
+
+"j7guHG" = "Obtenir llista de comptes";
+
+"je9RXz" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"jkLupt" = "Elimina el camí indicat del compte";
+
+"kfmZUU" = "Obtenir el fitxer ${path} de ${account}";
+
+"l1ScV6" = "El camí indicat no existeix.";
+
+"lIGrzU" = "És preferit";
+
+"lNNcvh" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"lUzgvo" = "El compte amb l’UUID indicat no existeix";
+
+"leB73e" = "El camí indicat no existeix.";
+
+"lrF7G0" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"lsb3bf" = "Data";
+
+"lyQhRe" = "Marca de temps de l’última modificació";
+
+"m6tE77" = "ID local";
+
+"mJL3AY" = "Només per confirmar, volies ‘${account}’?";
+
+"mRWXIl" = "Compte";
+
+"mjas8f" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"mmHd6b" = "La xarxa no està disponible en aquest moment.";
+
+"mqKEhg" = "Només per confirmar, volies ‘${account}’?";
+
+"nZsCMf" = "Sentit d’ordenació";
+
+"nvFl2W" = "Obté el fitxer del camí indicat al compte";
+
+"o7aBS2" = "Només per confirmar, volies ‘${account}’?";
+
+"odUmdN" = "Selecciona el compte";
+
+"ogx9ZM" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"ovRBKA" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"pDN16g" = "No";
+
+"pLbUOb" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"q5bi2K" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"qD6IIc" = "Última modificació";
+
+"qEUEIK" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"qWXOGM" = "De quin camí vols la informació del fitxer?";
+
+"rZf2ER" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"rzbAOP" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"sKUo1c" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"sLw6L8" = "El camí indicat no existeix.";
+
+"sdm6CF" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"sf57GO" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"sxd9RH" = "Compte";
+
+"tHgDsi" = "Ascendent";
+
+"tIdL1f" = "La xarxa no està disponible en aquest moment.";
+
+"tMYYpx" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"tiHX6L" = "Compte";
+
+"tiPumg" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"u8abus" = "Camí";
+
+"uP1q1e" = "Compte";
+
+"unxhTD" = "Camí";
+
+"uo96Pp" = "Quin camí s’ha d’utilitzar?";
+
+"vY7pxV" = "Tipus";
+
+"vhZe7o" = "De quin camí vols la informació del fitxer?";
+
+"vyzXPW" = "La xarxa no està disponible en aquest moment.";
+
+"w1TCyX" = "Sí";
+
+"wK4bqS" = "Obté una llista de tots els comptes configurats";
+
+"wPdYjH" = "Compte";
+
+"wbCXnN" = "Mida";
+
+"wnOHo5" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"wvNr8g" = "Ha fallat l’autenticació. Obre el compte a l’app per resoldre el problema.";
+
+"xIWWfW" = "El compte amb l’UUID indicat no existeix";
+
+"xZDy1P" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"xaKzfr" = "Selecciona el compte";
+
+"xgwnia" = "El camí indicat no existeix.";
+
+"xseRVY" = "ID del fitxer";
+
+"xzMJ1y" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";
+
+"y8oko2" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"yTzyi1" = "Aquesta acció és una funció Pro i ara mateix no està desbloquejada. Per a més informació i opcions de desbloqueig, consulta Configuració > Funcions Pro > Dreceres.";
+
+"yeD8D7" = "L’app està bloquejada amb un codi d’accés. Desactiva el codi d’accés per continuar.";
+
+"yrLv2M" = "Aquí tens la llista de comptes";
+
+"zAG76o" = "Hi ha ${count} opcions que coincideixen amb ‘${account}’.";
+
+"zKRAWH" = "Tipus MIME";
+
+"znA04X" = "La compatibilitat amb Dreceres està desactivada. Obre l’app i activa Dreceres a Configuració.";

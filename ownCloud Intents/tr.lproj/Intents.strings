@@ -1,0 +1,507 @@
+"08siGk" = "Dosya";
+
+"0hPNzX" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"0jWfGg" = "${account} içinde ${path} yolunun olup olmadığını denetle";
+
+"0n7uf3" = "Bu klasör belirtilen yolda zaten var";
+
+"0pF5fq" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"0w7gOP" = "Bilinmiyor";
+
+"0xydIy" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"1KMplM" = "Belirtilen yol mevcut değil.";
+
+"1UkR2J" = "Dosyayı Kaydet";
+
+"1rpPPR" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"2IChwb" = "Belirtilen hesap ve yol için dizin listesini al";
+
+"2etfeF" = "Onaylamak için soruyorum, ‘${sortType}’ mı istediniz?";
+
+"30uTS2" = "Yoldaki Öğeyi Sil";
+
+"38884k" = "Hangi dosyaya ihtiyacınız var?";
+
+"38uTf2" = "Oluşturma Tarihi";
+
+"3BsNkC" = "Sunucu URL'si";
+
+"3allZk" = "Yol";
+
+"3dRWka" = "Belirtilen yol mevcut değil.";
+
+"3uG0po" = "Hangi yolun dosya bilgisini istiyorsunuz?";
+
+"4BnO3u" = "Hesabı seçin";
+
+"4HFDB7" = "Dosya Bilgisi";
+
+"4JjSYi" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"4U4XOu" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"4WGDPz" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"4eTrn2" = "Belirtilen UUID'ye sahip hesap yok";
+
+"5bfpVi" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"5bvXKH" = "Dosya nereye kaydedilsin?";
+
+"5tW7cP" = "Onaylamak için soruyorum, ‘${sortDirection}’ mı istediniz?";
+
+"61YuKy" = "Belirtilen UUID'ye sahip hesap yok";
+
+"65dv1W" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"6JHJJP" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"6JcpPy" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"6a3odp" = "${file} dosyasını ${account} içinde ${path} konumuna kaydet";
+
+"6oQ3E3" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"6veqlK" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"6xEiIO" = "Evet";
+
+"74Rz1p" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"79FdrK" = "${account} içinde ${path} yolunun olup olmadığını denetle";
+
+"79YEXU" = "Ağ şu anda kullanılamıyor.";
+
+"7IlNsG" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"7NRaX2" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"7Rco9W" = "${account} içinde ${path} için dosya bilgisini al";
+
+"7Zv2I0" = "Hayır";
+
+"7bVLsg" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"7ei7AX" = "Devam etmeden önce klasör oluşturmanın tamamlanmasını bekle";
+
+"7leZJ9" = "Belirtilen UUID'ye sahip hesap yok";
+
+"81IjYk" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"8CnkN3" = "Ad";
+
+"8ZZD23" = "Hesabı Al";
+
+"8Ziepl" = "Dosyayı Al";
+
+"8a8rsQ" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"8cu3YB" = "Dosya çevrimdışı kullanılamıyor.";
+
+"8ruaDW" = "Ağ şu anda kullanılamıyor.";
+
+"8zt6Cl" = "Ağ şu anda kullanılamıyor.";
+
+"9tIXKj" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"9uzczk" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"A3Pv0a" = "Dosya Bilgisi";
+
+"ABZOUR" = "Belirtilen UUID'ye sahip hesap yok";
+
+"ACWews" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"AG0qbP" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"AQ4lsZ" = "Klasör Oluştur";
+
+"ARGEYl" = "Ağ şu anda kullanılamıyor.";
+
+"AtUMKl" = "Belirtilen UUID'ye sahip hesap yok";
+
+"Aviuqh" = "Bu klasör belirtilen yolda zaten var";
+
+"B1lmXQ" = "Dosya Adı (isteğe bağlı)";
+
+"BOHYUX" = "Yol Var";
+
+"C4qdxp" = "Belirtilen UUID'ye sahip hesap yok";
+
+"Cfk0HW" = "Hesap";
+
+"CtNzv7" = "Belirtilen UUID'ye sahip hesap yok";
+
+"CwmgYp" = "Sıralama Türü";
+
+"D3oUHR" = "${accountUUID} hesabını al";
+
+"DSSHvU" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"Dt0MVQ" = "Hesap UUID";
+
+"E5BAmD" = "Paylaşılan";
+
+"Ed4d2z" = "/";
+
+"Ezlwwe" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"FZOxYk" = "Ad";
+
+"Fe4YSc" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"GAhtDQ" = "Hesap";
+
+"GJ25u2" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"GOVcde" = "Yol";
+
+"GUKqkE" = "Dosya zaten var ve üzerine yazma devre dışı.";
+
+"Iej0wL" = "Hesap";
+
+"IklOI3" = "Sıralama Ölçütü";
+
+"Iq98sA" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"J4AXzF" = "Ağ şu anda kullanılamıyor.";
+
+"JPFL0e" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"JRUplN" = "Bilinmiyor";
+
+"KHwW13" = "Klasör nerede oluşturulsun?";
+
+"KLmGnh" = "Ağ şu anda kullanılamıyor.";
+
+"KpcaUP" = "Evet";
+
+"Kr0sps" = "Belirtilen UUID'ye sahip hesap yok";
+
+"KuSDoY" = "Ağ şu anda kullanılamıyor.";
+
+"LJUrKB" = "Dosya Yolu";
+
+"LdHBeL" = "Belirtilen yol için dosya bilgilerini al";
+
+"MGAYW2" = "Dosya Bilgisini Al";
+
+"MRTQ9c" = "Oluşturma Tarihi Zaman Damgası";
+
+"MVtUAV" = "Ağ şu anda kullanılamıyor.";
+
+"N181Er" = "Belirtilen yol mevcut değil.";
+
+"NEiHz6" = "Belirtilen yolda dosya yok.";
+
+"OBFBYf" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"OmLLGX" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"P6Xeu7" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"PHyaws" = "Dizin Listesini Al";
+
+"PthGCb" = "Belirtilen yolun var olup olmadığını denetle";
+
+"QIKvUr" = "Belirtilen UUID'ye sahip hesap yok";
+
+"R54XCc" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"Rc9iDZ" = "Ağ şu anda kullanılamıyor.";
+
+"Rh6ICd" = "${account} için ${path} içinde ${name} klasörünü oluştur";
+
+"SP1wR2" = "Belirtilen UUID'ye sahip hesap yok";
+
+"SW8AiH" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"TjffcC" = "${account} içinde ${path} yolundaki öğeyi sil";
+
+"U3l2bk" = "Belirtilen hesap UUID'sine ait hesabı al";
+
+"U4qBGg" = "Dosya çevrimdışı kullanılamıyor.";
+
+"UaOocE" = "Dosya zaten var ve üzerine yazma devre dışı.";
+
+"UdyMQ5" = "Belirtilen UUID'ye sahip hesap yok";
+
+"Ul4Kf0" = "Hesap Listesi";
+
+"Us1jG9" = "Ağ şu anda kullanılamıyor.";
+
+"V9kFMY" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"VHlRdG" = "Hesabı seçin";
+
+"VSQYEZ" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"VYw9o4" = "İstediğiniz hesabın UUID'sini girin";
+
+"Vbtkke" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"Vg8Ky0" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"VuUXmL" = "Ağ şu anda kullanılamıyor.";
+
+"W2jbjk" = "Klasörün adı";
+
+"WDPKZp" = "Belirtilen yolda dosya yok.";
+
+"WfA15u" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"X0Zskf" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"X2zTIZ" = "Dosya zaten varsa üzerine yaz";
+
+"XEIycV" = "Dizin Listesi";
+
+"XKCjDe" = "Hesapları Al";
+
+"XVBTsw" = "Hesap";
+
+"XmX9YS" = "Belirtilen adla yolda bir klasör oluştur.";
+
+"Xu46tf" = "Ağ şu anda kullanılamıyor.";
+
+"Y16qbv" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"Y87IjO" = "Belirtilen yol mevcut değil.";
+
+"YDTXfI" = "Hesabı seçin";
+
+"YNY6aQ" = "Mevcut Dosyanın Üzerine Yaz";
+
+"YzkaES" = "Dosya";
+
+"ZB0VB7" = "Azalan";
+
+"ZRW2EV" = "Ad";
+
+"ZWoKzx" = "Belirtilen yol mevcut değil.";
+
+"ZXvi1J" = "‘${sortDirection}’ ile eşleşen ${count} seçenek var.";
+
+"ZhFjkx" = "Yol";
+
+"a5zbSk" = "‘${sortType}’ ile eşleşen ${count} seçenek var.";
+
+"ak80K0" = "Ağ şu anda kullanılamıyor.";
+
+"axuc4N" = "${account} hesabından ${path} için dizin listesini al";
+
+"b4VIz0" = "Dosyayı kaydetmek için isteğe bağlı dosya adı";
+
+"b4pgUO" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"bPAspK" = "Hayır";
+
+"bfU2dy" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"cDQ3EQ" = "Dosya Uzantısı (isteğe bağlı)";
+
+"ceG0fs" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"cfhOuF" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"ctet5s" = "Belirtilen yol mevcut değil.";
+
+"dCe7NY" = "${accountUUID} hesabını al";
+
+"dH8vD7" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"dRSMFQ" = "Dosyayı kaydetmek için isteğe bağlı dosya uzantısı";
+
+"dWm6eD" = "Belirtilen UUID'ye sahip hesap yok";
+
+"dlIKxE" = "Yol";
+
+"ds6RJ5" = "Yol Var";
+
+"dtUvRf" = "Hesaptaki yola bir dosya kaydet";
+
+"e5LXg2" = "Hesabı seçin";
+
+"eATsqP" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"eGjKAM" = "Yol";
+
+"eJ8Zop" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"eZdCum" = "Boyut";
+
+"eg3e3D" = "Hayır";
+
+"ficaax" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"fjiVU2" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"fotVdI" = "Hesabı seçin";
+
+"g1Zin1" = "Belirtilen UUID'ye sahip hesap yok";
+
+"gDQ2EW" = "UUID";
+
+"gFiypL" = "Sıralama Yönü";
+
+"gYCA4r" = "${account} içinde ${path} yolundaki öğeyi sil";
+
+"ggYJ45" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"gxBJkl" = "Hesap listeniz burada";
+
+"hL4u0G" = "Yol";
+
+"hLfV0h" = "Belirtilen UUID'ye sahip hesap yok";
+
+"hPuHs9" = "Klasör oluşturmanın tamamlanmasını bekle";
+
+"iBm5P1" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"iDEwxe" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"icA1AQ" = "Evet";
+
+"idUnAy" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"ijKWiB" = "Hangi dosya kaydedilsin?";
+
+"j7guHG" = "Hesap Listesini Al";
+
+"je9RXz" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"jkLupt" = "Hesaptaki belirtilen yolu sil";
+
+"kfmZUU" = "${account} hesabından ${path} dosyasını al";
+
+"l1ScV6" = "Belirtilen yol mevcut değil.";
+
+"lIGrzU" = "Favori mi";
+
+"lNNcvh" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"lUzgvo" = "Belirtilen UUID'ye sahip hesap yok";
+
+"leB73e" = "Belirtilen yol mevcut değil.";
+
+"lrF7G0" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"lsb3bf" = "Tarih";
+
+"lyQhRe" = "Son Değişiklik Zaman Damgası";
+
+"m6tE77" = "Yerel ID";
+
+"mJL3AY" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"mRWXIl" = "Hesap";
+
+"mjas8f" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"mmHd6b" = "Ağ şu anda kullanılamıyor.";
+
+"mqKEhg" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"nZsCMf" = "Sıralama Yönü";
+
+"nvFl2W" = "Hesapta belirtilen yoldaki dosyayı al";
+
+"o7aBS2" = "Onaylamak için soruyorum, ‘${account}’ mı istediniz?";
+
+"odUmdN" = "Hesabı seçin";
+
+"ogx9ZM" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"ovRBKA" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"pDN16g" = "Hayır";
+
+"pLbUOb" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"q5bi2K" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"qD6IIc" = "Son Değişiklik";
+
+"qEUEIK" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"qWXOGM" = "Hangi yolun dosya bilgisini istiyorsunuz?";
+
+"rZf2ER" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"rzbAOP" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"sKUo1c" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"sLw6L8" = "Belirtilen yol mevcut değil.";
+
+"sdm6CF" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"sf57GO" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"sxd9RH" = "Hesap";
+
+"tHgDsi" = "Artan";
+
+"tIdL1f" = "Ağ şu anda kullanılamıyor.";
+
+"tMYYpx" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"tiHX6L" = "Hesap";
+
+"tiPumg" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"u8abus" = "Yol";
+
+"uP1q1e" = "Hesap";
+
+"unxhTD" = "Yol";
+
+"uo96Pp" = "Hangi yol kullanılsın?";
+
+"vY7pxV" = "Tür";
+
+"vhZe7o" = "Hangi yolun dosya bilgisini istiyorsunuz?";
+
+"vyzXPW" = "Ağ şu anda kullanılamıyor.";
+
+"w1TCyX" = "Evet";
+
+"wK4bqS" = "Yapılandırılmış tüm hesapların listesini al";
+
+"wPdYjH" = "Hesap";
+
+"wbCXnN" = "Boyut";
+
+"wnOHo5" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"wvNr8g" = "Kimlik doğrulama başarısız oldu. Sorunu gidermek için lütfen hesabı uygulamada açın.";
+
+"xIWWfW" = "Belirtilen UUID'ye sahip hesap yok";
+
+"xZDy1P" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"xaKzfr" = "Hesabı seçin";
+
+"xgwnia" = "Belirtilen yol mevcut değil.";
+
+"xseRVY" = "Dosya ID";
+
+"xzMJ1y" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
+
+"y8oko2" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"yTzyi1" = "Bu eylem bir Pro Özelliğidir ve şu anda kilidi açılmamış. Daha fazla bilgi ve kilit açma seçenekleri için lütfen Ayarlar > Pro Özellikler > Kestirmeler bölümüne bakın.";
+
+"yeD8D7" = "Uygulama şu anda parola koduyla kilitli. Devam etmek için lütfen parola kodunu devre dışı bırakın.";
+
+"yrLv2M" = "Hesap listeniz burada";
+
+"zAG76o" = "‘${account}’ ile eşleşen ${count} seçenek var.";
+
+"zKRAWH" = "MIME Türü";
+
+"znA04X" = "Kestirmeler desteği devre dışı. Lütfen uygulamayı açın ve Ayarlar'da Kestirmeler'i etkinleştirin.";
