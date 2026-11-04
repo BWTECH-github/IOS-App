@@ -35,7 +35,7 @@ modules, file names) are unchanged.
   `NSExtensionFileProviderDocumentGroup`, entitlements of all targets)
 - **Keychain Access Group**: `$(AppIdentifierPrefix)group.owncloud.online.bw.tech`
   (`OCKeychainAccessGroupIdentifier = group.owncloud.online.bw.tech`)
-- **Team**: BW-TECH GmbH (4545KLA52K), automatic signing (no manual profiles)
+- **Team**: BW-TECH GmbH (A7VZ8HFNR4), automatic signing (no manual profiles)
 - **URL schemes**: `owncloud-online-bwtech` (app/private links) and
   `owncloud-online-bwtech-auth` (auth) — no collision with the apps of
   ownCloud GmbH (`owncloud`, `oc`, `owncloud-online`)

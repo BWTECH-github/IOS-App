@@ -1,10 +1,10 @@
 # App-Store-Release (owncloud.online iOS)
 
-Kurzanleitung für den Store-Build der App `owncloud.online.bw.tech` (Team `4545KLA52K`, BW-TECH GmbH).
+Kurzanleitung für den Store-Build der App `owncloud.online.bw.tech` (Team `A7VZ8HFNR4`, BW-TECH GmbH).
 
 ## Voraussetzungen
 
-- Xcode mit angemeldetem Apple-Konto des Teams `4545KLA52K` (Xcode → Settings → Accounts).
+- Xcode mit angemeldetem Apple-Konto des Teams `A7VZ8HFNR4` (Xcode → Settings → Accounts).
   Das Konto braucht die Rolle **Admin** oder **App Manager** mit Zugriff auf Zertifikate,
   damit Xcode das Zertifikat **Apple Distribution** automatisch anlegen kann
   (alternativ einmalig in Xcode → Accounts → Manage Certificates → „+“ → Apple Distribution).
@@ -30,7 +30,7 @@ Kurzanleitung für den Store-Build der App `owncloud.online.bw.tech` (Team `4545
   (`online.owncloud.ios-app`, `group.online.owncloud.ios-app`, Scheme `owncloud-online`);
   beide Apps laufen nebeneinander auf einem Gerät.
 - Die automatische Signierung (`-allowProvisioningUpdates`) legt fehlende App-IDs, die App-Group
-  und die App-Store-Profile im Team `4545KLA52K` selbst an.
+  und die App-Store-Profile im Team `A7VZ8HFNR4` selbst an.
 
 ## Versionen
 
@@ -59,13 +59,13 @@ tools/appstore/release.sh --verify build/appstore/303/export/ownCloud.ipa
 Was das Skript macht:
 
 1. `xcodebuild archive`: Schema `ownCloud`, Konfiguration Release, `generic/platform=iOS`,
-   automatische Signierung, `-allowProvisioningUpdates`. Dabei werden `DEVELOPMENT_TEAM=4545KLA52K`
+   automatische Signierung, `-allowProvisioningUpdates`. Dabei werden `DEVELOPMENT_TEAM=A7VZ8HFNR4`
    (auch für die Targets im Submodul `ios-sdk`, in denen noch das ownCloud-Team steht), `APP_VERSION`
    und `APP_BUILD_FLAGS` gesetzt. `APP_BUILD_FLAGS` kommt wie beim Fastfile aus `build.flags` in `Branding.plist`;
    `DISABLE_APPSTORE_LICENSING` wird immer ergänzt (keine In-App-Käufe). Das Flag steht zusätzlich auf
    Projektebene, damit auch ein Archiv direkt aus Xcode (Product > Archive) keine Kaufangebote enthält.
 2. `xcodebuild -exportArchive` mit `tools/appstore/ExportOptions.plist`
-   (`app-store-connect`, Team `4545KLA52K`, `signingStyle automatic`, `destination export`).
+   (`app-store-connect`, Team `A7VZ8HFNR4`, `signingStyle automatic`, `destination export`).
 3. Prüfung des IPA (immer, auch vor einem Upload). Schlägt sie fehl, bricht das Skript ab.
 4. Nur mit `--upload`: zweiter `-exportArchive` mit `destination upload` (Log `upload.log`).
 
@@ -99,10 +99,11 @@ und für die Unit-Tests: Die StoreKit-Tests in `LicensingTests` werden dann übe
 
 - Im Team registriert: nur die App-ID `owncloud.online.bw.tech`. Die fünf Extension-IDs und die
   App-Group `group.owncloud.online.bw.tech` legt Xcode beim ersten signierten Archiv an.
-- Das Xcode-Konto `dev@bw.tech` wird seit dem Update auf Xcode 27.2 abgelehnt
-  („The login details … were rejected“). Mit App-Store-Connect-API-Schlüssel (`ASC_KEY_*`) meldet
-  `xcodebuild archive` „No Account for Team 4545KLA52K“. Vor `release.sh` deshalb in Xcode →
-  Settings → Accounts das Team-Konto neu anmelden.
+- BW-TECH hat zwei Apple-Teams mit gleichem Firmennamen: **A7VZ8HFNR4** (App Store Connect, App-ID
+  `owncloud.online.bw.tech`, API-Schlüssel, Developer ID des Desktop-Clients; Konto l.gross@bw.tech als Admin)
+  und 4545KLA52K (altes Team des Kontos dev@bw.tech). Die iOS-App gehört zu A7VZ8HFNR4. Meldet
+  `xcodebuild` „No Account for Team …“, ist meist das falsche Team eingetragen oder in Xcode → Settings →
+  Apple Accounts kein Konto dieses Teams angemeldet.
 
 ## Checkliste vor der Einreichung
 

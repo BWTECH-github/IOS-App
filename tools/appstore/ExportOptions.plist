@@ -6,7 +6,7 @@
 	<key>method</key>
 	<string>app-store-connect</string>
 	<key>teamID</key>
-	<string>4545KLA52K</string>
+	<string>A7VZ8HFNR4</string>
 	<key>signingStyle</key>
 	<string>automatic</string>
 	<!-- "export" schreibt nur das IPA; release.sh setzt "upload" ausschliesslich mit dem Schalter --upload -->
