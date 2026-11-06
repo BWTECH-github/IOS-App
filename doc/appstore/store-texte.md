@@ -162,6 +162,6 @@ Diese Nutzung fällt unter die Ausnahmen (Authentifizierung, Integrität, Versch
 > This app is the client for owncloud.online, a hosted file storage service operated by BW-TECH GmbH (Germany). A demo account is provided below.
 > Background location (UIBackgroundModes "location") is optional and used only when the user enables "Auto Upload" with location-based background triggering: significant location changes wake the app to upload new photos and videos. No location data is collected or transmitted.
 > The app contains no in-app purchases.
-> Accounts cannot be created in the app. They are provisioned by BW-TECH GmbH as part of a subscription contract and deleted when it is cancelled. On first launch, enter the server URL below, tap "Anmeldeseite öffnen" (Open login page), confirm the system prompt and sign in on the login page of the server with the user name and password.
+> Accounts cannot be created in the app. They are provisioned by BW-TECH GmbH as part of a subscription contract and deleted when it is cancelled. On first launch, enter the server URL below, tap "Open login page" ("Anmeldeseite öffnen" in German), confirm the system prompt, sign in on the login page of the server with the user name and password, then tap "Authorize" ("Autorisieren").
 >
 > Demo account: server URL https://testoo.bw.tech, user name appreview, password: see the App Review Information fields (the password is not stored in this repository). The account contains sample documents, photos and a project folder.
