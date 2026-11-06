@@ -73,10 +73,7 @@ class BookmarkInfoViewController: StaticTableViewController {
 						row.cell?.accessoryView = progressView
 					}
 
-					var includeAvailableOfflineCopies : Bool = (includeAvailableOfflineCopiesRow.value as? Bool) ?? false
-					if VendorServices.shared.isBranded {
-						includeAvailableOfflineCopies = true
-					}
+					let includeAvailableOfflineCopies : Bool = (includeAvailableOfflineCopiesRow.value as? Bool) ?? false
 
 					let compactingSelector : OCVaultCompactSelector? = (includeAvailableOfflineCopies == false) ? { (_, item) -> Bool in
 						return item.downloadTriggerIdentifier != .availableOffline
@@ -110,11 +107,7 @@ class BookmarkInfoViewController: StaticTableViewController {
 			}
 		}, title: OCLocalizedString("Delete all Offline Files", nil), style: .destructive, alignment: .center, identifier: "row-offline-copies-delete")
 
-		if VendorServices.shared.isBranded {
-			addSection(StaticTableViewSection(headerTitle: "", footerTitle: OCLocalizedString("Removes downloaded files and local copies of items marked as Available Offline. The latter will be re-downloaded next time you log into your account (connectivity required).", nil), identifier: "section-compact", rows: [ deleteLocalFilesRow ]))
-		} else {
-			addSection(StaticTableViewSection(headerTitle: OCLocalizedString("Compacting", nil), footerTitle: nil, identifier: "section-compact", rows: [ includeAvailableOfflineCopiesRow, deleteLocalFilesRow ]))
-		}
+		addSection(StaticTableViewSection(headerTitle: OCLocalizedString("Compacting", nil), footerTitle: nil, identifier: "section-compact", rows: [ includeAvailableOfflineCopiesRow, deleteLocalFilesRow ]))
 
 		if DiagnosticManager.shared.enabled {
 			let showDiagnostics = StaticTableViewRow(rowWithAction: { [weak self] (_, _) in

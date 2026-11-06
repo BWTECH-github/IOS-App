@@ -159,7 +159,7 @@ class SavedSearchCell: ThemeableCollectionViewCell {
 			hasItemsConstraint!, // Constraint effective if the cell has items
 
 			segmentView.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-			segmentView.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+			segmentView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -titleInsets.right),
 			segmentView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -titleInsets.bottom),
 
 			sideButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -titleInsets.right),

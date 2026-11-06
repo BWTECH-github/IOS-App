@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>branding.can-add-account</key>
-	<false/>
+	<true/>
 	<key>branding.can-edit-account</key>
 	<true/>
 	<key>branding.enable-review-prompt</key>
 	<false/>
 	<key>branding.organization-name</key>
-	<string>owncloud.online</string>
-	<key>branding.profile-bookmark-name</key>
 	<string>owncloud.online</string>
 	<key>branding.profile-allow-url-configuration</key>
 	<true/>
@@ -50,6 +48,7 @@
 		<string>accountSetup.step.background.fill: #FFFFFF</string>
 		<string>accountSetup.step.title.stroke: #262B45</string>
 		<string>accountSetup.step.message.stroke: #464D6A</string>
+		<string>accountSetup.step.label.stroke: #262B45</string>
 		<string>accountSetup.textField.style: light</string>
 		<string>accountSetup.textField.keyboardAppearance: light</string>
 		<string>accountSetup.textField.label.stroke: #262B45</string>

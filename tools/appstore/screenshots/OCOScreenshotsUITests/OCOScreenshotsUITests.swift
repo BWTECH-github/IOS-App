@@ -318,6 +318,9 @@ final class OCOScreenshotsUITests: XCTestCase {
 				case "portrait": XCUIDevice.shared.orientation = .portrait
 				case "landscape": XCUIDevice.shared.orientation = .landscapeLeft
 				case "shot": shot(arg)
+				case "rawshot":
+					// ohne auf das Ende der Ladeanzeige zu warten, um Zwischenzustaende festzuhalten
+					try? XCUIScreen.main.screenshot().pngRepresentation.write(to: URL(fileURLWithPath: "\(out)/\(arg).png"))
 				case "dump": dump(arg)
 				default: XCTFail("unbekannte Aktion \(cmd)")
 			}

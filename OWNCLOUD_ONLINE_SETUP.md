@@ -68,6 +68,9 @@ modules, file names) are unchanged.
 - **OAuth2 client**: the app uses the SDK defaults, client "iOS" with the redirect URI
   `oc://ios.owncloud.com`. Do not set `authentication-oauth2.*` in Branding.plist: a
   different client or redirect URI would have to be registered on every server first.
+- **Managed devices**: the MDM browser session classes `MIBrowser`, `AWBrowser` and
+  `CustomScheme` are not supported. They return through the URL scheme `oc`, which this
+  app does not register because it belongs to the original app.
 - **Check a server** without an account: `POST /index.php/apps/oauth2/api/v1/token` with the
   client id and secret as HTTP Basic and `grant_type=authorization_code&code=x`.
   `invalid_grant` means the client is registered, `invalid_client` means it is missing

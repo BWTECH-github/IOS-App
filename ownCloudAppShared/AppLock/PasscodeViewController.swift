@@ -336,10 +336,6 @@ public class PasscodeViewController: UIViewController, Themeable {
 
 	// MARK: - Themeing
 	public override var preferredStatusBarStyle : UIStatusBarStyle {
-		if VendorServices.shared.isBranded {
-			return .darkContent
-		}
-
 		return Theme.shared.activeCollection.css.getStatusBarStyle(for: self) ?? .default
 	}
 

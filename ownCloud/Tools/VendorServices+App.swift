@@ -47,7 +47,8 @@ extension VendorServices {
 	}
 
 	public func sendFeedback(from viewController: UIViewController) {
-		if let feedbackMail {
+		// Ohne Mail-Konto auf dem Geraet fuehrt die Kontaktseite weiter
+		if let feedbackMail, MFMailComposeViewController.canSendMail() || Branding.shared.feedbackURL == nil {
 			var buildType = OCLocalizedString("release", nil)
 
 			if self.isBetaBuild {

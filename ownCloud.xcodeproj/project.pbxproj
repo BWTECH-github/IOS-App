@@ -384,6 +384,7 @@
 		DC6C0A4929239E560045FF2A /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C0A4829239E560045FF2A /* AppRootViewController.swift */; };
 		DC6C0A542923FFF30045FF2A /* AccountControllerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C0A532923FFF30045FF2A /* AccountControllerSection.swift */; };
 		DC6C68362574FD0400E46BD4 /* PLCrashReporter.LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DC6C68352574FD0400E46BD4 /* PLCrashReporter.LICENSE */; };
+		BB0A11C02F4224E6000F57D2 /* App.LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BB0A11C12F4224E6000F57D2 /* App.LICENSE */; };
 		DC6C9A132A12859900BFF393 /* PocketSVG in Frameworks */ = {isa = PBXBuildFile; productRef = DC6C9A122A12859900BFF393 /* PocketSVG */; };
 		DC6CC3152642C3560040ECAC /* ExternalBrowserBusyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC3142642C3560040ECAC /* ExternalBrowserBusyHandler.swift */; };
 		DC6CF7FB219446050013B9F9 /* LogSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CF7FA219446050013B9F9 /* LogSettingsViewController.swift */; };
@@ -1368,6 +1369,7 @@
 		DC6C0A4829239E560045FF2A /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
 		DC6C0A532923FFF30045FF2A /* AccountControllerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountControllerSection.swift; sourceTree = "<group>"; };
 		DC6C68352574FD0400E46BD4 /* PLCrashReporter.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = PLCrashReporter.LICENSE; sourceTree = "<group>"; };
+		BB0A11C12F4224E6000F57D2 /* App.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = App.LICENSE; sourceTree = "<group>"; };
 		DC6CC3142642C3560040ECAC /* ExternalBrowserBusyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalBrowserBusyHandler.swift; sourceTree = "<group>"; };
 		DC6CF7FA219446050013B9F9 /* LogSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSettingsViewController.swift; sourceTree = "<group>"; };
 		DC6F0B962AE90C4A00BFF393 /* com.owncloud.ios-app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "com.owncloud.ios-app"; sourceTree = "<group>"; };
@@ -2840,6 +2842,7 @@
 				395E3B142C8B0E83007979C9 /* InfoPlist.xcstrings */,
 				395E3B162C8B0E83007979C9 /* Localizable.xcstrings */,
 				DC6C68352574FD0400E46BD4 /* PLCrashReporter.LICENSE */,
+				BB0A11C12F4224E6000F57D2 /* App.LICENSE */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -4284,6 +4287,7 @@
 				395E3B152C8B0E83007979C9 /* InfoPlist.xcstrings in Resources */,
 				233BDEA7204FEFE500C06732 /* Assets.xcassets in Resources */,
 				DC6C68362574FD0400E46BD4 /* PLCrashReporter.LICENSE in Resources */,
+				BB0A11C02F4224E6000F57D2 /* App.LICENSE in Resources */,
 				DCC077832F02D1FA007D6CD3 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
