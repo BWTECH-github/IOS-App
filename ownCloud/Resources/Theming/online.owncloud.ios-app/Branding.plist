@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>authentication-oauth2.oidc-register-client-name-template</key>
+	<string>owncloud.online/{{os.name}} {{app.version}}</string>
 	<key>branding.can-add-account</key>
 	<true/>
 	<key>branding.can-edit-account</key>
