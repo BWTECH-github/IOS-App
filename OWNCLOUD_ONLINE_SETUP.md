@@ -60,14 +60,19 @@ modules, file names) are unchanged.
 - **Help / Privacy / Terms URLs**: `owncloud.online/faq/`, `/privacy-policy/`, `/terms/`
 
 ### Authentication
-- **Basic Auth**: the only allowed method right now
-  (`connection.allowed-authentication-methods = [com.owncloud.basicauth]`)
-- **OAuth2 / OpenID Connect**: currently DISABLED — no client is registered on
-  owncloud.online yet. To enable: register the iOS client on the server
-  (the SDK default redirect URI `oc://ios.owncloud.com` is unchanged; a new
-  redirect URI must first be registered on the server), then re-add
-  `com.owncloud.oauth2` to the allowed methods and set
-  `authentication-oauth2.oa2-client-id`/`-secret` in Branding.plist
+- **Allowed methods** (`connection.allowed-authentication-methods`): OpenID Connect,
+  OAuth2 and Basic Auth, as in the original app. The server decides: if it answers
+  with `WWW-Authenticate: Bearer`, the app opens the login page of the server
+  (needed for Azure and other single sign-on), otherwise it asks for user name and
+  password.
+- **OAuth2 client**: the app uses the SDK defaults, client "iOS" with the redirect URI
+  `oc://ios.owncloud.com`. Do not set `authentication-oauth2.*` in Branding.plist: a
+  different client or redirect URI would have to be registered on every server first.
+- **Check a server** without an account: `POST /index.php/apps/oauth2/api/v1/token` with the
+  client id and secret as HTTP Basic and `grant_type=authorization_code&code=x`.
+  `invalid_grant` means the client is registered, `invalid_client` means it is missing
+  and the login page would fail. Checked 2026-11-06: testoo.bw.tech, oc.bw.tech and
+  antgueupho850.owncloud.online have it.
 
 ### PHP 8.4 Compatibility
 The owncloud.online backend runs PHP 8.4 with the following key dependencies:

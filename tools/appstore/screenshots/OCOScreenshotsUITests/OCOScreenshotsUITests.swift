@@ -123,9 +123,8 @@ final class OCOScreenshotsUITests: XCTestCase {
 			tap("Einrichtung starten")
 			enterText(field: 0, env["OCO_SERVER"] ?? "https://testoo.bw.tech")
 			tap("Fortfahren", type: .button)
-			enterText(field: 0, env["OCO_USER"] ?? "demo")
-			enterText(field: 0, secure: true, env["OCO_PASS"] ?? "")
-			tap("Anmelden", type: .button)
+			openLoginPage()
+			signIn(user: env["OCO_USER"] ?? "demo")
 			dismissPrompts(wait: 10)
 			tap("Fertig", type: .button)
 			dismissPrompts(wait: 5)
@@ -216,6 +215,67 @@ final class OCOScreenshotsUITests: XCTestCase {
 		shot("06-aktionen", numbered: false)
 		app.swipeDown(); settle(1.5)
 		if find("Abbrechen", type: .button) != nil { tap("Abbrechen", type: .button) }
+	}
+
+	// MARK: - Web-Anmeldung (OAuth2)
+	var loginPage: XCUIApplication { XCUIApplication(bundleIdentifier: "com.apple.SafariViewService") }
+
+	/// Vom Schritt "Anmelden" bis zur geladenen Anmeldeseite des Servers
+	func openLoginPage() {
+		XCTAssertNotNil(wait("Anmeldeseite öffnen", timeout: 30, type: .button), "Keine Web-Anmeldung angeboten")
+		dump("web-anmelden")
+		tap("Anmeldeseite öffnen", type: .button)
+
+		// Systemabfrage der Anmeldesitzung: "... moechte ... zum Anmelden verwenden"
+		let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+		let confirm = springboard.buttons.matching(NSPredicate(format: "label IN %@", ["Fortfahren", "Weiter", "Continue"])).firstMatch
+		XCTAssertTrue(confirm.waitForExistence(timeout: 20), "Systemabfrage fehlt")
+		shot("web-systemabfrage")
+		confirm.tap()
+
+		XCTAssertTrue(loginPage.webViews.firstMatch.waitForExistence(timeout: 30), "Anmeldeseite fehlt")
+		settle(6)
+		shot("web-seite")
+		try? loginPage.debugDescription.write(toFile: "\(out)/web-seite.txt", atomically: true, encoding: .utf8)
+	}
+
+	/// Anmeldung auf der Seite und Zustimmung, danach ist die App wieder vorn
+	func signIn(user: String) {
+		let web = loginPage
+		let userField = web.textFields.firstMatch
+		XCTAssertTrue(userField.waitForExistence(timeout: 20), "Feld Benutzername fehlt")
+		userField.tap()
+		// Tippen auf ein zweites Feld einer Webseite gibt ihm keinen Tastaturfokus: mit Tabulator weiter
+		userField.typeText(user + "\t")
+		settle(1)
+		web.secureTextFields.firstMatch.typeText((env["OCO_PASS"] ?? "") + "\n")
+
+		let authorize = web.buttons["Autorisieren"]
+		XCTAssertTrue(authorize.waitForExistence(timeout: 30), "Zustimmungsseite fehlt")
+		shot("web-zustimmung")
+		authorize.tap()
+	}
+
+	/// Anmeldung ueber die Anmeldeseite des Servers. Ohne OCO_USER endet der Test auf der Anmeldeseite,
+	/// z. B. bei Servern mit fremdem Anmeldedienst (Azure), fuer den es hier keine Zugangsdaten gibt.
+	func testWebLogin() throws {
+		app.launch()
+		if wait("Einrichtung starten", timeout: 8) != nil { tap("Einrichtung starten") }
+		enterText(field: 0, env["OCO_SERVER"] ?? "https://testoo.bw.tech")
+		tap("Fortfahren", type: .button)
+		openLoginPage()
+		guard let user = env["OCO_USER"], !user.isEmpty else { return }
+		signIn(user: user)
+
+		XCTAssertNotNil(wait("Fertig", timeout: 40, type: .button), "Anmeldung nicht abgeschlossen")
+		shot("web-fertig")
+		tap("Fertig", type: .button)
+		dismissPrompts(wait: 5)
+		if let account = wait("Konto ", timeout: 8, type: .cell) { account.tap() }
+		dismissPrompts()
+		// Dateizeilen tragen den Namen ohne Endung, deshalb ein Ordner
+		XCTAssertNotNil(wait(env["OCO_EXPECT"] ?? "Dokumente", timeout: 40), "Dateiliste nicht geladen")
+		shot("web-dateien")
 	}
 
 	// MARK: - Generischer Treiber

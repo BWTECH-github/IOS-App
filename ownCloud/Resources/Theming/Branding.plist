@@ -71,6 +71,8 @@
 	<string>DISABLE_APPSTORE_LICENSING</string>
 	<key>connection.allowed-authentication-methods</key>
 	<array>
+		<string>com.owncloud.openid-connect</string>
+		<string>com.owncloud.oauth2</string>
 		<string>com.owncloud.basicauth</string>
 	</array>
 	<key>locale.overrides</key>
